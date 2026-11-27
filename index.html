@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#21051f">
   <meta name="description" content="UNITE-ONE：以八項特徵推理寶可夢大集結角色，包含可遊玩角色與地圖 NPC。">
-  <title>集結一把｜UNITE-ONE V1.7.9</title>
+  <title>集結一把｜UNITE-ONE V1.8.0</title>
   <style>
 :root{--bg:#170414;--bg2:#260720;--panel:#390a2c;--panel2:#4a103b;--line:rgba(255,125,205,.2);--line2:rgba(255,160,220,.34);--text:#f8eaf4;--muted:#c5a6bb;--pink:#ec69bf;--pink2:#a92e83;--green:#185e49;--green-b:#49cba0;--red:#6c263f;--red-b:#ff7d9c;--gold:#e5ba6a;--shadow:0 24px 70px rgba(0,0,0,.3);font-family:Inter,"Noto Sans TC",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(ellipse at 12% 2%,rgba(157,39,119,.28),transparent 34%),radial-gradient(ellipse at 92% 35%,rgba(97,24,82,.2),transparent 31%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}.app-shell{width:min(1500px,calc(100% - 36px));margin:20px auto 26px;background:linear-gradient(140deg,rgba(72,17,57,.97),rgba(40,8,36,.98));border:1px solid rgba(255,125,205,.13);border-radius:18px;overflow:visible;box-shadow:var(--shadow);min-height:calc(100vh - 46px)}.topbar{height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);background:rgba(40,4,34,.66);border-radius:18px 18px 0 0}.brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;min-width:220px}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:linear-gradient(140deg,#f17aca,#8f317e);color:#fff;font-size:22px;box-shadow:0 0 24px rgba(236,105,191,.3)}.brand-word{display:flex;align-items:baseline;gap:12px}.brand-word strong{font-size:19px;letter-spacing:.12em}.brand-word small{font-family:Georgia,serif;font-size:11px;color:#c99cb8;letter-spacing:.2em}.main-nav{display:flex;align-items:center;gap:8px}.nav-btn,.icon-btn,.language-select,.pill-btn,.filter-select{color:var(--muted);background:transparent;border:1px solid transparent;border-radius:999px;padding:11px 17px;transition:.2s}.nav-btn:hover,.nav-btn.active{border-color:var(--line2);color:#ffc2e9;background:rgba(205,65,158,.1)}.top-actions{display:flex;align-items:center;gap:9px}.language-select,.filter-select{border-color:var(--line);background:#2c0925;color:#f5d9eb;padding:10px 32px 10px 13px;outline:none}.icon-btn{width:38px;height:38px;padding:0;border-color:var(--line);font-size:17px;font-weight:800;color:#f5c0e7}.icon-btn:hover{background:rgba(236,105,191,.15)}main{padding:34px 28px 46px;min-height:630px}.view{display:none}.active-view{display:block}.game-heading,.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 22px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.2em;color:#d76ab4;margin:0 0 9px}.game-heading h1,.page-heading h1{font-size:clamp(25px,3.2vw,36px);line-height:1.15;margin:0 0 10px;letter-spacing:.02em}.subheading{margin:0;color:var(--muted);font-size:14px}.round-badge,.total-chip{border:1px solid var(--line);background:rgba(20,1,17,.2);color:#e7b8d7;border-radius:999px;padding:11px 16px;font-weight:700;font-size:12px;white-space:nowrap}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#f279c2;margin-right:9px;box-shadow:0 0 12px #f279c2}.status-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:13px 16px;background:rgba(41,2,31,.6);border:1px solid var(--line);border-radius:16px;margin-bottom:18px}.status-item{min-width:96px;text-align:center;padding:4px 14px;border-right:1px solid var(--line)}.status-label{display:block;color:#ae88a5;font-size:11px;margin-bottom:4px}.status-item strong{font-size:16px;font-variant-numeric:tabular-nums}.pill-btn{border-color:var(--line);padding:10px 17px;color:#eac0db;font-weight:700}.pill-btn:hover{border-color:var(--line2);background:rgba(236,105,191,.1)}.hint-btn{margin-left:auto}.hint-btn span:first-child{color:var(--gold);margin-right:6px}.reset-btn{color:#f48acb}.howto-bar{display:flex;align-items:center;gap:10px;padding:15px 18px;background:rgba(53,6,43,.75);border:1px solid rgba(255,125,205,.13);border-radius:13px;color:#e9bed9;font-size:13px;margin-bottom:19px}.howto-icon{font-size:16px;color:#b9b2ff}.howto-bar strong{white-space:nowrap;color:#f1c5e1}.howto-bar span:last-child{color:#bd9fb5}.hint-panel{padding:12px 16px;margin:-4px 0 17px;border:1px dashed rgba(229,186,106,.45);background:rgba(229,186,106,.07);border-radius:12px;color:#f4d8a5;font-size:13px}.guess-input-wrap{position:relative;display:flex;align-items:center;gap:12px;padding:6px 7px 6px 18px;border:1px solid rgba(236,105,191,.34);background:rgba(25,2,20,.68);border-radius:999px;max-width:850px;margin:0 auto}.search-icon{font-size:24px;color:#d17cb2;line-height:1}.guess-input-wrap input,.dex-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#fff;padding:12px 0;font-size:15px}.guess-input-wrap input::placeholder,.dex-search input::placeholder{color:#9e7e95}.primary-btn{border:0;color:#fff;font-weight:800;background:linear-gradient(135deg,#e66abe,#a93689);padding:14px 23px;border-radius:999px;box-shadow:0 5px 18px rgba(196,57,148,.2);white-space:nowrap;transition:.2s}.primary-btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.primary-btn span:last-child{margin-left:10px}.input-note{text-align:center;color:#97758e;font-size:11px;margin:9px 0 27px}.suggestions{position:absolute;z-index:8;top:calc(100% + 8px);left:15px;right:100px;background:#24051e;border:1px solid var(--line2);border-radius:13px;padding:6px;box-shadow:var(--shadow);max-height:300px;overflow:auto}.suggestion{display:flex;align-items:center;gap:10px;padding:10px 12px;border:0;background:transparent;color:#f6e5f1;width:100%;text-align:left;border-radius:8px}.suggestion:hover,.suggestion.active{background:rgba(236,105,191,.13)}.suggestion small{color:#a9879e;margin-left:auto;font-size:10px}.mini-avatar,.avatar{display:grid;place-items:center;flex:none;background:linear-gradient(145deg,#a84e94,#522457);border:1px solid rgba(255,208,238,.15);color:#fff;font-weight:900}.mini-avatar{width:27px;height:27px;border-radius:8px;font-size:10px}.table-section{margin-top:2px}.table-title-row{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}.table-title-row h2,.record-panel h2{font-size:17px;margin:0 0 5px}.table-title-row p{font-size:11px;color:#a9889e;margin:0}.table-count{font-size:12px;color:#dba2c9;border:1px solid var(--line);border-radius:999px;padding:6px 12px}.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:13px;background:rgba(20,1,17,.25)}.guess-table{border-collapse:separate;border-spacing:0;width:100%;min-width:790px;font-size:13px}.guess-table th{padding:14px 13px;text-align:center;background:rgba(65,14,52,.85);color:#caa9c1;font-weight:700;border-bottom:1px solid var(--line);white-space:nowrap}.guess-table th:first-child{text-align:left;padding-left:18px}.guess-table td{padding:10px 12px;text-align:center;border-bottom:1px solid rgba(255,144,206,.12);border-right:1px solid rgba(255,144,206,.08);color:#efdfeb}.guess-table tr:last-child td{border-bottom:0}.guess-table td:first-child{text-align:left;padding-left:15px;min-width:175px}.guess-row{animation:rowIn .25s ease-out}.pokemon-cell{display:flex;align-items:center;gap:10px;font-weight:700}.avatar{width:36px;height:36px;border-radius:10px;font-size:11px;letter-spacing:-.04em}.cell-match{background:rgba(32,120,88,.47)!important;color:#d8fff1!important;box-shadow:inset 0 0 0 1px rgba(85,219,169,.22)}.cell-miss{background:rgba(115,34,61,.44)!important;color:#ffdce6!important;box-shadow:inset 0 0 0 1px rgba(255,112,151,.15)}.cell-neutral{background:rgba(92,55,85,.24)!important}.match-symbol{display:inline-block;margin-right:5px;color:#91edc9;font-size:11px}.miss-symbol{display:inline-block;margin-right:5px;color:#ff9bb2;font-size:11px}.empty-row td{text-align:center!important;color:#98768e;padding:45px 16px!important}.empty-star{display:block;color:#c56ca9;font-size:24px;margin-bottom:8px}.legend-row{display:flex;justify-content:flex-end;gap:18px;color:#a98aa0;font-size:11px;margin-top:11px}.legend-row>span{display:flex;align-items:center;gap:7px}.legend-swatch{width:10px;height:10px;display:inline-block;border-radius:3px}.legend-swatch.correct{background:#38a77b}.legend-swatch.wrong{background:#b54c6a}.result-card{margin-top:22px;padding:22px;border:1px solid rgba(235,113,193,.38);border-radius:16px;background:linear-gradient(130deg,rgba(93,20,70,.65),rgba(34,3,28,.9));box-shadow:0 18px 42px rgba(0,0,0,.16);animation:rowIn .3s ease}.result-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:15px}.result-top h2{margin:0;font-size:22px}.result-pokemon{display:flex;align-items:center;gap:14px}.result-pokemon .avatar{width:58px;height:58px;font-size:15px;border-radius:15px}.result-pokemon h3{margin:0 0 5px;font-size:19px}.result-pokemon p{margin:0;color:#bb9bb3;font-size:12px}.result-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.metric{padding:12px;border:1px solid var(--line);border-radius:11px;text-align:center;background:rgba(20,1,17,.25)}.metric strong{display:block;color:#ef7cc5;font-size:21px;margin-bottom:4px}.metric span{color:#a98ba1;font-size:11px}.result-actions{display:flex;gap:9px;flex-wrap:wrap}.secondary-btn{border:1px solid var(--line2);border-radius:999px;padding:11px 16px;background:transparent;color:#eac4df;font-weight:700}.secondary-btn:hover{background:rgba(236,105,191,.1)}.page-heading{margin-bottom:25px}.total-chip{color:#f0b3dd}.dex-controls{display:flex;gap:12px;margin-bottom:20px}.dex-search{display:flex;align-items:center;gap:11px;padding:0 15px;border:1px solid var(--line);border-radius:999px;background:rgba(22,1,18,.36);flex:1}.dex-search>span{font-size:22px;color:#d17cb2}.dex-search input{padding:13px 0}.filter-select{border-radius:999px;min-width:170px}.dex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px}.dex-card{display:flex;align-items:center;gap:11px;text-align:left;padding:12px;border:1px solid rgba(255,125,205,.15);border-radius:13px;background:rgba(28,3,24,.38);color:var(--text);transition:.18s}.dex-card:hover{transform:translateY(-2px);border-color:var(--line2);background:rgba(94,20,72,.4)}.dex-card .avatar{width:40px;height:40px}.dex-card strong{font-size:12px;display:block;margin-bottom:4px}.dex-card small{display:block;color:#a98aa0;font-size:10px}.role-tag{margin-left:auto;font-size:9px;color:#ed9fd0;white-space:nowrap}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:5px 0 24px}.stat-card{padding:19px;border:1px solid var(--line);border-radius:14px;background:rgba(26,2,22,.42)}.stat-card span{display:block;color:#ab8aa0;font-size:11px;margin-bottom:9px}.stat-card strong{font-size:27px;color:#f2a4d6;font-variant-numeric:tabular-nums}.record-panel{padding:18px;border:1px solid var(--line);border-radius:15px;background:rgba(26,2,22,.35)}.record-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}.text-btn{border:0;background:transparent;color:#d987bd;font-size:11px}.recent-item{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid rgba(255,130,204,.1)}.recent-item .avatar{width:33px;height:33px}.recent-item strong{font-size:12px}.recent-item small{display:block;color:#a98aa0;font-size:10px;margin-top:3px}.recent-result{margin-left:auto;font-size:11px;font-weight:700}.won{color:#69d4aa}.lost{color:#ff92ac}.no-records{padding:22px;text-align:center;color:#9c7c93;font-size:12px}.footer{display:flex;justify-content:space-between;gap:18px;padding:17px 28px;border-top:1px solid var(--line);color:#87677f;font-size:9px;letter-spacing:.08em}.footer span:last-child{letter-spacing:0;text-align:right}.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:rgba(9,0,8,.76);padding:20px;backdrop-filter:blur(9px)}.modal-card{width:min(530px,100%);position:relative;padding:28px;border:1px solid var(--line2);border-radius:18px;background:#27051f;box-shadow:var(--shadow)}.modal-card h2{margin:0 0 18px;font-size:25px}.modal-close{position:absolute;right:18px;top:13px;border:0;background:transparent;color:#d8b4ce;font-size:27px}.help-content{color:#c6a6bb;font-size:13px;line-height:1.8}.help-content ol{padding-left:20px}.help-content strong{color:#f0c4df}.modal-ok{margin-top:20px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:30;background:#f2c0df;color:#3a0b2e;padding:11px 18px;border-radius:999px;font-weight:700;font-size:12px;box-shadow:var(--shadow);transition:.2s;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@keyframes rowIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
@@ -3514,16 +3514,16 @@ window.UNITE_ONE_POKEMON = [
   const LANGS = ['zh-TW','zh-CN','en','ja'];
   const I18N = {
     'zh-TW': {
-      navGame:'開始猜謎',navDex:'角色圖鑑',navStats:'遊玩紀錄',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.9',title:'今天要猜出誰？',subtitle:'輸入角色名稱，從八項特徵提示找出神祕寶可夢。',difficultyTitle:'選擇本局難度',difficultyIntro:'選擇今天的挑戰範圍。難度會影響答案題庫與可猜次數。',modeEasy:'簡單',modeEasyDesc:'答案只從操作難度為初級的角色中選出，適合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案從初級與中級角色中選出，考驗基本角色知識。',modeHard:'困難',modeHardDesc:'完整題庫，包含可遊玩角色與地圖 NPC，六次機會。',modeHell:'地獄',modeHellDesc:'完整題庫，包含可遊玩角色與地圖 NPC，只有四次機會，而且不能使用提示。',modePoolSuffix:'隻寶可夢',modePlayableSuffix:'隻寶可夢',modeNpcSuffix:'隻 NPC 寶可夢',modeAttemptsSuffix:'次機會',noHint:'本難度不能使用提示。',chooseMode:'開始挑戰',changeMode:'更換難度',hintUnavailable:'地獄難度不提供提示。',dexFilterHelp:'同一組可複選，符合其中任一項即可；不同組別會同時套用。',filterRole:'戰鬥定位',filterDamage:'攻擊分類',filterTypes:'寶可夢屬性',filterEvolution:'本傳進化次數',filterGeneration:'圖鑑世代',filterDifficulty:'操作難度',filterPlayable:'可否遊玩',filterMaps:'主要出現地圖',playableYes:'可遊玩',playableNo:'不可遊玩',npcTag:'地圖 NPC',notApplicable:'無',mapNames:{remoat:'黎莫特競技場', 'remoat-holiday':'黎莫特競技場（冰雪版）', pt500:'黎莫特競技場（PT500 模式）', mer:'瑪爾競技場',auroma:'奧拉公園',shivre:'吉弗市',theia:'媞亞蒼空遺跡'},all:'全部',clearFilters:'清除篩選',sortLabel:'排序',sortName:'名稱',sortGeneration:'世代',sortDifficulty:'操作難度',sortRole:'定位',dexNoMatches:'找不到符合條件的角色，請調整搜尋或篩選。',dexDetails:'角色資料',detailClose:'關閉',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次進化',filterSelected:'已選 {n} 項',standard:'八項特徵模式',time:'計時',round:'本局',left:'剩餘',hint:'提示',reset:'重新開始',howTitle:'怎麼玩？',howText:'每次猜測都會比對八項特徵。綠色代表符合，黃色代表屬性或地圖部分重疊，紅色代表不符合；灰色「無」代表該資料不適用。數值欄的箭頭表示答案在較高或較低的區間。',placeholder:'輸入寶可夢名稱…',guess:'猜測',inputNote:'可輸入繁體中文、簡體中文、英文或日文名稱。',history:'猜測紀錄',historySub:'每次猜測都會揭示更多線索。',name:'角色',role:'戰鬥定位',damage:'攻擊分類',types:'寶可夢屬性',evolution:'本傳進化次數',generation:'圖鑑世代',difficulty:'操作難度',playable:'可否遊玩',maps:'主要出現地圖',notCompared:'不適用',empty:'還沒有猜測紀錄，從下方輸入角色開始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色圖鑑',dexSub:'瀏覽遊戲題庫中的角色特徵資料。',search:'搜尋角色…',allRoles:'全部定位',statsTitle:'遊玩紀錄',statsSub:'登入後會同步到雲端；未登入時保存在這台裝置。',played:'總遊玩局數',wins:'猜中局數',rate:'猜中率',best:'最佳猜測次數',recent:'最近紀錄',clear:'清除紀錄',noRecords:'目前還沒有遊玩紀錄。',wonTitle:'推理成功！',lostTitle:'這次差一點！',found:'你找到了神祕寶可夢',answer:'正確答案',attempts:'猜測次數',elapsed:'耗時',winStreak:'目前連勝',bestStreak:'最高連勝',wonSubtitle:'你找到了隱藏的寶可夢！',lostSubtitle:'正確答案已揭曉，下一局再挑戰吧！',resultModes:'選擇難度',again:'再猜一局',seeDex:'檢視圖鑑',hintPrefix:'提示已揭露',hintUsed:'本局提示已使用過了。',invalid:'找不到這隻寶可夢，請從候選清單選擇。',duplicate:'這隻寶可夢已經猜過了。',finished:'本局已結束，請開始新的一局。',footer:'非官方粉絲作品，與 Pokémon 及 Pokémon UNITE 無隸屬關係。',helpTitle:'遊戲說明',helpHtml:'<ol><li>簡單與普通難度只從可遊玩角色出題；困難與地獄難度也會加入地圖 NPC。野生寶可夢家族會以 UNITE 地圖中實際出現的代表形態作為題目。</li><li>輸入角色名稱，支援繁體中文、簡體中文、英文及日文。</li><li>每局可猜測次數依照所選難度而定，比對<strong>戰鬥定位、攻擊分類、寶可夢屬性、本傳進化次數、圖鑑世代、操作難度、可否遊玩、主要出現地圖</strong>。</li><li><strong>綠色</strong>代表符合；<strong>黃色</strong>代表屬性或地圖部分重疊；<strong>紅色</strong>代表不符合；灰色「無」代表該欄不適用。</li><li>進化次數及圖鑑世代會顯示方向箭頭：↑ 代表答案數值較高，↓ 代表答案數值較低。</li><li>本傳進化次數從該進化鏈最初形態起算；超級進化不另計。地圖欄包含正式地圖及活動地圖。</li><li>提示會揭露答案的一項特徵，每局限用一次。登入後，遊玩紀錄會同步至帳號；未登入時則保存在目前瀏覽器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻擊型',speedster:'敏捷型',allrounder:'平衡型',defender:'防禦型',supporter:'輔助型'},damageNames:{physical:'物理攻擊',special:'特殊攻擊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'高級'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'電',grass:'草',ice:'冰',fighting:'格鬥',poison:'毒',ground:'地面',flying:'飛行',psychic:'超能力',bug:'蟲',rock:'岩石',ghost:'幽靈',dragon:'龍',dark:'惡',steel:'鋼',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 個角色授權',targetHint:'答案的「{field}」是：{value}',up:'↑',down:'↓',sourceNote:'「可遊玩」指有一般可選擇的集結參賽證；限時模式中暫時可操控不算。題庫包含可遊玩角色及地圖野生 NPC；野生寶可夢家族以大集結地圖中實際出現的代表形態作為題目。地圖欄標示該寶可夢或其進化家族出現的主要地圖，並將冰雪季節版與 PT500 模式分開標示。NPC 不適用的戰鬥定位、攻擊分類及操作難度以「無」表示。圖片由 PokéAPI Sprites 提供。',directionLegend:'箭頭表示答案數值較高或較低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'開始猜謎',navDex:'角色圖鑑',navStats:'遊玩紀錄',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.8.0',title:'今天要猜出誰？',subtitle:'輸入角色名稱，從八項特徵提示找出神祕寶可夢。',difficultyTitle:'選擇本局難度',difficultyIntro:'選擇今天的挑戰範圍。難度會影響答案題庫與可猜次數。',modeEasy:'簡單',modeEasyDesc:'答案只從操作難度為初級的角色中選出，適合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案從初級與中級角色中選出，考驗基本角色知識。',modeHard:'困難',modeHardDesc:'完整題庫，包含可遊玩角色與地圖 NPC，六次機會。',modeHell:'地獄',modeHellDesc:'完整題庫，包含可遊玩角色與地圖 NPC，只有四次機會，而且不能使用提示。',modePoolSuffix:'隻寶可夢',modePlayableSuffix:'隻寶可夢',modeNpcSuffix:'隻 NPC 寶可夢',modeAttemptsSuffix:'次機會',noHint:'本難度不能使用提示。',chooseMode:'開始挑戰',changeMode:'更換難度',hintUnavailable:'地獄難度不提供提示。',dexFilterHelp:'同一組可複選，符合其中任一項即可；不同組別會同時套用。',filterRole:'戰鬥定位',filterDamage:'攻擊分類',filterTypes:'寶可夢屬性',filterEvolution:'本傳進化次數',filterGeneration:'圖鑑世代',filterDifficulty:'操作難度',filterPlayable:'可否遊玩',filterMaps:'主要出現地圖',playableYes:'可遊玩',playableNo:'不可遊玩',npcTag:'地圖 NPC',notApplicable:'無',mapNames:{remoat:'黎莫特競技場', 'remoat-holiday':'黎莫特競技場（冰雪版）', pt500:'黎莫特競技場（PT500 模式）', mer:'瑪爾競技場',auroma:'奧拉公園',shivre:'吉弗市',theia:'媞亞蒼空遺跡'},all:'全部',clearFilters:'清除篩選',sortLabel:'排序',sortName:'名稱',sortGeneration:'世代',sortDifficulty:'操作難度',sortRole:'定位',dexNoMatches:'找不到符合條件的角色，請調整搜尋或篩選。',dexDetails:'角色資料',detailClose:'關閉',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次進化',filterSelected:'已選 {n} 項',standard:'八項特徵模式',time:'計時',round:'本局',left:'剩餘',hint:'提示',reset:'重新開始',howTitle:'怎麼玩？',howText:'每次猜測都會比對八項特徵。綠色代表符合，黃色代表屬性或地圖部分重疊，紅色代表不符合；灰色「無」代表該資料不適用。數值欄的箭頭表示答案在較高或較低的區間。',placeholder:'輸入寶可夢名稱…',guess:'猜測',inputNote:'可輸入繁體中文、簡體中文、英文或日文名稱。',history:'猜測紀錄',historySub:'每次猜測都會揭示更多線索。',name:'角色',role:'戰鬥定位',damage:'攻擊分類',types:'寶可夢屬性',evolution:'本傳進化次數',generation:'圖鑑世代',difficulty:'操作難度',playable:'可否遊玩',maps:'主要出現地圖',notCompared:'不適用',empty:'還沒有猜測紀錄，從下方輸入角色開始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色圖鑑',dexSub:'瀏覽遊戲題庫中的角色特徵資料。',search:'搜尋角色…',allRoles:'全部定位',statsTitle:'遊玩紀錄',statsSub:'登入後會同步到雲端；未登入時保存在這台裝置。',played:'總遊玩局數',wins:'猜中局數',rate:'猜中率',best:'最佳猜測次數',recent:'最近紀錄',clear:'清除紀錄',noRecords:'目前還沒有遊玩紀錄。',wonTitle:'推理成功！',lostTitle:'這次差一點！',found:'你找到了神祕寶可夢',answer:'正確答案',attempts:'猜測次數',elapsed:'耗時',winStreak:'目前連勝',bestStreak:'最高連勝',wonSubtitle:'你找到了隱藏的寶可夢！',lostSubtitle:'正確答案已揭曉，下一局再挑戰吧！',resultModes:'選擇難度',again:'再猜一局',seeDex:'檢視圖鑑',hintPrefix:'提示已揭露',hintUsed:'本局提示已使用過了。',invalid:'找不到這隻寶可夢，請從候選清單選擇。',duplicate:'這隻寶可夢已經猜過了。',finished:'本局已結束，請開始新的一局。',footer:'非官方粉絲作品，與 Pokémon 及 Pokémon UNITE 無隸屬關係。',helpTitle:'遊戲說明',helpHtml:'<ol><li>簡單與普通難度只從可遊玩角色出題；困難與地獄難度也會加入地圖 NPC。野生寶可夢家族會以 UNITE 地圖中實際出現的代表形態作為題目。</li><li>輸入角色名稱，支援繁體中文、簡體中文、英文及日文。</li><li>每局可猜測次數依照所選難度而定，比對<strong>戰鬥定位、攻擊分類、寶可夢屬性、本傳進化次數、圖鑑世代、操作難度、可否遊玩、主要出現地圖</strong>。</li><li><strong>綠色</strong>代表符合；<strong>黃色</strong>代表屬性或地圖部分重疊；<strong>紅色</strong>代表不符合；灰色「無」代表該欄不適用。</li><li>進化次數及圖鑑世代會顯示方向箭頭：↑ 代表答案數值較高，↓ 代表答案數值較低。</li><li>本傳進化次數從該進化鏈最初形態起算；超級進化不另計。地圖欄包含正式地圖及活動地圖。</li><li>提示會揭露答案的一項特徵，每局限用一次。登入後，遊玩紀錄會同步至帳號；未登入時則保存在目前瀏覽器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻擊型',speedster:'敏捷型',allrounder:'平衡型',defender:'防禦型',supporter:'輔助型'},damageNames:{physical:'物理攻擊',special:'特殊攻擊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'高級'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'電',grass:'草',ice:'冰',fighting:'格鬥',poison:'毒',ground:'地面',flying:'飛行',psychic:'超能力',bug:'蟲',rock:'岩石',ghost:'幽靈',dragon:'龍',dark:'惡',steel:'鋼',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 個角色授權',targetHint:'答案的「{field}」是：{value}',up:'↑',down:'↓',sourceNote:'「可遊玩」指有一般可選擇的集結參賽證；限時模式中暫時可操控不算。題庫包含可遊玩角色及地圖野生 NPC；野生寶可夢家族以大集結地圖中實際出現的代表形態作為題目。地圖欄標示該寶可夢或其進化家族出現的主要地圖，並將冰雪季節版與 PT500 模式分開標示。NPC 不適用的戰鬥定位、攻擊分類及操作難度以「無」表示。圖片由 PokéAPI Sprites 提供。',directionLegend:'箭頭表示答案數值較高或較低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     },
     'zh-CN': {
-      navGame:'开始猜谜',navDex:'角色图鉴',navStats:'游玩记录',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.9',title:'今天要猜出谁？',subtitle:'输入角色名称，通过八项特征提示找出神秘宝可梦。',difficultyTitle:'选择本局难度',difficultyIntro:'选择今天的挑战范围。难度会影响答案题库与可猜次数。',modeEasy:'简单',modeEasyDesc:'答案只从操作难度为初级的角色中选出，适合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案从初级与中级角色中选出，考验基本角色知识。',modeHard:'困难',modeHardDesc:'完整题库，包含可玩角色与地图 NPC，六次机会。',modeHell:'地狱',modeHellDesc:'完整题库，包含可玩角色与地图 NPC，只有四次机会，而且不能使用提示。',modePoolSuffix:'只宝可梦',modePlayableSuffix:'只宝可梦',modeNpcSuffix:'只 NPC 宝可梦',modeAttemptsSuffix:'次机会',noHint:'此难度不能使用提示。',chooseMode:'开始挑战',changeMode:'更换难度',hintUnavailable:'地狱难度不提供提示。',dexFilterHelp:'同一组可多选，符合其中任一项即可；不同组别会同时应用。',filterRole:'战斗定位',filterDamage:'攻击分类',filterTypes:'宝可梦属性',filterEvolution:'本传进化次数',filterGeneration:'图鉴世代',filterDifficulty:'操作难度',filterPlayable:'是否可玩',filterMaps:'主要出现地图',playableYes:'可玩',playableNo:'不可玩',npcTag:'地图 NPC',notApplicable:'无',mapNames:{remoat:'黎莫特竞技场', 'remoat-holiday':'黎莫特竞技场（冰雪版）', pt500:'黎莫特竞技场（PT500 模式）', mer:'玛尔竞技场',auroma:'奥拉公园',shivre:'吉弗市',theia:'媞亚苍空遗迹'},all:'全部',clearFilters:'清除筛选',sortLabel:'排序',sortName:'名称',sortGeneration:'世代',sortDifficulty:'操作难度',sortRole:'定位',dexNoMatches:'找不到符合条件的角色，请调整搜索或筛选。',dexDetails:'角色资料',detailClose:'关闭',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次进化',filterSelected:'已选 {n} 项',standard:'八项特征模式',time:'计时',round:'本局',left:'剩余',hint:'提示',reset:'重新开始',howTitle:'怎么玩？',howText:'每次猜测都会比对八项特征。绿色代表符合，黄色代表属性或地图部分重叠，红色代表不符合；灰色“不适用”代表该资料不适用。数值栏的箭头表示答案数值更高或更低。',placeholder:'输入宝可梦名称…',guess:'猜测',inputNote:'可输入简体中文、繁体中文、英文或日文名称。',history:'猜测记录',historySub:'每次猜测都会揭示更多线索。',name:'角色',role:'战斗定位',damage:'攻击分类',types:'宝可梦属性',evolution:'本传进化次数',generation:'图鉴世代',difficulty:'操作难度',notCompared:'不适用',maps:'主要出现地图',playable:'是否可玩',empty:'还没有猜测记录，从下方输入角色开始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色图鉴',dexSub:'浏览游戏题库中的角色特征资料。',search:'搜索角色…',allRoles:'全部定位',statsTitle:'游玩记录',statsSub:'登录后会同步到云端；未登录时保存在这台设备。',played:'总游玩局数',wins:'猜中局数',rate:'猜中率',best:'最佳猜测次数',recent:'最近记录',clear:'清除记录',noRecords:'目前还没有游玩记录。',wonTitle:'推理成功！',lostTitle:'这次差一点！',found:'你找到了神秘宝可梦',answer:'正确答案',attempts:'猜测次数',elapsed:'耗时',winStreak:'当前连胜',bestStreak:'最高连胜',wonSubtitle:'你找到了隐藏的宝可梦！',lostSubtitle:'正确答案已经揭晓，下一局再挑战吧！',resultModes:'选择难度',again:'再猜一局',seeDex:'查看图鉴',hintPrefix:'提示已揭晓',hintUsed:'本局提示已经使用过了。',invalid:'找不到这只宝可梦，请从候选列表中选择。',duplicate:'这只宝可梦已经猜过了。',finished:'本局已结束，请开始新的一局。',footer:'非官方粉丝作品，与 Pokémon 及 Pokémon UNITE 无隶属关系。',helpTitle:'游戏说明',helpHtml:'<ol><li>简单与普通难度只从可玩角色出题；困难与地狱难度也会加入地图 NPC。野生宝可梦若有进化链，会以该进化链的最终进化形态代表。</li><li>输入角色名称，支持简体中文、繁体中文、英文及日文。</li><li>每局可猜测次数由所选难度决定，比对<strong>战斗定位、攻击分类、宝可梦属性、本传进化次数、图鉴世代、操作难度、是否可玩、主要出现地图</strong>。</li><li><strong>绿色</strong>代表符合；<strong>黄色</strong>代表属性或地图部分重叠；<strong>红色</strong>代表不符合；灰色“不适用”代表该栏没有可比较的数据。</li><li>本传进化次数及图鉴世代会显示方向箭头：↑ 代表答案数值较高，↓ 代表答案数值较低。</li><li>本传进化次数从进化链最初形态起算；超级进化不另计。地图栏包含正式地图及活动地图。</li><li>提示会揭晓答案的一项特征，每局限用一次。登录后，游玩记录会同步至账号；未登录时则保存在当前浏览器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻击型',speedster:'敏捷型',allrounder:'平衡型',defender:'防御型',supporter:'辅助型'},damageNames:{physical:'物理攻击',special:'特殊攻击'},difficultyNames:{novice:'初级',intermediate:'中级',expert:'高级'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'电',grass:'草',ice:'冰',fighting:'格斗',poison:'毒',ground:'地面',flying:'飞行',psychic:'超能力',bug:'虫',rock:'岩石',ghost:'幽灵',dragon:'龙',dark:'恶',steel:'钢',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 个角色授权',targetHint:'答案的“{field}”是：{value}',up:'↑',down:'↓',sourceNote:'“可玩”指拥有常规可选的集结参赛证；限时模式中暂时可操控不算。题库包含可玩角色及地图野生 NPC；有进化链的野生家族以本传最终进化形态代表。地图栏标示该宝可梦或其进化家族出现的主要地图，并将冰雪季节版与 PT500 模式分开标示。NPC 不适用的战斗定位、攻击分类及操作难度标记为“不适用”。图片由 PokéAPI Sprites 提供。',directionLegend:'箭头表示答案数值更高或更低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'开始猜谜',navDex:'角色图鉴',navStats:'游玩记录',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.8.0',title:'今天要猜出谁？',subtitle:'输入角色名称，通过八项特征提示找出神秘宝可梦。',difficultyTitle:'选择本局难度',difficultyIntro:'选择今天的挑战范围。难度会影响答案题库与可猜次数。',modeEasy:'简单',modeEasyDesc:'答案只从操作难度为初级的角色中选出，适合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案从初级与中级角色中选出，考验基本角色知识。',modeHard:'困难',modeHardDesc:'完整题库，包含可玩角色与地图 NPC，六次机会。',modeHell:'地狱',modeHellDesc:'完整题库，包含可玩角色与地图 NPC，只有四次机会，而且不能使用提示。',modePoolSuffix:'只宝可梦',modePlayableSuffix:'只宝可梦',modeNpcSuffix:'只 NPC 宝可梦',modeAttemptsSuffix:'次机会',noHint:'此难度不能使用提示。',chooseMode:'开始挑战',changeMode:'更换难度',hintUnavailable:'地狱难度不提供提示。',dexFilterHelp:'同一组可多选，符合其中任一项即可；不同组别会同时应用。',filterRole:'战斗定位',filterDamage:'攻击分类',filterTypes:'宝可梦属性',filterEvolution:'本传进化次数',filterGeneration:'图鉴世代',filterDifficulty:'操作难度',filterPlayable:'是否可玩',filterMaps:'主要出现地图',playableYes:'可玩',playableNo:'不可玩',npcTag:'地图 NPC',notApplicable:'无',mapNames:{remoat:'黎莫特竞技场', 'remoat-holiday':'黎莫特竞技场（冰雪版）', pt500:'黎莫特竞技场（PT500 模式）', mer:'玛尔竞技场',auroma:'奥拉公园',shivre:'吉弗市',theia:'媞亚苍空遗迹'},all:'全部',clearFilters:'清除筛选',sortLabel:'排序',sortName:'名称',sortGeneration:'世代',sortDifficulty:'操作难度',sortRole:'定位',dexNoMatches:'找不到符合条件的角色，请调整搜索或筛选。',dexDetails:'角色资料',detailClose:'关闭',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次进化',filterSelected:'已选 {n} 项',standard:'八项特征模式',time:'计时',round:'本局',left:'剩余',hint:'提示',reset:'重新开始',howTitle:'怎么玩？',howText:'每次猜测都会比对八项特征。绿色代表符合，黄色代表属性或地图部分重叠，红色代表不符合；灰色“不适用”代表该资料不适用。数值栏的箭头表示答案数值更高或更低。',placeholder:'输入宝可梦名称…',guess:'猜测',inputNote:'可输入简体中文、繁体中文、英文或日文名称。',history:'猜测记录',historySub:'每次猜测都会揭示更多线索。',name:'角色',role:'战斗定位',damage:'攻击分类',types:'宝可梦属性',evolution:'本传进化次数',generation:'图鉴世代',difficulty:'操作难度',notCompared:'不适用',maps:'主要出现地图',playable:'是否可玩',empty:'还没有猜测记录，从下方输入角色开始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色图鉴',dexSub:'浏览游戏题库中的角色特征资料。',search:'搜索角色…',allRoles:'全部定位',statsTitle:'游玩记录',statsSub:'登录后会同步到云端；未登录时保存在这台设备。',played:'总游玩局数',wins:'猜中局数',rate:'猜中率',best:'最佳猜测次数',recent:'最近记录',clear:'清除记录',noRecords:'目前还没有游玩记录。',wonTitle:'推理成功！',lostTitle:'这次差一点！',found:'你找到了神秘宝可梦',answer:'正确答案',attempts:'猜测次数',elapsed:'耗时',winStreak:'当前连胜',bestStreak:'最高连胜',wonSubtitle:'你找到了隐藏的宝可梦！',lostSubtitle:'正确答案已经揭晓，下一局再挑战吧！',resultModes:'选择难度',again:'再猜一局',seeDex:'查看图鉴',hintPrefix:'提示已揭晓',hintUsed:'本局提示已经使用过了。',invalid:'找不到这只宝可梦，请从候选列表中选择。',duplicate:'这只宝可梦已经猜过了。',finished:'本局已结束，请开始新的一局。',footer:'非官方粉丝作品，与 Pokémon 及 Pokémon UNITE 无隶属关系。',helpTitle:'游戏说明',helpHtml:'<ol><li>简单与普通难度只从可玩角色出题；困难与地狱难度也会加入地图 NPC。野生宝可梦若有进化链，会以该进化链的最终进化形态代表。</li><li>输入角色名称，支持简体中文、繁体中文、英文及日文。</li><li>每局可猜测次数由所选难度决定，比对<strong>战斗定位、攻击分类、宝可梦属性、本传进化次数、图鉴世代、操作难度、是否可玩、主要出现地图</strong>。</li><li><strong>绿色</strong>代表符合；<strong>黄色</strong>代表属性或地图部分重叠；<strong>红色</strong>代表不符合；灰色“不适用”代表该栏没有可比较的数据。</li><li>本传进化次数及图鉴世代会显示方向箭头：↑ 代表答案数值较高，↓ 代表答案数值较低。</li><li>本传进化次数从进化链最初形态起算；超级进化不另计。地图栏包含正式地图及活动地图。</li><li>提示会揭晓答案的一项特征，每局限用一次。登录后，游玩记录会同步至账号；未登录时则保存在当前浏览器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻击型',speedster:'敏捷型',allrounder:'平衡型',defender:'防御型',supporter:'辅助型'},damageNames:{physical:'物理攻击',special:'特殊攻击'},difficultyNames:{novice:'初级',intermediate:'中级',expert:'高级'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'电',grass:'草',ice:'冰',fighting:'格斗',poison:'毒',ground:'地面',flying:'飞行',psychic:'超能力',bug:'虫',rock:'岩石',ghost:'幽灵',dragon:'龙',dark:'恶',steel:'钢',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 个角色授权',targetHint:'答案的“{field}”是：{value}',up:'↑',down:'↓',sourceNote:'“可玩”指拥有常规可选的集结参赛证；限时模式中暂时可操控不算。题库包含可玩角色及地图野生 NPC；有进化链的野生家族以本传最终进化形态代表。地图栏标示该宝可梦或其进化家族出现的主要地图，并将冰雪季节版与 PT500 模式分开标示。NPC 不适用的战斗定位、攻击分类及操作难度标记为“不适用”。图片由 PokéAPI Sprites 提供。',directionLegend:'箭头表示答案数值更高或更低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     },
     en: {
-      navGame:'Play',navDex:'Pokédex',navStats:'Records',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.9',title:'Who is today’s Pokémon?',subtitle:'Guess the Pokémon and use eight attributes to narrow it down.',difficultyTitle:'Choose a difficulty',difficultyIntro:'Choose today’s challenge. Difficulty changes the answer pool and the number of guesses.',modeEasy:'Easy',modeEasyDesc:'Answers are selected from Novice licenses only. A friendly way to learn the roster.',modeNormal:'Normal',modeNormalDesc:'Answers come from Novice and Intermediate licenses. A balanced challenge.',modeHard:'Hard',modeHardDesc:'The full pool of playable licenses and map NPCs, with six guesses.',modeHell:'Hell',modeHellDesc:'The full pool of playable licenses and map NPCs, only four guesses, and no hints.',modePoolSuffix:'Pokémon',modePlayableSuffix:'Pokémon',modeNpcSuffix:'NPC Pokémon',modeAttemptsSuffix:'guesses',noHint:'Hints are disabled in this difficulty.',chooseMode:'Start challenge',changeMode:'Change difficulty',hintUnavailable:'Hints are disabled in Hell mode.',dexFilterHelp:'Select multiple options within a group (any match). Different groups are combined (all must match).',filterRole:'Battle role',filterDamage:'Damage category',filterTypes:'Pokémon type',filterEvolution:'Main-series evolution',filterGeneration:'Pokédex generation',filterDifficulty:'License difficulty',filterPlayable:'Playable',filterMaps:'Main map',playableYes:'Playable',playableNo:'Not playable',npcTag:'Map NPC',notApplicable:'N/A',mapNames:{remoat:'Remoat Stadium', 'remoat-holiday':'Remoat Stadium (Holiday)', pt500:'Remoat Stadium (PT500)', mer:'Mer Stadium',auroma:'Auroma Park',shivre:'Shivre City',theia:'Theia Sky Ruins'},all:'All',clearFilters:'Clear filters',sortLabel:'Sort',sortName:'Name',sortGeneration:'Generation',sortDifficulty:'Difficulty',sortRole:'Role',dexNoMatches:'No Pokémon entries match these filters. Try changing your search or filters.',dexDetails:'Pokémon details',detailClose:'Close',detailGeneration:'Generation {n}',detailEvolution:'{n} evolution steps',filterSelected:'{n} selected',standard:'Eight-attribute mode',time:'TIME',round:'GUESSES',left:'LEFT',hint:'Hint',reset:'New game',howTitle:'How to play',howText:'Each guess is checked against eight attributes. Green means a match, yellow means a partial type or map overlap, red means no match, and gray N/A means the field does not apply. Arrows show whether the answer has a higher or lower value.',placeholder:'Enter a Pokémon name…',guess:'Guess',inputNote:'Names are accepted in Traditional Chinese, Simplified Chinese, English, or Japanese.',history:'Guess history',historySub:'Each guess reveals more clues.',name:'Pokémon',role:'Battle role',damage:'Damage type',types:'Pokémon type',evolution:'Main-series evolution steps',generation:'Pokédex generation',difficulty:'Difficulty',playable:'Playable',maps:'Main map(s)',notCompared:'Not applicable',empty:'No guesses yet. Enter a Pokémon name below to begin!',correct:'Exact match',partial:'Partial match',wrong:'No match',dexTitle:'Pokédex',dexSub:'Browse the character attributes used in this game.',search:'Search Pokémon…',allRoles:'All roles',statsTitle:'Player records',statsSub:'When signed in, records sync to your account; otherwise they stay in this browser.',played:'Games played',wins:'Correct answers',rate:'Win rate',best:'Best guesses',recent:'Recent games',clear:'Clear records',noRecords:'No games recorded yet.',wonTitle:'Correct deduction!',lostTitle:'So close!',found:'You found the mystery Pokémon',answer:'Answer',attempts:'Guesses',elapsed:'Time',winStreak:'Current streak',bestStreak:'Best streak',wonSubtitle:'You found the hidden Pokémon!',lostSubtitle:'The answer is revealed. Try another round!',resultModes:'Choose difficulty',again:'Play again',seeDex:'Open Pokédex',hintPrefix:'Hint revealed',hintUsed:'You have already used the hint this round.',invalid:'Pokémon not found. Choose a name from the suggestions.',duplicate:'You already guessed that Pokémon.',finished:'This round is over. Start a new game to play again.',footer:'Unofficial fan-made game. Not affiliated with Pokémon or Pokémon UNITE.',helpTitle:'How to play',helpHtml:'<ol><li>Easy and Normal select answers from playable licenses only. Hard and Hell also include map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map.</li><li>Enter a name in Traditional Chinese, Simplified Chinese, English, or Japanese.</li><li>The number of guesses depends on difficulty. Each guess compares <strong>battle role, damage category, Pokémon type, main-series evolution steps, Pokédex generation, license difficulty, playability, and main map</strong>.</li><li><strong>Green</strong> means a match; <strong>yellow</strong> means a partial type or map overlap; <strong>red</strong> means no match; gray N/A means the field does not apply.</li><li>Evolution steps and generation show an arrow: ↑ means the answer is higher; ↓ means it is lower.</li><li>Evolution steps count from the earliest form in the main-series evolutionary line. Mega Evolution is not counted. Maps include standard and event stages.</li><li>One attribute hint is available per round. When signed in, records sync to your account; otherwise they stay in this browser.</li></ol>',ok:'Got it',roleNames:{attacker:'Attacker',speedster:'Speedster',allrounder:'All-Rounder',defender:'Defender',supporter:'Supporter'},damageNames:{physical:'Physical',special:'Special'},difficultyNames:{novice:'Novice',intermediate:'Intermediate',expert:'Expert'},typeNames:{normal:'Normal',fire:'Fire',water:'Water',electric:'Electric',grass:'Grass',ice:'Ice',fighting:'Fighting',poison:'Poison',ground:'Ground',flying:'Flying',psychic:'Psychic',bug:'Bug',rock:'Rock',ghost:'Ghost',dragon:'Dragon',dark:'Dark',steel:'Steel',fairy:'Fairy'},evoValue:n=>`${n}`,genValue:n=>`Gen ${n}`,win:'Won',loss:'Lost',licenses:' licenses',targetHint:'The answer’s {field}: {value}',up:'↑',down:'↓',sourceNote:'Playable means the Pokémon has a regular selectable Unite License; temporary control in special modes does not count. The pool includes playable licenses and wild map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map. Maps indicate where the Pokémon or its family appears, with the Holiday variant and PT500 mode listed separately. NPC battle role, damage category, and license difficulty are N/A. Artwork by PokéAPI Sprites.',directionLegend:'Arrows show whether the answer is higher or lower',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'Play',navDex:'Pokédex',navStats:'Records',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.8.0',title:'Who is today’s Pokémon?',subtitle:'Guess the Pokémon and use eight attributes to narrow it down.',difficultyTitle:'Choose a difficulty',difficultyIntro:'Choose today’s challenge. Difficulty changes the answer pool and the number of guesses.',modeEasy:'Easy',modeEasyDesc:'Answers are selected from Novice licenses only. A friendly way to learn the roster.',modeNormal:'Normal',modeNormalDesc:'Answers come from Novice and Intermediate licenses. A balanced challenge.',modeHard:'Hard',modeHardDesc:'The full pool of playable licenses and map NPCs, with six guesses.',modeHell:'Hell',modeHellDesc:'The full pool of playable licenses and map NPCs, only four guesses, and no hints.',modePoolSuffix:'Pokémon',modePlayableSuffix:'Pokémon',modeNpcSuffix:'NPC Pokémon',modeAttemptsSuffix:'guesses',noHint:'Hints are disabled in this difficulty.',chooseMode:'Start challenge',changeMode:'Change difficulty',hintUnavailable:'Hints are disabled in Hell mode.',dexFilterHelp:'Select multiple options within a group (any match). Different groups are combined (all must match).',filterRole:'Battle role',filterDamage:'Damage category',filterTypes:'Pokémon type',filterEvolution:'Main-series evolution',filterGeneration:'Pokédex generation',filterDifficulty:'License difficulty',filterPlayable:'Playable',filterMaps:'Main map',playableYes:'Playable',playableNo:'Not playable',npcTag:'Map NPC',notApplicable:'N/A',mapNames:{remoat:'Remoat Stadium', 'remoat-holiday':'Remoat Stadium (Holiday)', pt500:'Remoat Stadium (PT500)', mer:'Mer Stadium',auroma:'Auroma Park',shivre:'Shivre City',theia:'Theia Sky Ruins'},all:'All',clearFilters:'Clear filters',sortLabel:'Sort',sortName:'Name',sortGeneration:'Generation',sortDifficulty:'Difficulty',sortRole:'Role',dexNoMatches:'No Pokémon entries match these filters. Try changing your search or filters.',dexDetails:'Pokémon details',detailClose:'Close',detailGeneration:'Generation {n}',detailEvolution:'{n} evolution steps',filterSelected:'{n} selected',standard:'Eight-attribute mode',time:'TIME',round:'GUESSES',left:'LEFT',hint:'Hint',reset:'New game',howTitle:'How to play',howText:'Each guess is checked against eight attributes. Green means a match, yellow means a partial type or map overlap, red means no match, and gray N/A means the field does not apply. Arrows show whether the answer has a higher or lower value.',placeholder:'Enter a Pokémon name…',guess:'Guess',inputNote:'Names are accepted in Traditional Chinese, Simplified Chinese, English, or Japanese.',history:'Guess history',historySub:'Each guess reveals more clues.',name:'Pokémon',role:'Battle role',damage:'Damage type',types:'Pokémon type',evolution:'Main-series evolution steps',generation:'Pokédex generation',difficulty:'Difficulty',playable:'Playable',maps:'Main map(s)',notCompared:'Not applicable',empty:'No guesses yet. Enter a Pokémon name below to begin!',correct:'Exact match',partial:'Partial match',wrong:'No match',dexTitle:'Pokédex',dexSub:'Browse the character attributes used in this game.',search:'Search Pokémon…',allRoles:'All roles',statsTitle:'Player records',statsSub:'When signed in, records sync to your account; otherwise they stay in this browser.',played:'Games played',wins:'Correct answers',rate:'Win rate',best:'Best guesses',recent:'Recent games',clear:'Clear records',noRecords:'No games recorded yet.',wonTitle:'Correct deduction!',lostTitle:'So close!',found:'You found the mystery Pokémon',answer:'Answer',attempts:'Guesses',elapsed:'Time',winStreak:'Current streak',bestStreak:'Best streak',wonSubtitle:'You found the hidden Pokémon!',lostSubtitle:'The answer is revealed. Try another round!',resultModes:'Choose difficulty',again:'Play again',seeDex:'Open Pokédex',hintPrefix:'Hint revealed',hintUsed:'You have already used the hint this round.',invalid:'Pokémon not found. Choose a name from the suggestions.',duplicate:'You already guessed that Pokémon.',finished:'This round is over. Start a new game to play again.',footer:'Unofficial fan-made game. Not affiliated with Pokémon or Pokémon UNITE.',helpTitle:'How to play',helpHtml:'<ol><li>Easy and Normal select answers from playable licenses only. Hard and Hell also include map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map.</li><li>Enter a name in Traditional Chinese, Simplified Chinese, English, or Japanese.</li><li>The number of guesses depends on difficulty. Each guess compares <strong>battle role, damage category, Pokémon type, main-series evolution steps, Pokédex generation, license difficulty, playability, and main map</strong>.</li><li><strong>Green</strong> means a match; <strong>yellow</strong> means a partial type or map overlap; <strong>red</strong> means no match; gray N/A means the field does not apply.</li><li>Evolution steps and generation show an arrow: ↑ means the answer is higher; ↓ means it is lower.</li><li>Evolution steps count from the earliest form in the main-series evolutionary line. Mega Evolution is not counted. Maps include standard and event stages.</li><li>One attribute hint is available per round. When signed in, records sync to your account; otherwise they stay in this browser.</li></ol>',ok:'Got it',roleNames:{attacker:'Attacker',speedster:'Speedster',allrounder:'All-Rounder',defender:'Defender',supporter:'Supporter'},damageNames:{physical:'Physical',special:'Special'},difficultyNames:{novice:'Novice',intermediate:'Intermediate',expert:'Expert'},typeNames:{normal:'Normal',fire:'Fire',water:'Water',electric:'Electric',grass:'Grass',ice:'Ice',fighting:'Fighting',poison:'Poison',ground:'Ground',flying:'Flying',psychic:'Psychic',bug:'Bug',rock:'Rock',ghost:'Ghost',dragon:'Dragon',dark:'Dark',steel:'Steel',fairy:'Fairy'},evoValue:n=>`${n}`,genValue:n=>`Gen ${n}`,win:'Won',loss:'Lost',licenses:' licenses',targetHint:'The answer’s {field}: {value}',up:'↑',down:'↓',sourceNote:'Playable means the Pokémon has a regular selectable Unite License; temporary control in special modes does not count. The pool includes playable licenses and wild map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map. Maps indicate where the Pokémon or its family appears, with the Holiday variant and PT500 mode listed separately. NPC battle role, damage category, and license difficulty are N/A. Artwork by PokéAPI Sprites.',directionLegend:'Arrows show whether the answer is higher or lower',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     },
     ja: {
-      navGame:'ゲーム開始',navDex:'ポケモン図鑑',navStats:'プレイ記録',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.9',title:'今日のポケモンは誰？',subtitle:'名前を入力し、8つの特徴から正解を探そう。',difficultyTitle:'難易度を選択',difficultyIntro:'今日のチャレンジ範囲を選びます。難易度によって答えの候補と予想回数が変わります。',modeEasy:'かんたん',modeEasyDesc:'操作難易度「初級」のライセンスから出題。ロスターに慣れるのにおすすめ。',modeNormal:'ふつう',modeNormalDesc:'初級と中級のライセンスから出題。バランスのよい難易度です。',modeHard:'むずかしい',modeHardDesc:'プレイ可能なライセンスとマップNPCがすべて候補。予想は6回まで。',modeHell:'地獄',modeHellDesc:'プレイ可能なライセンスとマップNPCが候補。予想は4回まで、ヒントは使用できません。',modePoolSuffix:'匹',modePlayableSuffix:'匹のポケモン',modeNpcSuffix:'匹のNPCポケモン',modeAttemptsSuffix:'回',noHint:'この難易度ではヒントを使用できません。',chooseMode:'チャレンジ開始',changeMode:'難易度を変更',hintUnavailable:'地獄モードではヒントを使用できません。',dexFilterHelp:'同じグループでは複数選択でき、いずれかに一致すれば表示されます。異なるグループはすべて一致する必要があります。',filterRole:'バトルスタイル',filterDamage:'攻撃分類',filterTypes:'ポケモンのタイプ',filterEvolution:'本編の進化回数',filterGeneration:'図鑑世代',filterDifficulty:'操作難易度',filterPlayable:'プレイ可能',filterMaps:'主な出現マップ',playableYes:'プレイ可能',playableNo:'プレイ不可',npcTag:'マップNPC',notApplicable:'該当なし',mapNames:{remoat:'レモータスタジアム', 'remoat-holiday':'レモータスタジアム（氷雪Ver.）', pt500:'レモータスタジアム（PT500）', mer:'マールスタジアム',auroma:'ゼフィオパーク',shivre:'ジーヴルシティ',theia:'テイア蒼空遺跡'},all:'すべて',clearFilters:'絞り込みを解除',sortLabel:'並べ替え',sortName:'名前',sortGeneration:'世代',sortDifficulty:'難易度',sortRole:'ロール',dexNoMatches:'条件に一致するライセンスがありません。検索や絞り込みを変更してください。',dexDetails:'ライセンス情報',detailClose:'閉じる',detailGeneration:'第{n}世代',detailEvolution:'進化回数：{n}',filterSelected:'{n}件選択',standard:'8項目モード',time:'タイム',round:'回数',left:'残り',hint:'ヒント',reset:'新しいゲーム',howTitle:'遊び方',howText:'8つの特徴を照合します。緑は一致、黄色はタイプまたはマップの一部一致、赤は不一致、灰色の「対象外」は比較できない項目です。数値の矢印は正解の値が大きいか小さいかを示します。',placeholder:'ポケモンの名前を入力…',guess:'予想',inputNote:'繁體中文、簡体中文、英語、日本語の名前で入力できます。',history:'予想履歴',historySub:'予想するたびにヒントが増えます。',name:'ポケモン',role:'バトルスタイル',damage:'攻撃タイプ',types:'ポケモンのタイプ',evolution:'本編の進化回数',generation:'図鑑世代',difficulty:'難易度',playable:'プレイ可能',maps:'主な出現マップ',notCompared:'対象外',empty:'まだ予想がありません。下からポケモンを入力しよう！',correct:'完全一致',partial:'一部一致',wrong:'不一致',dexTitle:'ポケモン図鑑',dexSub:'ゲームに登録されているポケモンの特徴を確認できます。',search:'ポケモンを検索…',allRoles:'すべて',statsTitle:'プレイ記録',statsSub:'ログイン中は記録がアカウントに同期され、未ログイン時はこのブラウザーに保存されます。',played:'プレイ回数',wins:'正解数',rate:'正解率',best:'最少予想回数',recent:'最近のゲーム',clear:'記録を削除',noRecords:'プレイ記録はまだありません。',wonTitle:'正解！',lostTitle:'惜しい！',found:'正解のポケモンを見つけました',answer:'正解',attempts:'予想回数',elapsed:'時間',winStreak:'現在の連勝',bestStreak:'最高連勝',wonSubtitle:'隠れていたポケモンを見つけました！',lostSubtitle:'正解を発表します。次のラウンドに挑戦しよう！',resultModes:'難易度を選択',again:'もう一度遊ぶ',seeDex:'図鑑を見る',hintPrefix:'ヒント公開',hintUsed:'このゲームではヒントを使用済みです。',invalid:'ポケモンが見つかりません。候補から選んでください。',duplicate:'そのポケモンはすでに予想しています。',finished:'このゲームは終了しました。新しいゲームを始めてください。',footer:'非公式ファンメイド作品です。PokémonおよびPokémon UNITEとは関係ありません。',helpTitle:'遊び方',helpHtml:'<ol><li>かんたん・ふつうはプレイ可能なライセンスのみ、むずかしい・地獄はマップNPCも出題対象です。野生ポケモンの進化系統は、UNITEマップに実際に登場する代表形態を出題します。</li><li>繁體中文、簡体中文、英語、日本語の名前を入力できます。</li><li>予想できる回数は難易度によって異なります。<strong>バトルスタイル、攻撃タイプ、ポケモンのタイプ、本編の進化回数、図鑑世代、操作難易度、プレイ可能か、主な出現マップ</strong>を照合します。</li><li><strong>緑</strong>は一致、<strong>黄</strong>はタイプまたはマップの一部一致、<strong>赤</strong>は不一致、灰色の「対象外」は比較できない項目です。</li><li>進化回数と世代には矢印が表示されます。↑は正解の値が大きく、↓は小さいことを示します。</li><li>本編の進化回数は進化系統の最初の姿から数え、メガシンカは含みません。マップ欄には通常・イベントステージを表示します。</li><li>1ゲームにつき1回ヒントを使用できます。ログイン中は記録がアカウントに同期され、未ログイン時はこのブラウザーに保存されます。</li></ol>',ok:'OK',roleNames:{attacker:'アタック',speedster:'スピード',allrounder:'バランス',defender:'ディフェンス',supporter:'サポート'},damageNames:{physical:'物理',special:'特殊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'上級'},typeNames:{normal:'ノーマル',fire:'ほのお',water:'みず',electric:'でんき',grass:'くさ',ice:'こおり',fighting:'かくとう',poison:'どく',ground:'じめん',flying:'ひこう',psychic:'エスパー',bug:'むし',rock:'いわ',ghost:'ゴースト',dragon:'ドラゴン',dark:'あく',steel:'はがね',fairy:'フェアリー'},evoValue:n=>`${n}回`,genValue:n=>`第${n}世代`,win:'正解',loss:'不正解',licenses:' ライセンス',targetHint:'正解の「{field}」：{value}',up:'↑',down:'↓',sourceNote:'プレイ可能とは通常のユナイトライセンスを所持することを指し、期間限定モードで一時的に操作できる場合は含みません。野生の進化系統は、UNITEマップに実際に登場する代表形態で登録しています。マップ欄は、そのポケモンまたは進化系統が出現する主なマップを示し、氷雪版とPT500モードを分けて表示します。NPCに適用されないバトルスタイル、攻撃分類、操作難易度は「該当なし」と表示します。画像：PokéAPI Sprites。',directionLegend:'矢印は正解の値が大きいか小さいかを示します',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'ゲーム開始',navDex:'ポケモン図鑑',navStats:'プレイ記録',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.8.0',title:'今日のポケモンは誰？',subtitle:'名前を入力し、8つの特徴から正解を探そう。',difficultyTitle:'難易度を選択',difficultyIntro:'今日のチャレンジ範囲を選びます。難易度によって答えの候補と予想回数が変わります。',modeEasy:'かんたん',modeEasyDesc:'操作難易度「初級」のライセンスから出題。ロスターに慣れるのにおすすめ。',modeNormal:'ふつう',modeNormalDesc:'初級と中級のライセンスから出題。バランスのよい難易度です。',modeHard:'むずかしい',modeHardDesc:'プレイ可能なライセンスとマップNPCがすべて候補。予想は6回まで。',modeHell:'地獄',modeHellDesc:'プレイ可能なライセンスとマップNPCが候補。予想は4回まで、ヒントは使用できません。',modePoolSuffix:'匹',modePlayableSuffix:'匹のポケモン',modeNpcSuffix:'匹のNPCポケモン',modeAttemptsSuffix:'回',noHint:'この難易度ではヒントを使用できません。',chooseMode:'チャレンジ開始',changeMode:'難易度を変更',hintUnavailable:'地獄モードではヒントを使用できません。',dexFilterHelp:'同じグループでは複数選択でき、いずれかに一致すれば表示されます。異なるグループはすべて一致する必要があります。',filterRole:'バトルスタイル',filterDamage:'攻撃分類',filterTypes:'ポケモンのタイプ',filterEvolution:'本編の進化回数',filterGeneration:'図鑑世代',filterDifficulty:'操作難易度',filterPlayable:'プレイ可能',filterMaps:'主な出現マップ',playableYes:'プレイ可能',playableNo:'プレイ不可',npcTag:'マップNPC',notApplicable:'該当なし',mapNames:{remoat:'レモータスタジアム', 'remoat-holiday':'レモータスタジアム（氷雪Ver.）', pt500:'レモータスタジアム（PT500）', mer:'マールスタジアム',auroma:'ゼフィオパーク',shivre:'ジーヴルシティ',theia:'テイア蒼空遺跡'},all:'すべて',clearFilters:'絞り込みを解除',sortLabel:'並べ替え',sortName:'名前',sortGeneration:'世代',sortDifficulty:'難易度',sortRole:'ロール',dexNoMatches:'条件に一致するライセンスがありません。検索や絞り込みを変更してください。',dexDetails:'ライセンス情報',detailClose:'閉じる',detailGeneration:'第{n}世代',detailEvolution:'進化回数：{n}',filterSelected:'{n}件選択',standard:'8項目モード',time:'タイム',round:'回数',left:'残り',hint:'ヒント',reset:'新しいゲーム',howTitle:'遊び方',howText:'8つの特徴を照合します。緑は一致、黄色はタイプまたはマップの一部一致、赤は不一致、灰色の「対象外」は比較できない項目です。数値の矢印は正解の値が大きいか小さいかを示します。',placeholder:'ポケモンの名前を入力…',guess:'予想',inputNote:'繁體中文、簡体中文、英語、日本語の名前で入力できます。',history:'予想履歴',historySub:'予想するたびにヒントが増えます。',name:'ポケモン',role:'バトルスタイル',damage:'攻撃タイプ',types:'ポケモンのタイプ',evolution:'本編の進化回数',generation:'図鑑世代',difficulty:'難易度',playable:'プレイ可能',maps:'主な出現マップ',notCompared:'対象外',empty:'まだ予想がありません。下からポケモンを入力しよう！',correct:'完全一致',partial:'一部一致',wrong:'不一致',dexTitle:'ポケモン図鑑',dexSub:'ゲームに登録されているポケモンの特徴を確認できます。',search:'ポケモンを検索…',allRoles:'すべて',statsTitle:'プレイ記録',statsSub:'ログイン中は記録がアカウントに同期され、未ログイン時はこのブラウザーに保存されます。',played:'プレイ回数',wins:'正解数',rate:'正解率',best:'最少予想回数',recent:'最近のゲーム',clear:'記録を削除',noRecords:'プレイ記録はまだありません。',wonTitle:'正解！',lostTitle:'惜しい！',found:'正解のポケモンを見つけました',answer:'正解',attempts:'予想回数',elapsed:'時間',winStreak:'現在の連勝',bestStreak:'最高連勝',wonSubtitle:'隠れていたポケモンを見つけました！',lostSubtitle:'正解を発表します。次のラウンドに挑戦しよう！',resultModes:'難易度を選択',again:'もう一度遊ぶ',seeDex:'図鑑を見る',hintPrefix:'ヒント公開',hintUsed:'このゲームではヒントを使用済みです。',invalid:'ポケモンが見つかりません。候補から選んでください。',duplicate:'そのポケモンはすでに予想しています。',finished:'このゲームは終了しました。新しいゲームを始めてください。',footer:'非公式ファンメイド作品です。PokémonおよびPokémon UNITEとは関係ありません。',helpTitle:'遊び方',helpHtml:'<ol><li>かんたん・ふつうはプレイ可能なライセンスのみ、むずかしい・地獄はマップNPCも出題対象です。野生ポケモンの進化系統は、UNITEマップに実際に登場する代表形態を出題します。</li><li>繁體中文、簡体中文、英語、日本語の名前を入力できます。</li><li>予想できる回数は難易度によって異なります。<strong>バトルスタイル、攻撃タイプ、ポケモンのタイプ、本編の進化回数、図鑑世代、操作難易度、プレイ可能か、主な出現マップ</strong>を照合します。</li><li><strong>緑</strong>は一致、<strong>黄</strong>はタイプまたはマップの一部一致、<strong>赤</strong>は不一致、灰色の「対象外」は比較できない項目です。</li><li>進化回数と世代には矢印が表示されます。↑は正解の値が大きく、↓は小さいことを示します。</li><li>本編の進化回数は進化系統の最初の姿から数え、メガシンカは含みません。マップ欄には通常・イベントステージを表示します。</li><li>1ゲームにつき1回ヒントを使用できます。ログイン中は記録がアカウントに同期され、未ログイン時はこのブラウザーに保存されます。</li></ol>',ok:'OK',roleNames:{attacker:'アタック',speedster:'スピード',allrounder:'バランス',defender:'ディフェンス',supporter:'サポート'},damageNames:{physical:'物理',special:'特殊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'上級'},typeNames:{normal:'ノーマル',fire:'ほのお',water:'みず',electric:'でんき',grass:'くさ',ice:'こおり',fighting:'かくとう',poison:'どく',ground:'じめん',flying:'ひこう',psychic:'エスパー',bug:'むし',rock:'いわ',ghost:'ゴースト',dragon:'ドラゴン',dark:'あく',steel:'はがね',fairy:'フェアリー'},evoValue:n=>`${n}回`,genValue:n=>`第${n}世代`,win:'正解',loss:'不正解',licenses:' ライセンス',targetHint:'正解の「{field}」：{value}',up:'↑',down:'↓',sourceNote:'プレイ可能とは通常のユナイトライセンスを所持することを指し、期間限定モードで一時的に操作できる場合は含みません。野生の進化系統は、UNITEマップに実際に登場する代表形態で登録しています。マップ欄は、そのポケモンまたは進化系統が出現する主なマップを示し、氷雪版とPT500モードを分けて表示します。NPCに適用されないバトルスタイル、攻撃分類、操作難易度は「該当なし」と表示します。画像：PokéAPI Sprites。',directionLegend:'矢印は正解の値が大きいか小さいかを示します',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     }
   };
   // V1.7.7: Mega Evolution attribute translations (core-series eligibility).
@@ -3880,7 +3880,7 @@ window.UNITE_ONE_POKEMON = [
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
 import {
-  getDatabase, ref, get, set, update, onValue, serverTimestamp
+  getDatabase, ref, get, set, update, onValue, remove, serverTimestamp
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 import {
   getAuth,
@@ -4403,6 +4403,568 @@ if (!topActions || !helpButton) {
     }
   });
 }
+
+// UNITE-ONE V1.8.0: two-player room multiplayer
+const roomText = {
+  'zh-TW': {
+    nav:'好友對戰', eyebrow:'UNITE-ONE ONLINE', title:'好友房間', sub:'建立房間邀請朋友，兩人挑戰同一隻寶可夢。',
+    create:'建立房間', join:'加入房間', code:'六位數房間代碼', mode:'選擇難度',
+    easy:'簡單', normal:'普通', hard:'困難', hell:'地獄',
+    createHint:'建立房間後，把代碼分享給朋友。', joinHint:'輸入朋友提供的六位數代碼。',
+    wait:'等待第二位玩家加入…', waiting:'等待中', playing:'對戰進行中', finished:'對戰結束', closed:'房間已關閉',
+    start:'開始對戰', leave:'離開房間', copy:'複製代碼', copied:'已複製房間代碼。',
+    host:'房主', you:'你', guest:'玩家', ready:'已加入',
+    attempts:'猜測次數', remaining:'剩餘次數', guess:'提交猜測', input:'輸入寶可夢名稱…',
+    noAuth:'請先登入或使用訪客模式。', noData:'找不到房間，請確認代碼。',
+    full:'房間已滿，最多兩位玩家。', started:'這個房間已經開始，無法加入。',
+    needTwo:'需要兩位玩家加入後才能開始。', invalid:'請輸入六位數房間代碼。',
+    notFound:'找不到這隻寶可夢，請使用清單中的名稱。', duplicate:'你已經猜過這隻寶可夢。',
+    limit:'你的猜測次數已用完。', submitted:'猜測已送出，正在同步…',
+    win:'猜中了！你贏得這場對戰。', lose:'對手先猜中了。', draw:'雙方都用完猜測次數，平手。',
+    answer:'本局答案', result:'對戰結果', me:'我的猜測', opponent:'對手猜測',
+    waitingStart:'房主開始後，雙方會同時看到題目。', hostOnly:'只有房主可以開始對戰。',
+    roomCreated:'房間已建立，請邀請朋友加入。', joined:'成功加入房間。',
+    closedByHost:'房主已關閉房間。', left:'已離開房間。',
+    attributes:['定位','攻擊','屬性','進化','世代','難度','可遊玩','地圖','超級進化'],
+    yes:'是', no:'否', notApplicable:'無',
+    role:{attacker:'攻擊型',defender:'防禦型',speedster:'敏捷型',supporter:'輔助型',allrounder:'平衡型'},
+    damage:{physical:'物理',special:'特殊'},
+    difficulty:{novice:'初級',intermediate:'中級',expert:'高級'},
+    type:{normal:'一般',fighting:'格鬥',flying:'飛行',poison:'毒',ground:'地面',rock:'岩石',bug:'蟲',ghost:'幽靈',steel:'鋼',fire:'火',water:'水',grass:'草',electric:'電',psychic:'超能力',ice:'冰',dragon:'龍',dark:'惡',fairy:'妖精'},
+    maps:{remoat:'黎莫特競技場','remoat-holiday':'黎莫特競技場（冰雪版）',pt500:'黎莫特競技場（PT500）',mer:'瑪爾競技場',auroma:'奧拉公園',shivre:'吉弗市',theia:'媞亞蒼空遺跡'},
+    errors:{'PERMISSION_DENIED':'資料庫拒絕存取，請確認已發布 V1.8.0 房間規則。','NETWORK_ERROR':'網路連線失敗，請稍後再試。'}
+  },
+  'zh-CN': {
+    nav:'好友对战', eyebrow:'UNITE-ONE ONLINE', title:'好友房间', sub:'创建房间邀请朋友，两人挑战同一只宝可梦。',
+    create:'创建房间', join:'加入房间', code:'六位数房间代码', mode:'选择难度', easy:'简单', normal:'普通', hard:'困难', hell:'地狱',
+    createHint:'创建房间后，把代码分享给朋友。', joinHint:'输入朋友提供的六位数代码。', wait:'等待第二位玩家加入…', waiting:'等待中', playing:'对战进行中', finished:'对战结束', closed:'房间已关闭',
+    start:'开始对战', leave:'离开房间', copy:'复制代码', copied:'已复制房间代码。', host:'房主', you:'你', guest:'玩家', ready:'已加入', attempts:'猜测次数', remaining:'剩余次数', guess:'提交猜测', input:'输入宝可梦名称…',
+    noAuth:'请先登录或使用访客模式。', noData:'找不到房间，请确认代码。', full:'房间已满，最多两位玩家。', started:'这个房间已经开始，无法加入。', needTwo:'需要两位玩家加入后才能开始。', invalid:'请输入六位数房间代码。',
+    notFound:'找不到这只宝可梦，请使用清单中的名称。', duplicate:'你已经猜过这只宝可梦。', limit:'你的猜测次数已用完。', submitted:'猜测已发送，正在同步…', win:'猜中了！你赢得这场对战。', lose:'对手先猜中了。', draw:'双方都用完猜测次数，平手。', answer:'本局答案', result:'对战结果', me:'我的猜测', opponent:'对手猜测', waitingStart:'房主开始后，双方会同时看到题目。', hostOnly:'只有房主可以开始对战。', roomCreated:'房间已创建，请邀请朋友加入。', joined:'成功加入房间。', closedByHost:'房主已关闭房间。', left:'已离开房间。',
+    attributes:['定位','攻击','属性','进化','世代','难度','可游玩','地图','超级进化'],yes:'是',no:'否',notApplicable:'无',
+    role:{attacker:'攻击型',defender:'防御型',speedster:'敏捷型',supporter:'辅助型',allrounder:'平衡型'},damage:{physical:'物理',special:'特殊'},difficulty:{novice:'初级',intermediate:'中级',expert:'高级'},
+    type:{normal:'一般',fighting:'格斗',flying:'飞行',poison:'毒',ground:'地面',rock:'岩石',bug:'虫',ghost:'幽灵',steel:'钢',fire:'火',water:'水',grass:'草',electric:'电',psychic:'超能力',ice:'冰',dragon:'龙',dark:'恶',fairy:'妖精'},
+    maps:{remoat:'黎莫特竞技场','remoat-holiday':'黎莫特竞技场（冰雪版）',pt500:'黎莫特竞技场（PT500）',mer:'玛尔竞技场',auroma:'奥拉公园',shivre:'吉弗市',theia:'媞亚苍空遗迹'},errors:{'PERMISSION_DENIED':'数据库拒绝访问，请确认已发布 V1.8.0 房间规则。'}
+  },
+  en: {
+    nav:'Friend Match', eyebrow:'UNITE-ONE ONLINE', title:'Friend Rooms', sub:'Create a room and invite a friend to guess the same Pokémon.',
+    create:'Create room', join:'Join room', code:'6-digit room code', mode:'Difficulty', easy:'Easy', normal:'Normal', hard:'Hard', hell:'Hell',
+    createHint:'Share the room code with your friend after creating it.', joinHint:'Enter the 6-digit code shared by your friend.', wait:'Waiting for another player…', waiting:'Waiting', playing:'Match in progress', finished:'Match finished', closed:'Room closed',
+    start:'Start match', leave:'Leave room', copy:'Copy code', copied:'Room code copied.', host:'Host', you:'You', guest:'Player', ready:'Joined', attempts:'Guesses', remaining:'Remaining', guess:'Submit guess', input:'Enter a Pokémon name…',
+    noAuth:'Please sign in or continue as a guest first.', noData:'Room not found. Check the code.', full:'Room is full. Two players maximum.', started:'This room has already started.', needTwo:'Two players are required to start.', invalid:'Enter a 6-digit room code.', notFound:'Pokémon not found. Choose a name from the list.', duplicate:'You already guessed this Pokémon.', limit:'You have used all your guesses.', submitted:'Guess submitted. Syncing…', win:'Correct! You won the match.', lose:'Your opponent guessed it first.', draw:'Both players used all guesses. Draw.', answer:'Answer', result:'Match result', me:'My guesses', opponent:'Opponent guesses', waitingStart:'Both players will receive the question when the host starts.', hostOnly:'Only the host can start the match.', roomCreated:'Room created. Invite your friend.', joined:'Joined the room.', closedByHost:'The host closed the room.', left:'You left the room.',
+    attributes:['Role','Damage','Type','Evol.','Gen.','Difficulty','Playable','Map','Mega'],yes:'Yes',no:'No',notApplicable:'N/A',
+    role:{attacker:'Attacker',defender:'Defender',speedster:'Speedster',supporter:'Supporter',allrounder:'All-Rounder'},damage:{physical:'Physical',special:'Special'},difficulty:{novice:'Novice',intermediate:'Intermediate',expert:'Expert'},
+    type:{normal:'Normal',fighting:'Fighting',flying:'Flying',poison:'Poison',ground:'Ground',rock:'Rock',bug:'Bug',ghost:'Ghost',steel:'Steel',fire:'Fire',water:'Water',grass:'Grass',electric:'Electric',psychic:'Psychic',ice:'Ice',dragon:'Dragon',dark:'Dark',fairy:'Fairy'},
+    maps:{remoat:'Remoat Stadium','remoat-holiday':'Remoat Stadium (Holiday)',pt500:'Remoat Stadium (PT500)',mer:'Mer Stadium',auroma:'Auroma Park',shivre:'Shivre City',theia:'Theia Sky Ruins'},errors:{'PERMISSION_DENIED':'Database access denied. Publish the V1.8.0 room rules.'}
+  },
+  ja: {
+    nav:'フレンド対戦', eyebrow:'UNITE-ONE ONLINE', title:'フレンドルーム', sub:'ルームを作成して友達を招待し、同じポケモンを当てよう。',
+    create:'ルーム作成', join:'ルーム参加', code:'6桁のルームコード', mode:'難易度', easy:'かんたん', normal:'ふつう', hard:'むずかしい', hell:'地獄',
+    createHint:'ルーム作成後、コードを友達に共有してください。', joinHint:'友達から受け取った6桁のコードを入力してください。', wait:'もう1人の参加を待っています…', waiting:'待機中', playing:'対戦中', finished:'対戦終了', closed:'ルーム終了',
+    start:'対戦開始', leave:'ルーム退出', copy:'コードをコピー', copied:'ルームコードをコピーしました。', host:'ホスト', you:'あなた', guest:'プレイヤー', ready:'参加済み', attempts:'回答回数', remaining:'残り', guess:'回答する', input:'ポケモン名を入力…',
+    noAuth:'先にログインするか、ゲストとして続行してください。', noData:'ルームが見つかりません。コードを確認してください。', full:'ルームは満員です（最大2人）。', started:'このルームはすでに開始されています。', needTwo:'開始するには2人必要です。', invalid:'6桁のルームコードを入力してください。', notFound:'ポケモンが見つかりません。候補から選んでください。', duplicate:'このポケモンはすでに回答済みです。', limit:'回答回数の上限に達しました。', submitted:'回答を送信しました。同期待ち…', win:'正解！あなたの勝利です。', lose:'相手が先に正解しました。', draw:'両者とも回答回数を使い切りました。引き分けです。', answer:'正解', result:'対戦結果', me:'自分の回答', opponent:'相手の回答', waitingStart:'ホストが開始すると、2人に同じ問題が出題されます。', hostOnly:'ホストのみ開始できます。', roomCreated:'ルームを作成しました。友達を招待してください。', joined:'ルームに参加しました。', closedByHost:'ホストがルームを終了しました。', left:'ルームから退出しました。',
+    attributes:['ロール','攻撃','タイプ','進化','世代','難易度','使用可能','マップ','メガ'],yes:'はい',no:'いいえ',notApplicable:'なし',
+    role:{attacker:'アタック型',defender:'ディフェンス型',speedster:'スピード型',supporter:'サポート型',allrounder:'バランス型'},damage:{physical:'物理',special:'特殊'},difficulty:{novice:'初級',intermediate:'中級',expert:'上級'},
+    type:{normal:'ノーマル',fighting:'かくとう',flying:'ひこう',poison:'どく',ground:'じめん',rock:'いわ',bug:'むし',ghost:'ゴースト',steel:'はがね',fire:'ほのお',water:'みず',grass:'くさ',electric:'でんき',psychic:'エスパー',ice:'こおり',dragon:'ドラゴン',dark:'あく',fairy:'フェアリー'},
+    maps:{remoat:'レモータスタジアム','remoat-holiday':'レモータスタジアム（ホリデー）',pt500:'レモータスタジアム（PT500）',mer:'マールスタジアム',auroma:'オボラ公園',shivre:'ジーヴルシティ',theia:'テイア蒼空遺跡'},errors:{'PERMISSION_DENIED':'データベースへのアクセスが拒否されました。V1.8.0のルールを公開してください。'}
+  }
+};
+const roomLang = () => document.getElementById('language-select')?.value || 'zh-TW';
+const rt = key => (roomText[roomLang()] || roomText['zh-TW'])[key] ?? roomText['zh-TW'][key] ?? key;
+const roomEsc = value => String(value ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const roomPokemon = Array.isArray(window.UNITE_ONE_POKEMON) ? window.UNITE_ONE_POKEMON : [];
+const roomImageBase = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/';
+const roomModeConfig = {
+  easy:{attempts:10,filter:p=>p.playable && p.difficulty==='novice'},
+  normal:{attempts:8,filter:p=>p.playable && p.difficulty!=='expert'},
+  hard:{attempts:6,filter:()=>true},
+  hell:{attempts:4,filter:()=>true}
+};
+const roomNav = document.createElement('button');
+roomNav.type = 'button'; roomNav.className = 'nav-btn'; roomNav.dataset.view = 'room'; roomNav.id = 'nav-room';
+const roomMain = document.querySelector('main');
+const roomView = document.createElement('section');
+roomView.id = 'room-view'; roomView.className = 'view';
+roomView.innerHTML = `
+  <div class="page-heading room-page-heading"><div><p class="eyebrow">UNITE-ONE ONLINE</p><h1 id="room-page-title">好友房間</h1><p class="subheading" id="room-page-subtitle"></p></div><span class="total-chip">2 PLAYERS</span></div>
+  <div class="room-panel" id="room-lobby-panel">
+    <div class="room-panel-head"><div><p class="eyebrow">ROOM LOBBY</p><h2 id="room-lobby-title">建立或加入房間</h2><p class="room-muted" id="room-lobby-desc"></p></div><span class="room-status-pill">ONLINE</span></div>
+    <div class="room-create-grid">
+      <div class="room-action-card"><label for="room-mode" id="room-mode-label">選擇難度</label><select id="room-mode" class="room-control"><option value="easy">簡單</option><option value="normal" selected>普通</option><option value="hard">困難</option><option value="hell">地獄</option></select><button class="primary-btn room-wide-btn" id="room-create" type="button">建立房間</button><p class="room-muted" id="room-create-hint"></p></div>
+      <div class="room-action-card"><label for="room-code-input" id="room-code-label">六位數房間代碼</label><input id="room-code-input" class="room-control" inputmode="numeric" autocomplete="one-time-code" maxlength="6" placeholder="例如 482619"><button class="secondary-btn room-wide-btn" id="room-join" type="button">加入房間</button><p class="room-muted" id="room-join-hint"></p></div>
+    </div>
+    <p class="room-message" id="room-lobby-message" role="status" aria-live="polite"></p>
+  </div>
+  <div class="room-panel hidden" id="room-session-panel">
+    <div class="room-session-head"><div><p class="eyebrow">ROOM CODE</p><div class="room-code-display"><strong id="room-code-display">------</strong><button class="secondary-btn" id="room-copy" type="button">複製代碼</button></div><p class="room-muted" id="room-session-status"></p></div><span class="room-status-pill" id="room-session-pill">WAITING</span></div>
+    <div class="room-player-grid" id="room-player-list"></div>
+    <div class="room-session-actions"><button class="primary-btn" id="room-start" type="button" disabled>開始對戰</button><button class="secondary-btn" id="room-leave" type="button">離開房間</button></div>
+    <p class="room-message" id="room-session-message" role="status" aria-live="polite"></p>
+    <div class="room-game hidden" id="room-game-panel">
+      <div class="room-game-head"><div><p class="eyebrow">SAME POKÉMON · LIVE MATCH</p><h2 id="room-game-title">對戰進行中</h2></div><div class="room-attempt-chip" id="room-attempt-chip"></div></div>
+      <form class="room-guess-form" id="room-guess-form"><input id="room-guess-input" class="room-control" list="room-pokemon-list" autocomplete="off" placeholder="輸入寶可夢名稱…" aria-label="猜測寶可夢"><datalist id="room-pokemon-list"></datalist><button class="primary-btn" id="room-guess-submit" type="submit">提交猜測</button></form>
+      <div class="room-result-banner hidden" id="room-result-banner" role="status" aria-live="polite"></div>
+      <div class="room-guess-columns" id="room-guess-columns"></div>
+    </div>
+  </div>
+  <p class="room-footnote">房間代碼只分享給要一起遊玩的朋友。此版本為好友休閒對戰，尚未提供防作弊的伺服器端裁判。</p>
+`;
+if (roomMain && document.querySelector('.main-nav')) {
+  document.querySelector('.main-nav').appendChild(roomNav);
+  roomMain.appendChild(roomView);
+}
+const roomStyle = document.createElement('style');
+roomStyle.textContent = `
+  .room-page-heading{margin-bottom:22px}.room-panel{padding:22px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(145deg,rgba(62,9,47,.86),rgba(32,4,27,.82));box-shadow:0 14px 38px rgba(0,0,0,.12);margin-bottom:18px}
+  .room-panel-head,.room-session-head,.room-game-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}.room-panel h2,.room-game h2{margin:0 0 7px;font-size:20px}.room-muted{color:var(--muted);font-size:12px;line-height:1.6;margin:7px 0 0}.room-status-pill{border:1px solid var(--line2);border-radius:999px;padding:7px 11px;font-size:10px;font-weight:800;letter-spacing:.1em;color:#ffc2e9;white-space:nowrap}.room-create-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:20px}.room-action-card{padding:17px;border:1px solid var(--line);border-radius:14px;background:rgba(20,1,17,.22);min-width:0}.room-action-card label{display:block;color:#eac0db;font-weight:700;font-size:12px;margin-bottom:9px}.room-control{width:100%;min-width:0;padding:13px 14px;border-radius:11px;border:1px solid var(--line2);background:#20051b;color:#fff;font:inherit;outline:none}.room-control:focus{border-color:var(--pink);box-shadow:0 0 0 3px rgba(236,105,191,.12)}.room-wide-btn{width:100%;margin-top:12px}.room-message{min-height:20px;color:#ffc2e9;font-size:12px;line-height:1.55;margin:12px 0 0;overflow-wrap:anywhere}.room-code-display{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.room-code-display strong{font-size:clamp(27px,5vw,40px);letter-spacing:.16em;color:#ffd1ef;font-variant-numeric:tabular-nums}.room-player-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:20px 0}.room-player-card{padding:15px;border:1px solid var(--line);border-radius:13px;background:rgba(20,1,17,.28);min-width:0}.room-player-card.is-self{border-color:rgba(236,105,191,.55);background:rgba(100,17,74,.2)}.room-player-top{display:flex;align-items:center;gap:10px;min-width:0}.room-player-avatar{width:35px;height:35px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#b84a9a,#552050);font-weight:900;flex:none}.room-player-name{font-weight:800;overflow-wrap:anywhere}.room-player-sub{font-size:10px;color:var(--muted);margin-top:3px}.room-player-count{margin-left:auto;color:#e8b9d7;font-size:12px;white-space:nowrap}.room-session-actions{display:flex;gap:10px;flex-wrap:wrap}.room-session-actions button{min-width:125px}.room-game{margin-top:22px;padding-top:20px;border-top:1px solid var(--line)}.room-attempt-chip{color:#ffd1ef;font-size:12px;border:1px solid var(--line);border-radius:999px;padding:8px 11px;white-space:nowrap}.room-guess-form{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:9px;margin:15px 0}.room-result-banner{padding:12px 14px;border-radius:12px;margin:12px 0;background:rgba(236,105,191,.12);border:1px solid var(--line2);color:#ffd5ef;font-weight:700;font-size:13px}.room-guess-columns{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.room-guesses-card{padding:14px;border:1px solid var(--line);border-radius:13px;background:rgba(20,1,17,.22);min-width:0}.room-guesses-card h3{font-size:13px;margin:0 0 12px}.room-guess-entry{padding:11px 0;border-top:1px solid rgba(255,125,205,.12)}.room-guess-entry:first-of-type{border-top:0}.room-guess-pokemon{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:800}.room-guess-pokemon img{width:32px;height:32px;object-fit:contain}.room-guess-number{margin-left:auto;color:var(--muted);font-size:10px}.room-clue-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;margin-top:8px}.room-clue{padding:5px 6px;border-radius:7px;font-size:9px;line-height:1.4;min-width:0;overflow-wrap:anywhere;background:rgba(92,55,85,.2);border:1px solid rgba(255,255,255,.04)}.room-clue strong{display:block;font-size:9px;opacity:.85;margin-bottom:2px}.room-clue.match{background:rgba(32,120,88,.38);color:#d8fff1}.room-clue.partial{background:rgba(151,109,30,.3);color:#ffedbd}.room-clue.miss{background:rgba(115,34,61,.34);color:#ffdce6}.room-clue.neutral{background:rgba(92,55,85,.2);color:#d8c5d5}.room-footnote{color:#9f8198;font-size:10px;line-height:1.6;text-align:center;margin:14px 0}.room-player-empty{padding:16px;text-align:center;border:1px dashed var(--line);border-radius:12px;color:var(--muted);font-size:12px}.room-player-outcome{font-size:10px;color:#ffc2e9;margin-top:8px}.room-session-actions button:disabled,.room-guess-form button:disabled{opacity:.5;cursor:not-allowed}
+  @media(max-width:650px){.room-panel{padding:16px}.room-create-grid,.room-player-grid,.room-guess-columns{grid-template-columns:1fr}.room-panel-head,.room-session-head{align-items:flex-start}.room-guess-form{grid-template-columns:1fr}.room-guess-form button{width:100%}.room-clue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.room-session-actions button{flex:1}}
+`;
+document.head.appendChild(roomStyle);
+
+let activeRoomCode = null;
+let activeRoomSnapshot = null;
+let activeRoomAnswerId = null;
+let roomPublicUnsubscribe = null;
+let roomSecretUnsubscribe = null;
+let roomFinishing = false;
+let roomBusy = false;
+
+function roomSetMessage(message, session = false) {
+  const node = document.getElementById(session ? 'room-session-message' : 'room-lobby-message');
+  if (node) node.textContent = message || '';
+}
+function roomErrorText(error) {
+  const lang = roomText[roomLang()] || roomText['zh-TW'];
+  if (error?.code === 'PERMISSION_DENIED' || String(error?.message || '').includes('PERMISSION_DENIED')) return lang.errors?.PERMISSION_DENIED || '資料庫權限不足，請更新 Firebase 規則。';
+  return error?.message || '發生錯誤，請稍後再試。';
+}
+function roomNormalize(value) {
+  return String(value || '').toLocaleLowerCase().normalize('NFKC').replace(/[\s.'’\-_:：]/g, '');
+}
+function roomModePool(mode) {
+  const config = roomModeConfig[mode] || roomModeConfig.normal;
+  return roomPokemon.filter(config.filter);
+}
+function roomModeAttempts(mode) { return (roomModeConfig[mode] || roomModeConfig.normal).attempts; }
+function roomPokemonName(pokemon) {
+  const lang = roomLang();
+  return pokemon?.[lang === 'zh-TW' ? 'tw' : lang === 'zh-CN' ? 'sc' : lang === 'ja' ? 'ja' : 'en'] || pokemon?.en || pokemon?.id || '';
+}
+function roomFindPokemon(input) {
+  const query = roomNormalize(input);
+  if (!query) return null;
+  return roomPokemon.find(p => [p.tw,p.sc,p.en,p.ja].some(name => roomNormalize(name) === query)) || null;
+}
+function roomPlayerNickname(user) {
+  return get(ref(db, `users/${user.uid}/profile`)).then(snapshot => {
+    const profile = snapshot.val() || {};
+    if (typeof profile.nickname === 'string' && profile.nickname.trim()) return profile.nickname.trim().slice(0,16);
+    if (user.email) return user.email.split('@')[0].slice(0,16) || 'UNITE Player';
+    return `訪客${user.uid.slice(0,6)}`;
+  });
+}
+function roomRandomCode() { return String(Math.floor(100000 + Math.random() * 900000)); }
+function roomStopListeners() {
+  if (roomPublicUnsubscribe) roomPublicUnsubscribe();
+  if (roomSecretUnsubscribe) roomSecretUnsubscribe();
+  roomPublicUnsubscribe = null;
+  roomSecretUnsubscribe = null;
+}
+function roomClearLocalState() {
+  roomStopListeners();
+  activeRoomCode = null;
+  activeRoomSnapshot = null;
+  activeRoomAnswerId = null;
+  roomFinishing = false;
+  try { localStorage.removeItem('uniteOneActiveRoomCode'); } catch {}
+  document.getElementById('room-session-panel').classList.add('hidden');
+  document.getElementById('room-lobby-panel').classList.remove('hidden');
+}
+function roomSwitchView() {
+  document.querySelectorAll('.view').forEach(view => view.classList.remove('active-view'));
+  roomView.classList.add('active-view');
+  document.querySelectorAll('.nav-btn').forEach(button => button.classList.toggle('active', button === roomNav));
+  document.body.classList.remove('mobile-game-active');
+  window.scrollTo({top:0, behavior:'smooth'});
+}
+function roomRefreshLanguage() {
+  const language = roomText[roomLang()] || roomText['zh-TW'];
+  roomNav.textContent = language.nav;
+  document.getElementById('room-page-title').textContent = language.title;
+  document.getElementById('room-page-subtitle').textContent = language.sub;
+  document.getElementById('room-mode-label').textContent = language.mode;
+  document.getElementById('room-code-label').textContent = language.code;
+  document.getElementById('room-create').textContent = language.create;
+  document.getElementById('room-join').textContent = language.join;
+  document.getElementById('room-create-hint').textContent = language.createHint;
+  document.getElementById('room-join-hint').textContent = language.joinHint;
+  const modeSelect = document.getElementById('room-mode');
+  [...modeSelect.options].forEach(option => { option.textContent = language[option.value]; });
+  document.getElementById('room-copy').textContent = language.copy;
+  document.getElementById('room-start').textContent = language.start;
+  document.getElementById('room-leave').textContent = language.leave;
+  document.getElementById('room-guess-input').placeholder = language.input;
+  document.getElementById('room-guess-submit').textContent = language.guess;
+  const datalist = document.getElementById('room-pokemon-list');
+  const suggestionNames = new Set();
+  roomPokemon.forEach(pokemon => {
+    [roomPokemonName(pokemon), pokemon.en].filter(Boolean).forEach(name => suggestionNames.add(name));
+  });
+  datalist.innerHTML = [...suggestionNames].map(name => `<option value="${roomEsc(name)}"></option>`).join('');
+  if (activeRoomSnapshot) roomRender();
+}
+function roomSetBusy(busy) {
+  roomBusy = busy;
+  document.getElementById('room-create').disabled = busy;
+  document.getElementById('room-join').disabled = busy;
+  document.getElementById('room-start').disabled = busy;
+  document.getElementById('room-leave').disabled = busy;
+  document.getElementById('room-guess-submit').disabled = busy;
+}
+function roomRequireAuth() {
+  if (auth.currentUser) return true;
+  const modal = document.getElementById('unite-account-modal');
+  if (modal) modal.classList.remove('hidden');
+  roomSetMessage(rt('noAuth'));
+  return false;
+}
+async function roomCreate() {
+  if (roomBusy || !roomRequireAuth()) return;
+  roomSetBusy(true); roomSetMessage('');
+  try {
+    if (!roomPokemon.length) throw new Error('寶可夢資料尚未載入，請重新整理頁面。');
+    const user = auth.currentUser;
+    const nickname = await roomPlayerNickname(user);
+    const mode = document.getElementById('room-mode').value;
+    const attempts = roomModeAttempts(mode);
+    let code = null;
+    for (let i = 0; i < 12; i++) {
+      const candidate = roomRandomCode();
+      const existing = await get(ref(db, `roomPublic/${candidate}/meta`));
+      if (!existing.exists()) { code = candidate; break; }
+    }
+    if (!code) throw new Error('暫時無法產生房間代碼，請重試。');
+    const now = Date.now();
+    await set(ref(db, `roomPublic/${code}/meta`), {
+      hostUid: user.uid, mode, status: 'waiting', attemptLimit: attempts,
+      maxPlayers: 2, createdAt: now, startedAt: 0, winnerUid: '', finishedAt: 0
+    });
+    await set(ref(db, `roomPublic/${code}/players/${user.uid}`), {
+      uid: user.uid, nickname, isHost: true, joinedAt: now, ready: true
+    });
+    await roomEnter(code);
+    roomSetMessage(rt('roomCreated'), true);
+  } catch (error) {
+    console.error('UNITE-ONE room create failed:', error);
+    roomSetMessage(roomErrorText(error));
+  } finally { roomSetBusy(false); }
+}
+async function roomJoin() {
+  if (roomBusy || !roomRequireAuth()) return;
+  const code = document.getElementById('room-code-input').value.trim();
+  if (!/^\d{6}$/.test(code)) { roomSetMessage(rt('invalid')); return; }
+  roomSetBusy(true); roomSetMessage('');
+  try {
+    const user = auth.currentUser;
+    const snapshot = await get(ref(db, `roomPublic/${code}`));
+    if (!snapshot.exists()) throw new Error(rt('noData'));
+    const room = snapshot.val() || {};
+    const meta = room.meta || {};
+    const players = room.players || {};
+    const alreadyJoined = Boolean(players[user.uid]);
+    if (meta.status === 'closed' || meta.status === 'finished') throw new Error(rt('closed'));
+    if (!alreadyJoined && meta.status !== 'waiting') throw new Error(rt('started'));
+    if (!alreadyJoined && Object.keys(players).length >= 2) throw new Error(rt('full'));
+    if (!alreadyJoined) {
+      const nickname = await roomPlayerNickname(user);
+      await set(ref(db, `roomPublic/${code}/players/${user.uid}`), {
+        uid: user.uid, nickname, isHost: false, joinedAt: Date.now(), ready: true
+      });
+    }
+    await roomEnter(code);
+    roomSetMessage(rt('joined'), true);
+  } catch (error) {
+    console.error('UNITE-ONE room join failed:', error);
+    roomSetMessage(roomErrorText(error));
+  } finally { roomSetBusy(false); }
+}
+async function roomEnter(code) {
+  roomStopListeners();
+  activeRoomCode = code;
+  activeRoomSnapshot = null;
+  activeRoomAnswerId = null;
+  roomFinishing = false;
+  try { localStorage.setItem('uniteOneActiveRoomCode', code); } catch {}
+  document.getElementById('room-lobby-panel').classList.add('hidden');
+  document.getElementById('room-session-panel').classList.remove('hidden');
+  document.getElementById('room-code-display').textContent = code;
+  roomPublicUnsubscribe = onValue(ref(db, `roomPublic/${code}`), snapshot => {
+    if (activeRoomCode !== code) return;
+    activeRoomSnapshot = snapshot.val() || null;
+    if (!activeRoomSnapshot) { roomSetMessage(rt('noData'), true); roomClearLocalState(); return; }
+    roomRender();
+    roomCheckFinish().catch(error => console.warn('Room finish check failed:', error));
+  }, error => roomSetMessage(roomErrorText(error), true));
+  roomSecretUnsubscribe = onValue(ref(db, `roomSecrets/${code}`), snapshot => {
+    if (activeRoomCode !== code) return;
+    activeRoomAnswerId = snapshot.val()?.answerId || null;
+    roomRender();
+    roomCheckFinish().catch(error => console.warn('Room finish check failed:', error));
+  }, error => roomSetMessage(roomErrorText(error), true));
+}
+async function roomStart() {
+  if (roomBusy || !activeRoomCode || !activeRoomSnapshot || !roomRequireAuth()) return;
+  const meta = activeRoomSnapshot.meta || {};
+  const players = activeRoomSnapshot.players || {};
+  if (meta.hostUid !== auth.currentUser.uid) { roomSetMessage(rt('hostOnly'), true); return; }
+  if (Object.keys(players).length !== 2) { roomSetMessage(rt('needTwo'), true); return; }
+  const pool = roomModePool(meta.mode);
+  if (!pool.length) { roomSetMessage('目前難度沒有可用題庫。', true); return; }
+  roomSetBusy(true);
+  try {
+    const answer = pool[Math.floor(Math.random() * pool.length)];
+    await set(ref(db, `roomSecrets/${activeRoomCode}`), { answerId: answer.id, startedAt: Date.now() });
+    await update(ref(db, `roomPublic/${activeRoomCode}/meta`), {
+      status: 'playing', startedAt: Date.now(), winnerUid: '', finishedAt: 0
+    });
+    roomSetMessage(rt('playing'), true);
+  } catch (error) {
+    console.error('UNITE-ONE room start failed:', error);
+    roomSetMessage(roomErrorText(error), true);
+  } finally { roomSetBusy(false); }
+}
+async function roomLeave() {
+  if (!activeRoomCode || !auth.currentUser) { roomClearLocalState(); return; }
+  const code = activeRoomCode;
+  const uid = auth.currentUser.uid;
+  const meta = activeRoomSnapshot?.meta || {};
+  roomSetBusy(true);
+  try {
+    if (meta.hostUid === uid) {
+      await update(ref(db, `roomPublic/${code}/meta`), { status:'closed', finishedAt:Date.now() });
+    } else {
+      await remove(ref(db, `roomPublic/${code}/players/${uid}`));
+    }
+  } catch (error) {
+    console.warn('UNITE-ONE room leave failed:', error);
+    roomSetMessage(roomErrorText(error), true);
+  }
+  roomClearLocalState();
+  roomSetBusy(false);
+  roomSetMessage(rt('left'));
+}
+async function roomCopyCode() {
+  if (!activeRoomCode) return;
+  try {
+    await navigator.clipboard.writeText(activeRoomCode);
+    roomSetMessage(rt('copied'), true);
+  } catch {
+    const input = document.getElementById('room-code-input');
+    input.value = activeRoomCode;
+    input.select();
+    roomSetMessage(`房間代碼：${activeRoomCode}`, true);
+  }
+}
+function roomCurrentGuesses(uid) {
+  const raw = activeRoomSnapshot?.guesses?.[uid] || {};
+  return Object.entries(raw).map(([key, value]) => ({...value, order:Number(key)||Number(value?.order)||0}))
+    .filter(item => item && typeof item.pokemonId === 'string')
+    .sort((a,b) => a.order - b.order);
+}
+async function roomSubmitGuess(event) {
+  event.preventDefault();
+  if (roomBusy || !activeRoomCode || !activeRoomSnapshot || !auth.currentUser) return;
+  const meta = activeRoomSnapshot.meta || {};
+  if (meta.status !== 'playing') return;
+  const uid = auth.currentUser.uid;
+  const guesses = roomCurrentGuesses(uid);
+  const limit = Number(meta.attemptLimit) || 6;
+  if (guesses.length >= limit) { roomSetMessage(rt('limit'), true); return; }
+  const input = document.getElementById('room-guess-input');
+  const pokemon = roomFindPokemon(input.value);
+  if (!pokemon) { roomSetMessage(rt('notFound'), true); input.focus(); return; }
+  if (guesses.some(guess => guess.pokemonId === pokemon.id)) { roomSetMessage(rt('duplicate'), true); input.value = ''; return; }
+  roomSetBusy(true);
+  try {
+    const order = guesses.length + 1;
+    await set(ref(db, `roomPublic/${activeRoomCode}/guesses/${uid}/${order}`), {
+      pokemonId: pokemon.id, order, at: Date.now()
+    });
+    input.value = '';
+    roomSetMessage(rt('submitted'), true);
+  } catch (error) {
+    console.error('UNITE-ONE room guess failed:', error);
+    roomSetMessage(roomErrorText(error), true);
+  } finally { roomSetBusy(false); }
+}
+function roomFormatAttr(pokemon, key) {
+  const language = roomText[roomLang()] || roomText['zh-TW'];
+  if (!pokemon) return language.notApplicable;
+  if (key === 'role') return pokemon.role ? (language.role?.[pokemon.role] || pokemon.role) : language.notApplicable;
+  if (key === 'damage') return pokemon.damage ? (language.damage?.[pokemon.damage] || pokemon.damage) : language.notApplicable;
+  if (key === 'difficulty') return pokemon.difficulty ? (language.difficulty?.[pokemon.difficulty] || pokemon.difficulty) : language.notApplicable;
+  if (key === 'types') return (pokemon.typeOptions || [pokemon.types || []]).map(group => group.map(type => language.type?.[type] || type).join('/')).join(' · ');
+  if (key === 'evolution') return `${pokemon.evolution ?? 0}`;
+  if (key === 'generation') return `${pokemon.generation ?? '?'}`;
+  if (key === 'playable') return pokemon.playable ? language.yes : language.no;
+  if (key === 'maps') return (pokemon.maps || []).map(map => language.maps?.[map] || map).join(' · ') || language.notApplicable;
+  if (key === 'mega') return pokemon.mega ? language.yes : language.no;
+  return language.notApplicable;
+}
+function roomCompareGuess(guess, answer, key) {
+  if (!guess || !answer) return {state:'neutral', arrow:''};
+  if (key === 'types') {
+    const a = (guess.typeOptions || [guess.types || []]).map(v => [...v].sort().join('|'));
+    const b = (answer.typeOptions || [answer.types || []]).map(v => [...v].sort().join('|'));
+    if (a.some(v => b.includes(v))) return {state:'match', arrow:''};
+    const overlap = (guess.typeOptions || [guess.types || []]).some(x => (answer.typeOptions || [answer.types || []]).some(y => x.some(v => y.includes(v))));
+    return {state:overlap?'partial':'miss', arrow:''};
+  }
+  if (key === 'maps') {
+    const a = guess.maps || [], b = answer.maps || [];
+    if (!a.length || !b.length) return {state:'neutral',arrow:''};
+    if (a.length === b.length && a.every(v => b.includes(v))) return {state:'match',arrow:''};
+    return {state:a.some(v => b.includes(v))?'partial':'miss',arrow:''};
+  }
+  if (key === 'evolution' || key === 'generation') {
+    if (guess[key] === answer[key]) return {state:'match',arrow:''};
+    return {state:'miss',arrow:guess[key] < answer[key] ? '↑' : '↓'};
+  }
+  if (['role','damage','difficulty'].includes(key) && (guess[key] == null || answer[key] == null)) return {state:'neutral',arrow:''};
+  return {state:guess[key] === answer[key]?'match':'miss',arrow:''};
+}
+function roomRenderGuessCard(uid, player, answer) {
+  const language = roomText[roomLang()] || roomText['zh-TW'];
+  const guesses = roomCurrentGuesses(uid);
+  const limit = Number(activeRoomSnapshot?.meta?.attemptLimit) || 6;
+  const isSelf = uid === auth.currentUser?.uid;
+  const playerName = player?.nickname || language.guest;
+  const keys = ['role','damage','types','evolution','generation','difficulty','playable','maps','mega'];
+  const entries = guesses.map((entry, index) => {
+    const pokemon = roomPokemon.find(p => p.id === entry.pokemonId);
+    if (!pokemon) return '';
+    const isCorrect = Boolean(answer && pokemon.id === answer.id);
+    const clues = keys.map((key, i) => {
+      const result = answer ? roomCompareGuess(pokemon, answer, key) : {state:'neutral',arrow:''};
+      const label = language.attributes[i];
+      const value = roomFormatAttr(pokemon, key);
+      return `<span class="room-clue ${result.state}"><strong>${roomEsc(label)}</strong>${roomEsc(value)}${result.arrow ? ` ${result.arrow}` : ''}</span>`;
+    }).join('');
+    return `<div class="room-guess-entry"><div class="room-guess-pokemon"><img src="${roomImageBase}${Number(pokemon.imageId || pokemon.dexNo) || 0}.png" alt="" loading="lazy"><span>${roomEsc(roomPokemonName(pokemon))}${isCorrect?' ✓':''}</span><span class="room-guess-number">#${index+1}</span></div><div class="room-clue-grid">${clues}</div></div>`;
+  }).join('');
+  const found = Boolean(answer && guesses.some(g => g.pokemonId === answer.id));
+  const noGuesses = `<div class="room-player-empty">${isSelf ? language.me : language.opponent} · 0 / ${limit}</div>`;
+  return `<article class="room-guesses-card"><h3>${roomEsc(playerName)}${isSelf?` · ${roomEsc(language.you)}`:''} <span class="room-player-count">${guesses.length}/${limit}</span></h3>${entries || noGuesses}${found?`<p class="room-player-outcome">${roomEsc(language.win)}</p>`:''}</article>`;
+}
+function roomRender() {
+  if (!activeRoomCode || !activeRoomSnapshot) return;
+  const language = roomText[roomLang()] || roomText['zh-TW'];
+  const meta = activeRoomSnapshot.meta || {};
+  const players = activeRoomSnapshot.players || {};
+  const playerEntries = Object.values(players).sort((a,b) => (a.isHost ? -1 : 1) - (b.isHost ? -1 : 1));
+  const status = meta.status || 'waiting';
+  document.getElementById('room-lobby-panel').classList.add('hidden');
+  document.getElementById('room-session-panel').classList.remove('hidden');
+  document.getElementById('room-code-display').textContent = activeRoomCode;
+  document.getElementById('room-session-pill').textContent = status.toUpperCase();
+  document.getElementById('room-session-status').textContent = status === 'waiting' ? (playerEntries.length < 2 ? language.wait : language.waitingStart) : status === 'playing' ? language.playing : status === 'finished' ? language.finished : language.closed;
+  document.getElementById('room-player-list').innerHTML = [0,1].map(index => {
+    const player = playerEntries[index];
+    if (!player) return `<div class="room-player-empty">${roomEsc(language.wait)}</div>`;
+    const isSelf = player.uid === auth.currentUser?.uid;
+    const avatar = (player.nickname || language.guest).trim().slice(0,1).toUpperCase();
+    const role = player.isHost ? language.host : language.guest;
+    const guessCount = roomCurrentGuesses(player.uid).length;
+    const limit = Number(meta.attemptLimit) || 6;
+    return `<div class="room-player-card ${isSelf?'is-self':''}"><div class="room-player-top"><span class="room-player-avatar">${roomEsc(avatar)}</span><div style="min-width:0"><div class="room-player-name">${roomEsc(player.nickname || language.guest)}${isSelf?` (${roomEsc(language.you)})`:''}</div><div class="room-player-sub">${roomEsc(role)} · ${roomEsc(language.ready)}</div></div><span class="room-player-count">${status==='playing'||status==='finished'?`${guessCount}/${limit}`:'●'}</span></div></div>`;
+  }).join('');
+  const isHost = meta.hostUid === auth.currentUser?.uid;
+  const startButton = document.getElementById('room-start');
+  startButton.classList.toggle('hidden', !(isHost && status === 'waiting'));
+  startButton.disabled = roomBusy || playerEntries.length !== 2;
+  document.getElementById('room-game-panel').classList.toggle('hidden', status !== 'playing' && status !== 'finished');
+  const gameTitle = document.getElementById('room-game-title');
+  gameTitle.textContent = status === 'finished' ? language.finished : language.playing;
+  const myGuesses = auth.currentUser ? roomCurrentGuesses(auth.currentUser.uid) : [];
+  const limit = Number(meta.attemptLimit) || 6;
+  document.getElementById('room-attempt-chip').textContent = `${language.attempts} ${myGuesses.length}/${limit} · ${language.remaining} ${Math.max(0,limit-myGuesses.length)}`;
+  const canGuess = status === 'playing' && myGuesses.length < limit && !myGuesses.some(g => g.pokemonId === activeRoomAnswerId);
+  document.getElementById('room-guess-form').classList.toggle('hidden', status !== 'playing');
+  document.getElementById('room-guess-input').disabled = !canGuess || roomBusy;
+  document.getElementById('room-guess-submit').disabled = !canGuess || roomBusy;
+  const resultBanner = document.getElementById('room-result-banner');
+  if (status === 'finished') {
+    resultBanner.classList.remove('hidden');
+    const winner = meta.winnerUid ? players[meta.winnerUid] : null;
+    const answerPokemon = roomPokemon.find(p => p.id === activeRoomAnswerId);
+    const outcome = !winner ? language.draw : winner.uid === auth.currentUser?.uid ? language.win : language.lose;
+    resultBanner.innerHTML = `<div>${roomEsc(language.result)}：${roomEsc(outcome)}</div>${answerPokemon?`<div style="margin-top:7px">${roomEsc(language.answer)}：<strong>${roomEsc(roomPokemonName(answerPokemon))}</strong></div>`:''}`;
+  } else resultBanner.classList.add('hidden');
+  document.getElementById('room-guess-columns').innerHTML = playerEntries.map(player => roomRenderGuessCard(player.uid, player, roomPokemon.find(p => p.id === activeRoomAnswerId))).join('');
+  if (status === 'closed') {
+    roomSetMessage(language.closedByHost, true);
+    document.getElementById('room-game-panel').classList.add('hidden');
+  }
+  if (status === 'waiting') roomSetMessage(isHost ? (playerEntries.length === 2 ? language.waitingStart : language.wait) : language.waitingStart, true);
+}
+async function roomCheckFinish() {
+  if (roomFinishing || !activeRoomCode || !activeRoomSnapshot || !activeRoomAnswerId) return;
+  const meta = activeRoomSnapshot.meta || {};
+  if (meta.status !== 'playing' || meta.hostUid !== auth.currentUser?.uid) return;
+  const players = Object.keys(activeRoomSnapshot.players || {});
+  if (!players.length) return;
+  const events = players.flatMap(uid => roomCurrentGuesses(uid).map(guess => ({uid, ...guess}))).sort((a,b) => a.at - b.at || a.uid.localeCompare(b.uid));
+  const winningGuess = events.find(event => event.pokemonId === activeRoomAnswerId);
+  const limit = Number(meta.attemptLimit) || 6;
+  const allFinished = players.every(uid => roomCurrentGuesses(uid).length >= limit || roomCurrentGuesses(uid).some(g => g.pokemonId === activeRoomAnswerId));
+  if (!winningGuess && !allFinished) return;
+  roomFinishing = true;
+  try {
+    await update(ref(db, `roomPublic/${activeRoomCode}/meta`), {
+      status:'finished', winnerUid:winningGuess ? winningGuess.uid : '', finishedAt:Date.now()
+    });
+  } catch (error) {
+    console.warn('UNITE-ONE could not write room result:', error);
+    roomFinishing = false;
+  }
+}
+async function roomRestoreIfMember(user) {
+  if (!user) return;
+  let code = null;
+  try { code = localStorage.getItem('uniteOneActiveRoomCode'); } catch {}
+  if (!code || !/^\d{6}$/.test(code)) return;
+  try {
+    const snapshot = await get(ref(db, `roomPublic/${code}`));
+    const room = snapshot.val();
+    if (room?.players?.[user.uid] && room?.meta?.status !== 'closed') {
+      await roomEnter(code);
+    } else {
+      try { localStorage.removeItem('uniteOneActiveRoomCode'); } catch {}
+    }
+  } catch (error) {
+    console.warn('UNITE-ONE room restore failed:', error);
+  }
+}
+
+roomRefreshLanguage();
+roomNav.addEventListener('click', roomSwitchView);
+document.getElementById('room-create').addEventListener('click', roomCreate);
+document.getElementById('room-join').addEventListener('click', roomJoin);
+document.getElementById('room-start').addEventListener('click', roomStart);
+document.getElementById('room-leave').addEventListener('click', roomLeave);
+document.getElementById('room-copy').addEventListener('click', roomCopyCode);
+document.getElementById('room-guess-form').addEventListener('submit', roomSubmitGuess);
+document.getElementById('room-code-input').addEventListener('input', event => { event.target.value = event.target.value.replace(/\D/g,'').slice(0,6); });
+document.getElementById('language-select')?.addEventListener('change', roomRefreshLanguage);
+onAuthStateChanged(auth, user => {
+  if (user) roomRestoreIfMember(user).catch(error => console.warn(error));
+  else {
+    roomStopListeners();
+    activeRoomSnapshot = null;
+    activeRoomAnswerId = null;
+  }
+});
+console.log('UNITE-ONE V1.8.0 two-player room system initialized.');
 
 console.log("UNITE-ONE Firebase account, player profile, and cross-device game stats initialized.");
 </script>
