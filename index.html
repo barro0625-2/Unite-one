@@ -4640,6 +4640,11 @@ roomStyle.textContent = `
   .room-guess-table th:first-child{left:auto!important;z-index:2}
   .room-guess-table td.room-pokemon-cell{position:static!important;left:auto!important;z-index:auto!important;box-shadow:none!important}
   @media(max-width:650px){.room-rematch-controls{grid-template-columns:1fr}.room-rematch-controls label{grid-column:auto}.room-rematch-controls button{width:100%}.room-panel{padding:16px}.room-create-grid,.room-player-grid,.room-guess-columns{grid-template-columns:1fr}.room-panel-head,.room-session-head{align-items:flex-start}.room-guess-form{grid-template-columns:1fr}.room-guess-form button{width:auto}.room-clue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.room-session-actions button{flex:1}.room-guess-input-wrap{padding:5px 6px 5px 14px;gap:7px}.room-guess-input-wrap input{font-size:16px;min-width:0}.room-guess-input-wrap .primary-btn{padding:11px 13px;font-size:12px}.room-guess-input-wrap .suggestions{left:0;right:0;max-height:min(42vh,330px)}.room-turn-box{padding:12px}}
+
+  /* V1.8.5: Always stack the two players' guess panels vertically on desktop and mobile. */
+  #room-guess-columns{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;align-items:start}
+  #room-guess-columns>.room-guesses-card{width:100%;min-width:0;max-width:100%;}
+
 `;
 document.head.appendChild(roomStyle);
 
