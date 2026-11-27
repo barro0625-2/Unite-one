@@ -332,11 +332,11 @@
       </section>
       <section id="rank-view" class="view">
         <div class="page-heading rank-page-heading">
-          <div><p class="eyebrow">UNITE-ONE · RANKED CHALLENGE</p><h1>排位模式</h1><p class="subheading">單人・地獄難度・限時猜中 1 隻寶可夢。三種時間各自累積段位、積分與連勝。</p></div>
+          <div><p class="eyebrow">UNITE-ONE · RANKED CHALLENGE</p><h1>排位模式</h1><p class="subheading">單人・困難難度・限時猜中 1 隻寶可夢。三種時間各自累積段位、積分與連勝。</p></div>
           <span class="rank-season-chip">RANKED</span>
         </div>
         <div class="rank-rules-strip">
-          <span>♨ 地獄難度</span><span>🎯 猜中 1 隻</span><span>🏅 每階 100 分</span><span>🔥 連勝加分</span>
+          <span>❄ 困難難度</span><span>🎯 猜中 1 隻</span><span>🏅 每階 100 分</span><span>🔥 連勝加分</span>
         </div>
 
                 <div class="rank-mode-grid" id="rank-mode-grid"></div>
@@ -3765,7 +3765,7 @@ window.UNITE_ONE_POKEMON = [
     const cfg=DIFFICULTY_MODES[selectedMode],pool=modePool(selectedMode);
     let target=pool[Math.floor(Math.random()*pool.length)];
     if(pool.length>1&&previousTarget&&target.id===previousTarget) target=pool[(pool.findIndex(p=>p.id===target.id)+1+Math.floor(Math.random()*(pool.length-1)))%pool.length];
-    previousTarget=target.id;game={target,mode:selectedMode,limit:cfg.attempts,canHint:rankActive?false:cfg.hint,guesses:[],startedAt:Date.now(),finished:false,won:false,hintKey:null,saved:false};
+    previousTarget=target.id;game={target,mode:selectedMode,limit:cfg.attempts,canHint:cfg.hint,guesses:[],startedAt:Date.now(),finished:false,won:false,hintKey:null,saved:false};
     if($('game-view').classList.contains('active-view'))document.body.classList.add('mobile-game-active');
     $('guess-input').value='';$('result-modal').classList.add('hidden');$('hint-panel').classList.add('hidden');$('hint-panel').textContent='';hideSuggestions();
     $('mode-label').textContent=modeName(selectedMode);
@@ -3900,11 +3900,11 @@ window.UNITE_ONE_POKEMON = [
     if(rankTimerHandle){clearInterval(rankTimerHandle);rankTimerHandle=null;}
     $('result-modal').classList.add('hidden');rankActive={key,minutes:RANK_MODES[key].minutes};rankResult=null;
     switchView('game');$('difficulty-picker').classList.add('hidden');$('game-play-screen').classList.remove('hidden');
-    selectedMode='hell';newGame('hell');
-    $('mode-label').textContent=`排位 · ${RANK_MODES[key].label} · 地獄`;
-    $('main-title').textContent='排位挑戰';$('main-subtitle').textContent=`在 ${RANK_MODES[key].minutes} 分鐘內猜中 1 隻寶可夢。固定地獄難度，最多 4 次猜測、不能使用提示。`;
+    selectedMode='hard';newGame('hard');
+    $('mode-label').textContent=`排位 · ${RANK_MODES[key].label} · 困難`;
+    $('main-title').textContent='排位挑戰';$('main-subtitle').textContent=`在 ${RANK_MODES[key].minutes} 分鐘內猜中 1 隻寶可夢。固定困難難度，完整題庫、最多 6 次猜測，每局可使用 1 次提示。`;
     $('status-time-label').textContent='剩餘時間';$('status-round-label').textContent='猜測次數';$('status-left-label').textContent='剩餘次數';
-    $('how-title').textContent='排位規則';$('how-text').textContent='固定地獄難度，完整題庫、最多 4 次猜測且不可使用提示。猜中 1 隻即可完成挑戰，時間結束或用完次數仍未猜中則失敗，扣 15 分。';
+    $('how-title').textContent='排位規則';$('how-text').textContent='固定困難難度，完整題庫、最多 6 次猜測，每局可使用 1 次提示。猜中 1 隻即可完成挑戰，時間結束或用完次數仍未猜中則失敗，扣 15 分。';
     updateStatus();rankTimerHandle=setInterval(()=>{if(!rankActive||!game||game.finished){clearInterval(rankTimerHandle);rankTimerHandle=null;return;}const left=rankActive.minutes*60-elapsed();updateStatus();if(left<=0)completeGame(false);},200);
   }
   function showRankLobby(){if(rankTimerHandle){clearInterval(rankTimerHandle);rankTimerHandle=null;}rankActive=null;rankResult=null;$('status-time-label').textContent=t('time');$('status-round-label').textContent=t('round');$('status-left-label').textContent=t('left');$('main-title').textContent=t('title');$('main-subtitle').textContent=t('subtitle');$('how-title').textContent=t('howTitle');$('how-text').textContent=t('howText');$('result-modal').classList.add('hidden');$('game-play-screen').classList.add('hidden');$('difficulty-picker').classList.remove('hidden');document.body.classList.remove('mobile-game-active');switchView('rank');}
@@ -3912,7 +3912,7 @@ window.UNITE_ONE_POKEMON = [
   function renderRankView(){
     const grid=$('rank-mode-grid');if(!grid)return;
     grid.innerHTML=Object.entries(RANK_MODES).map(([key,mode])=>{const d=rankModeData(key),desc=rankDescriptor(d),streak=d.streak||0;const pct=desc.progress===null?100:Math.max(0,Math.min(100,desc.progress));const nextNote=d.stage==='legend'?'正在競逐大集結巔峰 TOP 100':d.stage==='master'?`還差 ${desc.next} 分進入傳奇`:desc.name==='大師'?'已達大師，積分從 0 開始':`下一階還差 ${desc.next} 分`;
-      return `<article class="rank-mode-card" data-rank-mode-card="${key}"><div class="rank-mode-card-head">${rankEmblem(desc.name,desc.icon)}<div><h3>${mode.label}排位</h3><small>單人 · 地獄難度 · 4 次機會 · 猜中 1 隻</small><div class="rank-current-name">${esc(desc.label)}</div><div class="rank-points">${rankStatusLine(d,key)}</div></div></div><div class="rank-progress"><span style="width:${pct}%"></span></div><div class="rank-progress-note">${nextNote}</div><div class="rank-streak-line"><span>🔥 目前連勝 ${streak}</span><span>最高連勝 ${d.bestStreak||0}</span></div><button class="primary-btn rank-start-btn" type="button" data-rank-start="${key}">開始 ${mode.label}挑戰 ↗</button></article>`;}).join('');
+      return `<article class="rank-mode-card" data-rank-mode-card="${key}"><div class="rank-mode-card-head">${rankEmblem(desc.name,desc.icon)}<div><h3>${mode.label}排位</h3><small>單人 · 困難難度 · 6 次機會 · 每局 1 次提示 · 猜中 1 隻</small><div class="rank-current-name">${esc(desc.label)}</div><div class="rank-points">${rankStatusLine(d,key)}</div></div></div><div class="rank-progress"><span style="width:${pct}%"></span></div><div class="rank-progress-note">${nextNote}</div><div class="rank-streak-line"><span>🔥 目前連勝 ${streak}</span><span>最高連勝 ${d.bestStreak||0}</span></div><button class="primary-btn rank-start-btn" type="button" data-rank-start="${key}">開始 ${mode.label}挑戰 ↗</button></article>`;}).join('');
   }
   function renderLeaderboardView(){
     document.querySelectorAll('[data-rank-board]').forEach(btn=>btn.classList.toggle('active',btn.dataset.rankBoard===rankSelectedBoard));
