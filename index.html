@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#21051f">
   <meta name="description" content="UNITE-ONE：以八項特徵推理寶可夢大集結角色，包含可遊玩角色與地圖 NPC。">
-  <title>集結一把｜UNITE-ONE V1.7.7</title>
+  <title>集結一把｜UNITE-ONE V1.7.8</title>
   <style>
 :root{--bg:#170414;--bg2:#260720;--panel:#390a2c;--panel2:#4a103b;--line:rgba(255,125,205,.2);--line2:rgba(255,160,220,.34);--text:#f8eaf4;--muted:#c5a6bb;--pink:#ec69bf;--pink2:#a92e83;--green:#185e49;--green-b:#49cba0;--red:#6c263f;--red-b:#ff7d9c;--gold:#e5ba6a;--shadow:0 24px 70px rgba(0,0,0,.3);font-family:Inter,"Noto Sans TC",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(ellipse at 12% 2%,rgba(157,39,119,.28),transparent 34%),radial-gradient(ellipse at 92% 35%,rgba(97,24,82,.2),transparent 31%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}.app-shell{width:min(1500px,calc(100% - 36px));margin:20px auto 26px;background:linear-gradient(140deg,rgba(72,17,57,.97),rgba(40,8,36,.98));border:1px solid rgba(255,125,205,.13);border-radius:18px;overflow:visible;box-shadow:var(--shadow);min-height:calc(100vh - 46px)}.topbar{height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);background:rgba(40,4,34,.66);border-radius:18px 18px 0 0}.brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;min-width:220px}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:linear-gradient(140deg,#f17aca,#8f317e);color:#fff;font-size:22px;box-shadow:0 0 24px rgba(236,105,191,.3)}.brand-word{display:flex;align-items:baseline;gap:12px}.brand-word strong{font-size:19px;letter-spacing:.12em}.brand-word small{font-family:Georgia,serif;font-size:11px;color:#c99cb8;letter-spacing:.2em}.main-nav{display:flex;align-items:center;gap:8px}.nav-btn,.icon-btn,.language-select,.pill-btn,.filter-select{color:var(--muted);background:transparent;border:1px solid transparent;border-radius:999px;padding:11px 17px;transition:.2s}.nav-btn:hover,.nav-btn.active{border-color:var(--line2);color:#ffc2e9;background:rgba(205,65,158,.1)}.top-actions{display:flex;align-items:center;gap:9px}.language-select,.filter-select{border-color:var(--line);background:#2c0925;color:#f5d9eb;padding:10px 32px 10px 13px;outline:none}.icon-btn{width:38px;height:38px;padding:0;border-color:var(--line);font-size:17px;font-weight:800;color:#f5c0e7}.icon-btn:hover{background:rgba(236,105,191,.15)}main{padding:34px 28px 46px;min-height:630px}.view{display:none}.active-view{display:block}.game-heading,.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 22px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.2em;color:#d76ab4;margin:0 0 9px}.game-heading h1,.page-heading h1{font-size:clamp(25px,3.2vw,36px);line-height:1.15;margin:0 0 10px;letter-spacing:.02em}.subheading{margin:0;color:var(--muted);font-size:14px}.round-badge,.total-chip{border:1px solid var(--line);background:rgba(20,1,17,.2);color:#e7b8d7;border-radius:999px;padding:11px 16px;font-weight:700;font-size:12px;white-space:nowrap}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#f279c2;margin-right:9px;box-shadow:0 0 12px #f279c2}.status-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:13px 16px;background:rgba(41,2,31,.6);border:1px solid var(--line);border-radius:16px;margin-bottom:18px}.status-item{min-width:96px;text-align:center;padding:4px 14px;border-right:1px solid var(--line)}.status-label{display:block;color:#ae88a5;font-size:11px;margin-bottom:4px}.status-item strong{font-size:16px;font-variant-numeric:tabular-nums}.pill-btn{border-color:var(--line);padding:10px 17px;color:#eac0db;font-weight:700}.pill-btn:hover{border-color:var(--line2);background:rgba(236,105,191,.1)}.hint-btn{margin-left:auto}.hint-btn span:first-child{color:var(--gold);margin-right:6px}.reset-btn{color:#f48acb}.howto-bar{display:flex;align-items:center;gap:10px;padding:15px 18px;background:rgba(53,6,43,.75);border:1px solid rgba(255,125,205,.13);border-radius:13px;color:#e9bed9;font-size:13px;margin-bottom:19px}.howto-icon{font-size:16px;color:#b9b2ff}.howto-bar strong{white-space:nowrap;color:#f1c5e1}.howto-bar span:last-child{color:#bd9fb5}.hint-panel{padding:12px 16px;margin:-4px 0 17px;border:1px dashed rgba(229,186,106,.45);background:rgba(229,186,106,.07);border-radius:12px;color:#f4d8a5;font-size:13px}.guess-input-wrap{position:relative;display:flex;align-items:center;gap:12px;padding:6px 7px 6px 18px;border:1px solid rgba(236,105,191,.34);background:rgba(25,2,20,.68);border-radius:999px;max-width:850px;margin:0 auto}.search-icon{font-size:24px;color:#d17cb2;line-height:1}.guess-input-wrap input,.dex-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#fff;padding:12px 0;font-size:15px}.guess-input-wrap input::placeholder,.dex-search input::placeholder{color:#9e7e95}.primary-btn{border:0;color:#fff;font-weight:800;background:linear-gradient(135deg,#e66abe,#a93689);padding:14px 23px;border-radius:999px;box-shadow:0 5px 18px rgba(196,57,148,.2);white-space:nowrap;transition:.2s}.primary-btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.primary-btn span:last-child{margin-left:10px}.input-note{text-align:center;color:#97758e;font-size:11px;margin:9px 0 27px}.suggestions{position:absolute;z-index:8;top:calc(100% + 8px);left:15px;right:100px;background:#24051e;border:1px solid var(--line2);border-radius:13px;padding:6px;box-shadow:var(--shadow);max-height:300px;overflow:auto}.suggestion{display:flex;align-items:center;gap:10px;padding:10px 12px;border:0;background:transparent;color:#f6e5f1;width:100%;text-align:left;border-radius:8px}.suggestion:hover,.suggestion.active{background:rgba(236,105,191,.13)}.suggestion small{color:#a9879e;margin-left:auto;font-size:10px}.mini-avatar,.avatar{display:grid;place-items:center;flex:none;background:linear-gradient(145deg,#a84e94,#522457);border:1px solid rgba(255,208,238,.15);color:#fff;font-weight:900}.mini-avatar{width:27px;height:27px;border-radius:8px;font-size:10px}.table-section{margin-top:2px}.table-title-row{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}.table-title-row h2,.record-panel h2{font-size:17px;margin:0 0 5px}.table-title-row p{font-size:11px;color:#a9889e;margin:0}.table-count{font-size:12px;color:#dba2c9;border:1px solid var(--line);border-radius:999px;padding:6px 12px}.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:13px;background:rgba(20,1,17,.25)}.guess-table{border-collapse:separate;border-spacing:0;width:100%;min-width:790px;font-size:13px}.guess-table th{padding:14px 13px;text-align:center;background:rgba(65,14,52,.85);color:#caa9c1;font-weight:700;border-bottom:1px solid var(--line);white-space:nowrap}.guess-table th:first-child{text-align:left;padding-left:18px}.guess-table td{padding:10px 12px;text-align:center;border-bottom:1px solid rgba(255,144,206,.12);border-right:1px solid rgba(255,144,206,.08);color:#efdfeb}.guess-table tr:last-child td{border-bottom:0}.guess-table td:first-child{text-align:left;padding-left:15px;min-width:175px}.guess-row{animation:rowIn .25s ease-out}.pokemon-cell{display:flex;align-items:center;gap:10px;font-weight:700}.avatar{width:36px;height:36px;border-radius:10px;font-size:11px;letter-spacing:-.04em}.cell-match{background:rgba(32,120,88,.47)!important;color:#d8fff1!important;box-shadow:inset 0 0 0 1px rgba(85,219,169,.22)}.cell-miss{background:rgba(115,34,61,.44)!important;color:#ffdce6!important;box-shadow:inset 0 0 0 1px rgba(255,112,151,.15)}.cell-neutral{background:rgba(92,55,85,.24)!important}.match-symbol{display:inline-block;margin-right:5px;color:#91edc9;font-size:11px}.miss-symbol{display:inline-block;margin-right:5px;color:#ff9bb2;font-size:11px}.empty-row td{text-align:center!important;color:#98768e;padding:45px 16px!important}.empty-star{display:block;color:#c56ca9;font-size:24px;margin-bottom:8px}.legend-row{display:flex;justify-content:flex-end;gap:18px;color:#a98aa0;font-size:11px;margin-top:11px}.legend-row>span{display:flex;align-items:center;gap:7px}.legend-swatch{width:10px;height:10px;display:inline-block;border-radius:3px}.legend-swatch.correct{background:#38a77b}.legend-swatch.wrong{background:#b54c6a}.result-card{margin-top:22px;padding:22px;border:1px solid rgba(235,113,193,.38);border-radius:16px;background:linear-gradient(130deg,rgba(93,20,70,.65),rgba(34,3,28,.9));box-shadow:0 18px 42px rgba(0,0,0,.16);animation:rowIn .3s ease}.result-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:15px}.result-top h2{margin:0;font-size:22px}.result-pokemon{display:flex;align-items:center;gap:14px}.result-pokemon .avatar{width:58px;height:58px;font-size:15px;border-radius:15px}.result-pokemon h3{margin:0 0 5px;font-size:19px}.result-pokemon p{margin:0;color:#bb9bb3;font-size:12px}.result-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.metric{padding:12px;border:1px solid var(--line);border-radius:11px;text-align:center;background:rgba(20,1,17,.25)}.metric strong{display:block;color:#ef7cc5;font-size:21px;margin-bottom:4px}.metric span{color:#a98ba1;font-size:11px}.result-actions{display:flex;gap:9px;flex-wrap:wrap}.secondary-btn{border:1px solid var(--line2);border-radius:999px;padding:11px 16px;background:transparent;color:#eac4df;font-weight:700}.secondary-btn:hover{background:rgba(236,105,191,.1)}.page-heading{margin-bottom:25px}.total-chip{color:#f0b3dd}.dex-controls{display:flex;gap:12px;margin-bottom:20px}.dex-search{display:flex;align-items:center;gap:11px;padding:0 15px;border:1px solid var(--line);border-radius:999px;background:rgba(22,1,18,.36);flex:1}.dex-search>span{font-size:22px;color:#d17cb2}.dex-search input{padding:13px 0}.filter-select{border-radius:999px;min-width:170px}.dex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px}.dex-card{display:flex;align-items:center;gap:11px;text-align:left;padding:12px;border:1px solid rgba(255,125,205,.15);border-radius:13px;background:rgba(28,3,24,.38);color:var(--text);transition:.18s}.dex-card:hover{transform:translateY(-2px);border-color:var(--line2);background:rgba(94,20,72,.4)}.dex-card .avatar{width:40px;height:40px}.dex-card strong{font-size:12px;display:block;margin-bottom:4px}.dex-card small{display:block;color:#a98aa0;font-size:10px}.role-tag{margin-left:auto;font-size:9px;color:#ed9fd0;white-space:nowrap}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:5px 0 24px}.stat-card{padding:19px;border:1px solid var(--line);border-radius:14px;background:rgba(26,2,22,.42)}.stat-card span{display:block;color:#ab8aa0;font-size:11px;margin-bottom:9px}.stat-card strong{font-size:27px;color:#f2a4d6;font-variant-numeric:tabular-nums}.record-panel{padding:18px;border:1px solid var(--line);border-radius:15px;background:rgba(26,2,22,.35)}.record-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}.text-btn{border:0;background:transparent;color:#d987bd;font-size:11px}.recent-item{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid rgba(255,130,204,.1)}.recent-item .avatar{width:33px;height:33px}.recent-item strong{font-size:12px}.recent-item small{display:block;color:#a98aa0;font-size:10px;margin-top:3px}.recent-result{margin-left:auto;font-size:11px;font-weight:700}.won{color:#69d4aa}.lost{color:#ff92ac}.no-records{padding:22px;text-align:center;color:#9c7c93;font-size:12px}.footer{display:flex;justify-content:space-between;gap:18px;padding:17px 28px;border-top:1px solid var(--line);color:#87677f;font-size:9px;letter-spacing:.08em}.footer span:last-child{letter-spacing:0;text-align:right}.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:rgba(9,0,8,.76);padding:20px;backdrop-filter:blur(9px)}.modal-card{width:min(530px,100%);position:relative;padding:28px;border:1px solid var(--line2);border-radius:18px;background:#27051f;box-shadow:var(--shadow)}.modal-card h2{margin:0 0 18px;font-size:25px}.modal-close{position:absolute;right:18px;top:13px;border:0;background:transparent;color:#d8b4ce;font-size:27px}.help-content{color:#c6a6bb;font-size:13px;line-height:1.8}.help-content ol{padding-left:20px}.help-content strong{color:#f0c4df}.modal-ok{margin-top:20px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:30;background:#f2c0df;color:#3a0b2e;padding:11px 18px;border-radius:999px;font-weight:700;font-size:12px;box-shadow:var(--shadow);transition:.2s;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@keyframes rowIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
@@ -3822,16 +3822,20 @@ window.UNITE_ONE_POKEMON = [
 })();
 
 </script>
-  <script type="module">
+<script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
-import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import {
+  getDatabase, ref, get, set, update, serverTimestamp
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
 import {
   getAuth,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signInAnonymously,
-  signOut
+  signOut,
+  EmailAuthProvider,
+  linkWithCredential
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
 const firebaseConfig = {
@@ -3848,123 +3852,298 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 const auth = getAuth(app);
+window.uniteOneFirebase = { app, db, auth };
+window.uniteOneAuthUser = null;
 
-window.firebaseDB = db;
-window.firebaseAuth = auth;
-// UNITE-ONE 帳號登入入口
+// Account and profile UI styles
+const accountStyle = document.createElement("style");
+accountStyle.textContent = `
+  .unite-account-card { width:min(520px,100%); max-height:min(88vh,760px); overflow:auto; }
+  .unite-account-card .account-input {
+    display:block; width:100%; margin:9px 0 13px; padding:12px 14px;
+    border:1px solid rgba(255,125,205,.28); border-radius:11px;
+    background:#190415; color:#fff; outline:none; font:inherit;
+  }
+  .unite-account-card .account-input:focus { border-color:#ec69bf; box-shadow:0 0 0 3px rgba(236,105,191,.12); }
+  .unite-account-card .account-actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:13px; }
+  .unite-account-card .account-id { padding:10px 12px; border:1px solid rgba(255,125,205,.16); border-radius:10px; background:rgba(20,1,17,.28); color:#c5a6bb; font-size:11px; overflow-wrap:anywhere; }
+  .unite-account-card .account-hint { color:#c5a6bb; font-size:12px; line-height:1.6; }
+  .unite-account-card .account-message { min-height:22px; margin:14px 0 0; color:#ffc2e9; font-size:12px; overflow-wrap:anywhere; }
+  .unite-account-card button:disabled { opacity:.55; cursor:wait; }
+  @media(max-width:620px) { .unite-account-card { padding:23px 17px; } }
+`;
+document.head.appendChild(accountStyle);
+
+// Add account button beside the existing help button.
 const topActions = document.querySelector(".top-actions");
 const helpButton = document.getElementById("help-btn");
+if (!topActions || !helpButton) {
+  console.error("UNITE-ONE account UI could not find the top action area.");
+} else {
+  const accountButton = document.createElement("button");
+  accountButton.id = "unite-account-button";
+  accountButton.type = "button";
+  accountButton.className = "icon-btn";
+  accountButton.style.width = "auto";
+  accountButton.style.padding = "0 12px";
+  accountButton.textContent = "登入";
+  accountButton.setAttribute("aria-label", "帳號與玩家資料");
+  topActions.insertBefore(accountButton, helpButton);
 
-const accountButton = document.createElement("button");
-accountButton.type = "button";
-accountButton.className = "icon-btn";
-accountButton.textContent = "登入";
-accountButton.style.width = "auto";
-accountButton.style.padding = "0 12px";
+  const accountModal = document.createElement("div");
+  accountModal.id = "unite-account-modal";
+  accountModal.className = "modal-backdrop hidden";
+  accountModal.innerHTML = `
+    <section class="modal-card unite-account-card" role="dialog" aria-modal="true" aria-labelledby="unite-account-title">
+      <button class="modal-close" id="unite-account-close" type="button" aria-label="關閉">×</button>
+      <p class="eyebrow">UNITE-ONE ONLINE</p>
+      <h2 id="unite-account-title">玩家帳號</h2>
+      <p id="unite-account-status" class="account-hint">請登入或以訪客身分繼續。</p>
 
-topActions.insertBefore(accountButton, helpButton);
+      <form id="unite-account-form">
+        <label for="unite-account-email">電子郵件</label>
+        <input class="account-input" id="unite-account-email" type="email" autocomplete="username" placeholder="name@example.com" required>
+        <label for="unite-account-password">密碼（至少 6 個字元）</label>
+        <input class="account-input" id="unite-account-password" type="password" autocomplete="current-password" minlength="6" placeholder="輸入密碼" required>
+        <div class="account-actions">
+          <button class="primary-btn" type="submit">登入</button>
+          <button class="secondary-btn" id="unite-account-register" type="button">註冊帳號</button>
+        </div>
+      </form>
 
-// 登入視窗
-const accountModal = document.createElement("div");
-accountModal.className = "modal-backdrop hidden";
-accountModal.innerHTML = `
-  <div class="modal-card">
-    <button class="modal-close" id="account-close">×</button>
-    <h2>UNITE-ONE 帳號</h2>
-    <p id="account-status">請登入或使用訪客模式</p>
+      <div id="unite-account-profile" class="hidden">
+        <label for="unite-account-nickname">玩家暱稱</label>
+        <input class="account-input" id="unite-account-nickname" type="text" maxlength="16" placeholder="設定 2 至 16 個字元的暱稱">
+        <div class="account-actions">
+          <button class="primary-btn" id="unite-account-save-profile" type="button">儲存暱稱</button>
+          <button class="secondary-btn" id="unite-account-logout" type="button">登出</button>
+        </div>
+        <p class="account-hint">玩家 UID</p>
+        <div class="account-id" id="unite-account-uid">載入中…</div>
+        <p class="account-hint" id="unite-account-type"></p>
+      </div>
 
-    <form id="account-form">
-      <input id="account-email" type="email"
-        placeholder="電子郵件" required>
-      <br><br>
-      <input id="account-password" type="password"
-        placeholder="密碼（至少 6 個字元）"
-        minlength="6" required>
-      <br><br>
-      <button class="primary-btn" type="submit">登入</button>
-      <button class="secondary-btn" type="button"
-        id="account-register">註冊</button>
-    </form>
+      <div class="account-actions" id="unite-account-guest-actions">
+        <button class="secondary-btn" id="unite-account-guest" type="button">以訪客身分繼續</button>
+      </div>
+      <p class="account-message" id="unite-account-message" role="status" aria-live="polite"></p>
+    </section>
+  `;
+  document.body.appendChild(accountModal);
 
-    <br>
-    <button class="secondary-btn" id="account-guest">
-      訪客登入
-    </button>
-    <button class="secondary-btn hidden" id="account-logout">
-      登出
-    </button>
+  const accountMessage = document.getElementById("unite-account-message");
+  const accountForm = document.getElementById("unite-account-form");
+  const profilePanel = document.getElementById("unite-account-profile");
+  const nicknameInput = document.getElementById("unite-account-nickname");
+  const emailInput = document.getElementById("unite-account-email");
+  const passwordInput = document.getElementById("unite-account-password");
+  const guestActions = document.getElementById("unite-account-guest-actions");
 
-    <p id="account-message" aria-live="polite"></p>
-  </div>
-`;
-
-document.body.appendChild(accountModal);
-
-const accountMessage = document.getElementById("account-message");
-const accountForm = document.getElementById("account-form");
-
-accountButton.onclick = () =>
-  accountModal.classList.remove("hidden");
-
-document.getElementById("account-close").onclick = () =>
-  accountModal.classList.add("hidden");
-
-accountForm.onsubmit = async (e) => {
-  e.preventDefault();
-  const email = document.getElementById("account-email").value.trim();
-  const password = document.getElementById("account-password").value;
-
-  try {
-    await signInWithEmailAndPassword(auth, email, password);
-    accountMessage.textContent = "登入成功！";
-  } catch (err) {
-    accountMessage.textContent = "登入失敗：" + err.message;
+  function setAccountMessage(message) {
+    accountMessage.textContent = message;
   }
-};
 
-document.getElementById("account-register").onclick = async () => {
-  const email = document.getElementById("account-email").value.trim();
-  const password = document.getElementById("account-password").value;
-
-  try {
-    await createUserWithEmailAndPassword(auth, email, password);
-    accountMessage.textContent = "註冊成功！";
-  } catch (err) {
-    accountMessage.textContent = "註冊失敗：" + err.message;
+  function setAccountBusy(busy) {
+    accountModal.querySelectorAll("button, input").forEach(element => {
+      element.disabled = busy;
+    });
   }
-};
 
-document.getElementById("account-guest").onclick = async () => {
-  try {
-    await signInAnonymously(auth);
-    accountMessage.textContent = "訪客登入成功！";
-  } catch (err) {
-    accountMessage.textContent = "登入失敗：" + err.message;
+  function getFriendlyAuthError(error) {
+    const messages = {
+      "auth/invalid-email": "電子郵件格式不正確。",
+      "auth/invalid-credential": "帳號或密碼錯誤。",
+      "auth/email-already-in-use": "這個電子郵件已註冊，請直接登入。",
+      "auth/weak-password": "密碼至少需要 6 個字元。",
+      "auth/network-request-failed": "網路連線失敗，請稍後再試。",
+      "auth/operation-not-allowed": "此登入方式尚未在 Firebase 啟用。",
+      "auth/unauthorized-domain": "網站網域尚未加入 Firebase 授權網域。",
+      "PERMISSION_DENIED": "資料庫拒絕存取，請確認 Realtime Database 規則已發布。"
+    };
+    return messages[error.code] || `操作失敗：${error.message || error.code || "未知錯誤"}`;
   }
-};
 
-document.getElementById("account-logout").onclick = async () => {
-  await signOut(auth);
-  accountMessage.textContent = "已登出。";
-};
+  function defaultNickname(user) {
+    if (user.displayName && user.displayName.trim()) return user.displayName.trim().slice(0, 16);
+    if (user.email) return user.email.split("@")[0].slice(0, 16) || "UNITE 玩家";
+    return `訪客${user.uid.slice(0, 6)}`;
+  }
 
-onAuthStateChanged(auth, (user) => {
-  accountButton.textContent = !user
-    ? "登入"
-    : user.isAnonymous ? "訪客" : "帳號";
+  // Create the player's profile once, then update login metadata without replacing their nickname.
+  async function syncPlayerProfile(user) {
+    const playerRef = ref(db, `users/${user.uid}`);
+    const snapshot = await get(playerRef);
+    const now = serverTimestamp();
 
-  document.getElementById("account-status").textContent =
-    !user ? "目前尚未登入"
-    : user.isAnonymous ? "目前使用訪客模式"
-    : "已登入：" + user.email;
+    if (!snapshot.exists()) {
+      await set(playerRef, {
+        profile: {
+          uid: user.uid,
+          nickname: defaultNickname(user),
+          email: user.email || null,
+          isAnonymous: Boolean(user.isAnonymous),
+          createdAt: now,
+          updatedAt: now,
+          lastLoginAt: now
+        }
+      });
+    } else {
+      const existing = snapshot.val() || {};
+      const existingProfile = existing.profile || {};
+      await update(ref(db, `users/${user.uid}/profile`), {
+        uid: user.uid,
+        nickname: existingProfile.nickname || defaultNickname(user),
+        email: user.email || null,
+        isAnonymous: Boolean(user.isAnonymous),
+        updatedAt: now,
+        lastLoginAt: now
+      });
+    }
 
-  accountForm.classList.toggle("hidden", !!user);
-  document.getElementById("account-guest")
-    .classList.toggle("hidden", !!user);
-  document.getElementById("account-logout")
-    .classList.toggle("hidden", !user);
-});
+    const freshSnapshot = await get(ref(db, `users/${user.uid}/profile`));
+    return freshSnapshot.exists() ? freshSnapshot.val() : null;
+  }
 
+  accountButton.addEventListener("click", () => {
+    setAccountMessage("");
+    accountModal.classList.remove("hidden");
+  });
+  document.getElementById("unite-account-close").addEventListener("click", () => {
+    accountModal.classList.add("hidden");
+  });
+  accountModal.addEventListener("click", event => {
+    if (event.target === accountModal) accountModal.classList.add("hidden");
+  });
+  document.addEventListener("keydown", event => {
+    if (event.key === "Escape") accountModal.classList.add("hidden");
+  });
+
+  accountForm.addEventListener("submit", async event => {
+    event.preventDefault();
+    setAccountBusy(true);
+    setAccountMessage("正在登入…");
+    try {
+      await signInWithEmailAndPassword(auth, emailInput.value.trim(), passwordInput.value);
+      setAccountMessage("登入成功！正在載入玩家資料…");
+    } catch (error) {
+      setAccountMessage(getFriendlyAuthError(error));
+    } finally {
+      setAccountBusy(false);
+    }
+  });
+
+  document.getElementById("unite-account-register").addEventListener("click", async () => {
+    const email = emailInput.value.trim();
+    const password = passwordInput.value;
+    if (!email || password.length < 6) {
+      setAccountMessage("請輸入有效電子郵件及至少 6 個字元的密碼。");
+      return;
+    }
+    setAccountBusy(true);
+    setAccountMessage("正在建立帳號…");
+    try {
+      if (auth.currentUser && auth.currentUser.isAnonymous) {
+        const credential = EmailAuthProvider.credential(email, password);
+        await linkWithCredential(auth.currentUser, credential);
+      } else {
+        await createUserWithEmailAndPassword(auth, email, password);
+      }
+      setAccountMessage("帳號建立成功！玩家資料已保留。");
+    } catch (error) {
+      setAccountMessage(getFriendlyAuthError(error));
+    } finally {
+      setAccountBusy(false);
+    }
+  });
+
+  document.getElementById("unite-account-guest").addEventListener("click", async () => {
+    setAccountBusy(true);
+    setAccountMessage("正在建立訪客身分…");
+    try {
+      await signInAnonymously(auth);
+      setAccountMessage("訪客登入成功！");
+    } catch (error) {
+      setAccountMessage(getFriendlyAuthError(error));
+    } finally {
+      setAccountBusy(false);
+    }
+  });
+
+  document.getElementById("unite-account-save-profile").addEventListener("click", async () => {
+    const user = auth.currentUser;
+    const nickname = nicknameInput.value.trim();
+    if (!user) {
+      setAccountMessage("請先登入。 ");
+      return;
+    }
+    if (nickname.length < 2 || nickname.length > 16) {
+      setAccountMessage("暱稱需要介於 2 至 16 個字元。");
+      return;
+    }
+    setAccountBusy(true);
+    setAccountMessage("正在儲存暱稱…");
+    try {
+      await update(ref(db, `users/${user.uid}/profile`), {
+        nickname,
+        updatedAt: serverTimestamp()
+      });
+      setAccountMessage("暱稱已儲存到雲端！");
+    } catch (error) {
+      setAccountMessage(getFriendlyAuthError(error));
+    } finally {
+      setAccountBusy(false);
+    }
+  });
+
+  document.getElementById("unite-account-logout").addEventListener("click", async () => {
+    setAccountBusy(true);
+    try {
+      await signOut(auth);
+      setAccountMessage("已登出。");
+    } catch (error) {
+      setAccountMessage(getFriendlyAuthError(error));
+    } finally {
+      setAccountBusy(false);
+    }
+  });
+
+  onAuthStateChanged(auth, async user => {
+    window.uniteOneAuthUser = user || null;
+    if (!user) {
+      accountButton.textContent = "登入";
+      document.getElementById("unite-account-status").textContent = "請登入或以訪客身分繼續。";
+      accountForm.classList.remove("hidden");
+      profilePanel.classList.add("hidden");
+      guestActions.classList.remove("hidden");
+      document.getElementById("unite-account-type").textContent = "";
+      return;
+    }
+
+    accountButton.textContent = user.isAnonymous ? "訪客" : "帳號";
+    document.getElementById("unite-account-status").textContent = "正在載入雲端玩家資料…";
+    accountForm.classList.add("hidden");
+    profilePanel.classList.remove("hidden");
+    guestActions.classList.add("hidden");
+    document.getElementById("unite-account-uid").textContent = user.uid;
+    document.getElementById("unite-account-type").textContent = user.isAnonymous
+      ? "目前使用訪客模式。之後可註冊電子郵件帳號並保留此 UID。"
+      : `已登入：${user.email || "電子郵件帳號"}`;
+
+    try {
+      const profile = await syncPlayerProfile(user);
+      nicknameInput.value = profile?.nickname || defaultNickname(user);
+      document.getElementById("unite-account-status").textContent = "玩家資料已與 Firebase 同步。";
+      setAccountMessage("雲端玩家資料已載入。");
+    } catch (error) {
+      document.getElementById("unite-account-status").textContent = "登入成功，但玩家資料同步失敗。";
+      setAccountMessage(getFriendlyAuthError(error));
+      console.error("UNITE-ONE profile sync failed:", error);
+    }
+  });
+}
+
+console.log("UNITE-ONE Firebase account and player profile initialized.");
 </script>
+
 </body>
 </html>
