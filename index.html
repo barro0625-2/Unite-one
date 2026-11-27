@@ -4646,9 +4646,26 @@ roomStyle.textContent = `
   .room-guess-table td.room-pokemon-cell{position:static!important;left:auto!important;z-index:auto!important;box-shadow:none!important}
   @media(max-width:650px){.room-rematch-controls{grid-template-columns:1fr}.room-rematch-controls label{grid-column:auto}.room-rematch-controls button{width:100%}.room-panel{padding:16px}.room-create-grid,.room-player-grid,.room-guess-columns{grid-template-columns:1fr}.room-panel-head,.room-session-head{align-items:flex-start}.room-guess-form{grid-template-columns:1fr}.room-guess-form button{width:auto}.room-clue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.room-session-actions button{flex:1}.room-guess-input-wrap{padding:5px 6px 5px 14px;gap:7px}.room-guess-input-wrap input{font-size:16px;min-width:0}.room-guess-input-wrap .primary-btn{padding:11px 13px;font-size:12px}.room-guess-input-wrap .suggestions{left:0;right:0;max-height:min(42vh,330px)}.room-turn-box{padding:12px}}
 
-  /* V1.8.5: Always stack the two players' guess panels vertically on desktop and mobile. */
-  #room-guess-columns{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;align-items:start}
+  /* V1.8.6: Stack player cards vertically on all screen sizes; mobile retains the original 3x3 clue grid. */
+  #room-guess-columns{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-auto-flow:row!important;align-items:start;gap:12px}
   #room-guess-columns>.room-guesses-card{width:100%;min-width:0;max-width:100%;}
+  .room-clue-mobile-label{display:none}
+  @media(max-width:650px){
+    #room-guess-columns{grid-template-columns:minmax(0,1fr)!important}
+    .room-guess-table-scroll{overflow:visible;border:0;background:transparent;contain:none}
+    .room-guess-table{display:block;width:100%;min-width:0;table-layout:fixed}
+    .room-guess-table thead{display:none}
+    .room-guess-table tbody{display:grid;gap:10px}
+    .room-guess-table tr.room-guess-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;padding:10px;border:1px solid rgba(255,125,205,.13);border-radius:10px;background:rgba(20,1,17,.22)}
+    .room-guess-table td{display:block;min-width:0;white-space:normal;overflow-wrap:anywhere;padding:7px 5px;border:1px solid rgba(255,255,255,.06);border-radius:7px;text-align:center;line-height:1.35}
+    .room-guess-table td.room-pokemon-cell{grid-column:1/-1;position:static!important;left:auto!important;z-index:auto!important;min-width:0;text-align:left;background:transparent!important;box-shadow:none!important;border:0;padding:0 0 7px}
+    .room-guess-table .room-guess-pokemon{gap:8px;font-size:12px;white-space:normal}
+    .room-guess-table .room-guess-pokemon img{width:30px;height:30px}
+    .room-clue-cell{min-width:0}
+    .room-clue-mobile-label{display:block;font-size:9px;font-weight:750;opacity:.8;margin-bottom:4px;line-height:1.2}
+    .room-clue-symbol{margin-right:3px}
+    .room-clue-value{font-size:10px;white-space:normal}
+  }
 
 `;
 document.head.appendChild(roomStyle);
@@ -5373,13 +5390,13 @@ function roomRenderGuessCard(uid, player, answer) {
     if (!pokemon) return '';
     const isCorrect = Boolean(answer && pokemon.id === answer.id);
     const firstCell = `<td class="room-pokemon-cell"><div class="room-guess-pokemon"><img src="${roomImageBase}${Number(pokemon.imageId || pokemon.dexNo) || 0}.png" alt="" loading="lazy"><span>${roomEsc(roomPokemonName(pokemon))}${isCorrect?' ✓':''}</span><span class="room-guess-number">#${Number(entry.order)||0}</span></div></td>`;
-    const cells = keys.map(key => {
+    const cells = keys.map((key, i) => {
       const result = answer ? roomCompareGuess(pokemon, answer, key) : {state:'neutral',arrow:''};
       const value = roomFormatAttr(pokemon, key);
       const typeIcons = key === 'types' ? roomTypeIconHtml(pokemon) : '';
       const iconHtml = typeIcons ? `<span class="room-cell-type-icons" aria-hidden="true">${typeIcons}</span>` : '';
       const symbol = result.state === 'match' ? '✓' : result.state === 'partial' ? '◐' : result.state === 'neutral' ? '—' : '×';
-      return `<td class="room-clue-cell ${result.state}"><span class="room-clue-symbol" aria-hidden="true">${symbol}</span>${iconHtml}<span class="room-clue-value">${roomEsc(value)}</span>${result.arrow ? `<span class="room-clue-arrow">${roomEsc(result.arrow)}</span>` : ''}</td>`;
+      return `<td class="room-clue-cell ${result.state}"><strong class="room-clue-mobile-label">${roomEsc(language.attributes[i])}</strong><span class="room-clue-symbol" aria-hidden="true">${symbol}</span>${iconHtml}<span class="room-clue-value">${roomEsc(value)}</span>${result.arrow ? `<span class="room-clue-arrow">${roomEsc(result.arrow)}</span>` : ''}</td>`;
     }).join('');
     return `<tr class="room-guess-row">${firstCell}${cells}</tr>`;
   }).join('');
