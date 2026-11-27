@@ -4666,7 +4666,23 @@ function roomSetBusy(busy) {
   document.getElementById('room-join').disabled = busy;
   document.getElementById('room-start').disabled = busy;
   document.getElementById('room-leave').disabled = busy;
-  document.getElementById('room-guess-submit').disabled = busy;
+
+  // Keep the room guess input in sync with the active turn after async actions.
+  // Previously roomRender() could disable the host input while roomStart() was
+  // busy, but roomSetBusy(false) only re-enabled the submit button, leaving the
+  // text input disabled until another database update arrived.
+  const input = document.getElementById('room-guess-input');
+  const submit = document.getElementById('room-guess-submit');
+  const meta = activeRoomSnapshot?.meta || {};
+  const uid = auth.currentUser?.uid;
+  const limit = Number(meta.attemptLimit) || 6;
+  const attempts = uid ? roomCurrentAttempts(uid) : 0;
+  const canGuess = !busy && meta.status === 'playing' && Boolean(uid) &&
+    meta.turnUid === uid && attempts < limit;
+
+  if (input) input.disabled = !canGuess;
+  if (submit) submit.disabled = !canGuess;
+  if (!canGuess) roomHideSuggestions();
 }
 function roomRequireAuth() {
   if (auth.currentUser) return true;
