@@ -202,6 +202,18 @@
 @media(max-width:850px){.rank-mode-grid{grid-template-columns:1fr}.rank-mode-card{padding:14px}.rank-mode-card-head{gap:10px}.rank-emblem{width:64px;height:72px}}
 @media(max-width:620px){.rank-board-panel{padding:14px}.rank-board-head{display:block}.rank-board-head #rank-refresh{margin-top:12px}.rank-board-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}.rank-board-tab{padding:9px 4px}.rank-rules-strip{gap:6px}.rank-rules-strip span{font-size:10px;padding:7px 9px}.rank-page-heading{align-items:flex-start}}
 </style>
+<style id="leaderboard-nav-responsive-style">
+/* V1.9.2: keep the expanded navigation readable on narrower screens. */
+@media(max-width:1100px){
+  .topbar{height:auto;min-height:76px;flex-wrap:wrap;padding-top:12px;padding-bottom:12px;gap:10px}
+  .main-nav{order:3;width:100%;min-width:0;overflow-x:auto;flex-wrap:nowrap;white-space:nowrap;padding-bottom:3px;scrollbar-width:thin}
+  .main-nav .nav-btn{flex:0 0 auto}
+}
+@media(max-width:620px){
+  .main-nav{gap:4px}
+  .main-nav .nav-btn{padding:8px 10px;font-size:10px}
+}
+</style>
 </head>
 <body>
   <div class="app-shell">
@@ -213,6 +225,7 @@
       <nav class="main-nav" aria-label="Main navigation">
         <button class="nav-btn active" data-view="game" id="nav-game">開始猜謎</button>
         <button class="nav-btn" data-view="rank" id="nav-rank">排位模式</button>
+        <button class="nav-btn" data-view="leaderboard" id="nav-leaderboard">排行榜</button>
         <button class="nav-btn" data-view="dex" id="nav-dex">角色圖鑑</button>
         <button class="nav-btn" data-view="stats" id="nav-stats">遊玩紀錄</button>
       </nav>
@@ -325,6 +338,15 @@
         <div class="rank-rules-strip">
           <span>♨ 地獄難度</span><span>🎯 猜中 1 隻</span><span>🏅 每階 100 分</span><span>🔥 連勝加分</span>
         </div>
+
+                <div class="rank-mode-grid" id="rank-mode-grid"></div>
+      </section>
+
+      <section id="leaderboard-view" class="view">
+        <div class="page-heading rank-page-heading">
+          <div><p class="eyebrow">UNITE-ONE · COMPETITIVE LEADERBOARD</p><h1>排行榜</h1><p class="subheading">查看 1 分鐘、3 分鐘與 5 分鐘排位的傳奇積分排名。進入各模式前 100 名即可取得大集結巔峰資格。</p></div>
+          <span class="rank-season-chip">TOP 100</span>
+        </div>
         <section class="rank-board-panel">
           <div class="rank-board-head"><div><p class="eyebrow">TOP 100 · LEGENDARY</p><h2>傳奇排行榜</h2><p class="subheading">只有傳奇玩家會列入排名；同分時依最高連勝、累積勝場、較早達到該積分的時間排序。</p></div><button class="secondary-btn" id="rank-refresh" type="button">更新排行榜</button></div>
           <div class="rank-board-tabs" id="rank-board-tabs">
@@ -335,8 +357,6 @@
           <div id="rank-board-list" class="rank-board-list"><div class="rank-empty">登入帳號或訪客帳號後，即可載入雲端排行榜。</div></div>
           <p class="rank-board-note" id="rank-board-note">排行榜依各模式獨立計算。大集結巔峰資格為該模式傳奇排行榜前 100 名。</p>
         </section>
-                <div class="rank-mode-grid" id="rank-mode-grid"></div>
-
       </section>
     </main>
 
@@ -3827,7 +3847,7 @@ window.UNITE_ONE_POKEMON = [
   }
   function hideSuggestions(){$('suggestions').classList.add('hidden');$('suggestions').innerHTML='';activeSuggestion=-1;}
   function showHint(){if(!game.canHint){toast(t('hintUnavailable'));return;}if(game.finished)return;if(game.hintKey){toast(t('hintUsed'));return;}const available=ATTRS.filter(key=>key==='playable'||(key==='maps'?Array.isArray(game.target.maps)&&game.target.maps.length>0:game.target[key]!==null&&game.target[key]!==undefined));const key=available[Math.floor(Math.random()*available.length)];game.hintKey=key;$('hint-panel').textContent=`${t('hintPrefix')} · ${t('targetHint').replace('{field}',t(FIELD_LABELS[key])).replace('{value}',formatAttr(game.target,key))}`;$('hint-panel').classList.remove('hidden');updateStatus();}
-  function switchView(view){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active-view'));$(`${view}-view`).classList.add('active-view');document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===view));if(view==='dex')renderDex();if(view==='stats')renderStats();if(view==='rank')renderRankView();document.body.classList.toggle('mobile-game-active',view==='game'&&Boolean(game)&&!game.finished&&!$('game-play-screen').classList.contains('hidden'));window.scrollTo({top:0,behavior:'smooth'});}
+  function switchView(view){document.querySelectorAll('.view').forEach(x=>x.classList.remove('active-view'));$(`${view}-view`).classList.add('active-view');document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.view===view));if(view==='dex')renderDex();if(view==='stats')renderStats();if(view==='rank')renderRankView();if(view==='leaderboard')renderLeaderboardView();document.body.classList.toggle('mobile-game-active',view==='game'&&Boolean(game)&&!game.finished&&!$('game-play-screen').classList.contains('hidden'));window.scrollTo({top:0,behavior:'smooth'});}
   function rankModeData(key){return rankProfile[key]||(rankProfile[key]=blankRankMode());}
   function rankPreMasterDescriptor(points){
     const p=Math.max(0,Math.min(RANK_LADDER_END-1,Number(points)||0));
@@ -3893,6 +3913,8 @@ window.UNITE_ONE_POKEMON = [
     const grid=$('rank-mode-grid');if(!grid)return;
     grid.innerHTML=Object.entries(RANK_MODES).map(([key,mode])=>{const d=rankModeData(key),desc=rankDescriptor(d),streak=d.streak||0;const pct=desc.progress===null?100:Math.max(0,Math.min(100,desc.progress));const nextNote=d.stage==='legend'?'正在競逐大集結巔峰 TOP 100':d.stage==='master'?`還差 ${desc.next} 分進入傳奇`:desc.name==='大師'?'已達大師，積分從 0 開始':`下一階還差 ${desc.next} 分`;
       return `<article class="rank-mode-card" data-rank-mode-card="${key}"><div class="rank-mode-card-head">${rankEmblem(desc.name,desc.icon)}<div><h3>${mode.label}排位</h3><small>單人 · 地獄難度 · 4 次機會 · 猜中 1 隻</small><div class="rank-current-name">${esc(desc.label)}</div><div class="rank-points">${rankStatusLine(d,key)}</div></div></div><div class="rank-progress"><span style="width:${pct}%"></span></div><div class="rank-progress-note">${nextNote}</div><div class="rank-streak-line"><span>🔥 目前連勝 ${streak}</span><span>最高連勝 ${d.bestStreak||0}</span></div><button class="primary-btn rank-start-btn" type="button" data-rank-start="${key}">開始 ${mode.label}挑戰 ↗</button></article>`;}).join('');
+  }
+  function renderLeaderboardView(){
     document.querySelectorAll('[data-rank-board]').forEach(btn=>btn.classList.toggle('active',btn.dataset.rankBoard===rankSelectedBoard));
     loadRankBoard(rankSelectedBoard);
   }
@@ -3914,10 +3936,12 @@ window.UNITE_ONE_POKEMON = [
   }
   $('rank-view').addEventListener('click',event=>{
     const start=event.target.closest('[data-rank-start]');if(start){startRankChallenge(start.dataset.rankStart);return;}
-    const tab=event.target.closest('[data-rank-board]');if(tab){rankSelectedBoard=tab.dataset.rankBoard;renderRankView();return;}
+  });
+  $('leaderboard-view').addEventListener('click',event=>{
+    const tab=event.target.closest('[data-rank-board]');if(tab){rankSelectedBoard=tab.dataset.rankBoard;renderLeaderboardView();return;}
     if(event.target.closest('#rank-refresh'))loadRankBoard(rankSelectedBoard);
   });
-  window.uniteOneRankRefresh=()=>{if($('rank-view')?.classList.contains('active-view'))renderRankView();};
+  window.uniteOneRankRefresh=()=>{if($('rank-view')?.classList.contains('active-view'))renderRankView();if($('leaderboard-view')?.classList.contains('active-view'))renderLeaderboardView();};
 
   const DEX_GROUPS=[
     {key:'playable',options:['true','false']},
@@ -3976,7 +4000,7 @@ window.UNITE_ONE_POKEMON = [
     $('dex-modal').classList.remove('hidden');
   }
   function renderStats(){const rate=stats.played?Math.round(stats.wins/stats.played*100):0;const cards=[[t('played'),stats.played],[t('wins'),stats.wins],[t('rate'),`${rate}%`],[t('best'),stats.best||'—'],[t('bestStreak'),stats.bestStreak||0]];$('stats-grid').innerHTML=cards.map(([label,value])=>`<div class="stat-card"><span>${label}</span><strong>${value}</strong></div>`).join('');if(!stats.history.length){$('recent-list').innerHTML=`<div class="no-records">${t('noRecords')}</div>`;return;}$('recent-list').innerHTML=stats.history.map(r=>{const p=POKEMON.find(x=>x.id===r.id);if(!p)return '';const date=new Date(r.at).toLocaleString(currentLang==='en'?'en-US':currentLang==='ja'?'ja-JP':currentLang==='zh-CN'?'zh-CN':'zh-TW',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});return `<div class="recent-item">${pokemonImage(p,'avatar')}<div><strong>${esc(getName(p))}</strong><small>${date} · ${r.guesses} ${t('attempts')} · ${formatTime(r.duration)}</small></div><span class="recent-result ${r.won?'won':'lost'}">${r.won?t('win'):t('loss')}</span></div>`;}).join('');}
-  function applyLanguage(){document.documentElement.lang=currentLang==='zh-TW'?'zh-Hant':currentLang==='zh-CN'?'zh-Hans':currentLang;$('language-select').value=currentLang;$('nav-rank').textContent=currentLang==='en'?'Ranked':currentLang==='ja'?'ランクマッチ':currentLang==='zh-CN'?'排位模式':'排位模式';const map={'nav-game':'navGame','nav-dex':'navDex','nav-stats':'navStats','eyebrow':'eyebrow','main-title':'title','main-subtitle':'subtitle','change-mode-label':'changeMode','status-time-label':'time','status-round-label':'round','status-left-label':'left','hint-label':'hint','reset-label':'reset','how-title':'howTitle','how-text':'howText','guess-btn-label':'guess','input-note':'inputNote','history-title':'history','history-subtitle':'historySub','th-name-label':'name','th-role-label':'role','th-damage-label':'damage','th-types-label':'types','th-evolution-label':'evolution','th-generation-label':'generation','th-difficulty-label':'difficulty','th-playable-label':'filterPlayable','th-maps-label':'filterMaps','th-mega-label':'mega','empty-message':'empty','legend-correct':'correct','legend-partial':'partial','legend-wrong':'wrong','legend-neutral':'notCompared','legend-direction':'directionLegend','dex-title':'dexTitle','dex-subtitle':'dexSub','dex-source-note':'sourceNote','difficulty-title':'difficultyTitle','difficulty-intro':'difficultyIntro','dex-filter-help':'dexFilterHelp','clear-dex-filters':'clearFilters','sort-label':'sortLabel','sort-name-label':'sortName','sort-generation-label':'sortGeneration','sort-difficulty-label':'sortDifficulty','sort-role-label':'sortRole','stats-title':'statsTitle','stats-subtitle':'statsSub','recent-title':'recent','clear-stats':'clear','help-modal-title':'helpTitle','help-ok':'ok','footer-note':'footer'};Object.entries(map).forEach(([id,k])=>{if($(id))$(id).textContent=t(k);});if(game)$('mode-label').textContent=modeName(game.mode);$('guess-input').placeholder=t('placeholder');$('dex-search').placeholder=t('search');renderDifficultyPicker();renderDexFilters();$('help-content').innerHTML=t('helpHtml');if(game)renderGame();if($('dex-view').classList.contains('active-view'))renderDex();if($('stats-view').classList.contains('active-view'))renderStats();if(game&&game.finished&&!$('result-modal').classList.contains('hidden'))renderResult();updateStatus();}
+  function applyLanguage(){document.documentElement.lang=currentLang==='zh-TW'?'zh-Hant':currentLang==='zh-CN'?'zh-Hans':currentLang;$('language-select').value=currentLang;$('nav-rank').textContent=currentLang==='en'?'Ranked':currentLang==='ja'?'ランクマッチ':currentLang==='zh-CN'?'排位模式':'排位模式';$('nav-leaderboard').textContent=currentLang==='en'?'Leaderboard':currentLang==='ja'?'ランキング':currentLang==='zh-CN'?'排行榜':'排行榜';const map={'nav-game':'navGame','nav-dex':'navDex','nav-stats':'navStats','eyebrow':'eyebrow','main-title':'title','main-subtitle':'subtitle','change-mode-label':'changeMode','status-time-label':'time','status-round-label':'round','status-left-label':'left','hint-label':'hint','reset-label':'reset','how-title':'howTitle','how-text':'howText','guess-btn-label':'guess','input-note':'inputNote','history-title':'history','history-subtitle':'historySub','th-name-label':'name','th-role-label':'role','th-damage-label':'damage','th-types-label':'types','th-evolution-label':'evolution','th-generation-label':'generation','th-difficulty-label':'difficulty','th-playable-label':'filterPlayable','th-maps-label':'filterMaps','th-mega-label':'mega','empty-message':'empty','legend-correct':'correct','legend-partial':'partial','legend-wrong':'wrong','legend-neutral':'notCompared','legend-direction':'directionLegend','dex-title':'dexTitle','dex-subtitle':'dexSub','dex-source-note':'sourceNote','difficulty-title':'difficultyTitle','difficulty-intro':'difficultyIntro','dex-filter-help':'dexFilterHelp','clear-dex-filters':'clearFilters','sort-label':'sortLabel','sort-name-label':'sortName','sort-generation-label':'sortGeneration','sort-difficulty-label':'sortDifficulty','sort-role-label':'sortRole','stats-title':'statsTitle','stats-subtitle':'statsSub','recent-title':'recent','clear-stats':'clear','help-modal-title':'helpTitle','help-ok':'ok','footer-note':'footer'};Object.entries(map).forEach(([id,k])=>{if($(id))$(id).textContent=t(k);});if(game)$('mode-label').textContent=modeName(game.mode);$('guess-input').placeholder=t('placeholder');$('dex-search').placeholder=t('search');renderDifficultyPicker();renderDexFilters();$('help-content').innerHTML=t('helpHtml');if(game)renderGame();if($('dex-view').classList.contains('active-view'))renderDex();if($('stats-view').classList.contains('active-view'))renderStats();if(game&&game.finished&&!$('result-modal').classList.contains('hidden'))renderResult();updateStatus();}
   $('guess-input').addEventListener('input',renderSuggestions);
   $('guess-input').addEventListener('keydown',e=>{const b=[...$('suggestions').querySelectorAll('.suggestion')];if(e.key==='ArrowDown'&&b.length){e.preventDefault();activeSuggestion=(activeSuggestion+1)%b.length;b.forEach((x,i)=>x.classList.toggle('active',i===activeSuggestion));}else if(e.key==='ArrowUp'&&b.length){e.preventDefault();activeSuggestion=(activeSuggestion-1+b.length)%b.length;b.forEach((x,i)=>x.classList.toggle('active',i===activeSuggestion));}else if(e.key==='Enter'){e.preventDefault();if(activeSuggestion>=0&&b[activeSuggestion])b[activeSuggestion].click();else submitGuess();}else if(e.key==='Escape')hideSuggestions();});
   $('guess-btn').addEventListener('click',()=>submitGuess());$('hint-btn').addEventListener('click',showHint);$('reset-btn').addEventListener('click',()=>newGame());
