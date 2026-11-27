@@ -3851,6 +3851,119 @@ const auth = getAuth(app);
 
 window.firebaseDB = db;
 window.firebaseAuth = auth;
+// UNITE-ONE 帳號登入入口
+const topActions = document.querySelector(".top-actions");
+const helpButton = document.getElementById("help-btn");
+
+const accountButton = document.createElement("button");
+accountButton.type = "button";
+accountButton.className = "icon-btn";
+accountButton.textContent = "登入";
+accountButton.style.width = "auto";
+accountButton.style.padding = "0 12px";
+
+topActions.insertBefore(accountButton, helpButton);
+
+// 登入視窗
+const accountModal = document.createElement("div");
+accountModal.className = "modal-backdrop hidden";
+accountModal.innerHTML = `
+  <div class="modal-card">
+    <button class="modal-close" id="account-close">×</button>
+    <h2>UNITE-ONE 帳號</h2>
+    <p id="account-status">請登入或使用訪客模式</p>
+
+    <form id="account-form">
+      <input id="account-email" type="email"
+        placeholder="電子郵件" required>
+      <br><br>
+      <input id="account-password" type="password"
+        placeholder="密碼（至少 6 個字元）"
+        minlength="6" required>
+      <br><br>
+      <button class="primary-btn" type="submit">登入</button>
+      <button class="secondary-btn" type="button"
+        id="account-register">註冊</button>
+    </form>
+
+    <br>
+    <button class="secondary-btn" id="account-guest">
+      訪客登入
+    </button>
+    <button class="secondary-btn hidden" id="account-logout">
+      登出
+    </button>
+
+    <p id="account-message" aria-live="polite"></p>
+  </div>
+`;
+
+document.body.appendChild(accountModal);
+
+const accountMessage = document.getElementById("account-message");
+const accountForm = document.getElementById("account-form");
+
+accountButton.onclick = () =>
+  accountModal.classList.remove("hidden");
+
+document.getElementById("account-close").onclick = () =>
+  accountModal.classList.add("hidden");
+
+accountForm.onsubmit = async (e) => {
+  e.preventDefault();
+  const email = document.getElementById("account-email").value.trim();
+  const password = document.getElementById("account-password").value;
+
+  try {
+    await signInWithEmailAndPassword(auth, email, password);
+    accountMessage.textContent = "登入成功！";
+  } catch (err) {
+    accountMessage.textContent = "登入失敗：" + err.message;
+  }
+};
+
+document.getElementById("account-register").onclick = async () => {
+  const email = document.getElementById("account-email").value.trim();
+  const password = document.getElementById("account-password").value;
+
+  try {
+    await createUserWithEmailAndPassword(auth, email, password);
+    accountMessage.textContent = "註冊成功！";
+  } catch (err) {
+    accountMessage.textContent = "註冊失敗：" + err.message;
+  }
+};
+
+document.getElementById("account-guest").onclick = async () => {
+  try {
+    await signInAnonymously(auth);
+    accountMessage.textContent = "訪客登入成功！";
+  } catch (err) {
+    accountMessage.textContent = "登入失敗：" + err.message;
+  }
+};
+
+document.getElementById("account-logout").onclick = async () => {
+  await signOut(auth);
+  accountMessage.textContent = "已登出。";
+};
+
+onAuthStateChanged(auth, (user) => {
+  accountButton.textContent = !user
+    ? "登入"
+    : user.isAnonymous ? "訪客" : "帳號";
+
+  document.getElementById("account-status").textContent =
+    !user ? "目前尚未登入"
+    : user.isAnonymous ? "目前使用訪客模式"
+    : "已登入：" + user.email;
+
+  accountForm.classList.toggle("hidden", !!user);
+  document.getElementById("account-guest")
+    .classList.toggle("hidden", !!user);
+  document.getElementById("account-logout")
+    .classList.toggle("hidden", !user);
+});
 
 </script>
 </body>
