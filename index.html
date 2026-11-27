@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#21051f">
   <meta name="description" content="UNITE-ONE：以八項特徵推理寶可夢大集結角色，包含可遊玩角色與地圖 NPC。">
-  <title>集結一把｜UNITE-ONE V1.7.6</title>
+  <title>集結一把｜UNITE-ONE V1.7.7</title>
   <style>
 :root{--bg:#170414;--bg2:#260720;--panel:#390a2c;--panel2:#4a103b;--line:rgba(255,125,205,.2);--line2:rgba(255,160,220,.34);--text:#f8eaf4;--muted:#c5a6bb;--pink:#ec69bf;--pink2:#a92e83;--green:#185e49;--green-b:#49cba0;--red:#6c263f;--red-b:#ff7d9c;--gold:#e5ba6a;--shadow:0 24px 70px rgba(0,0,0,.3);font-family:Inter,"Noto Sans TC",system-ui,sans-serif;color-scheme:dark}
 *{box-sizing:border-box}body{margin:0;min-height:100vh;color:var(--text);background:radial-gradient(ellipse at 12% 2%,rgba(157,39,119,.28),transparent 34%),radial-gradient(ellipse at 92% 35%,rgba(97,24,82,.2),transparent 31%),var(--bg)}button,input,select{font:inherit}button{cursor:pointer}.app-shell{width:min(1500px,calc(100% - 36px));margin:20px auto 26px;background:linear-gradient(140deg,rgba(72,17,57,.97),rgba(40,8,36,.98));border:1px solid rgba(255,125,205,.13);border-radius:18px;overflow:visible;box-shadow:var(--shadow);min-height:calc(100vh - 46px)}.topbar{height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);background:rgba(40,4,34,.66);border-radius:18px 18px 0 0}.brand{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none;min-width:220px}.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:linear-gradient(140deg,#f17aca,#8f317e);color:#fff;font-size:22px;box-shadow:0 0 24px rgba(236,105,191,.3)}.brand-word{display:flex;align-items:baseline;gap:12px}.brand-word strong{font-size:19px;letter-spacing:.12em}.brand-word small{font-family:Georgia,serif;font-size:11px;color:#c99cb8;letter-spacing:.2em}.main-nav{display:flex;align-items:center;gap:8px}.nav-btn,.icon-btn,.language-select,.pill-btn,.filter-select{color:var(--muted);background:transparent;border:1px solid transparent;border-radius:999px;padding:11px 17px;transition:.2s}.nav-btn:hover,.nav-btn.active{border-color:var(--line2);color:#ffc2e9;background:rgba(205,65,158,.1)}.top-actions{display:flex;align-items:center;gap:9px}.language-select,.filter-select{border-color:var(--line);background:#2c0925;color:#f5d9eb;padding:10px 32px 10px 13px;outline:none}.icon-btn{width:38px;height:38px;padding:0;border-color:var(--line);font-size:17px;font-weight:800;color:#f5c0e7}.icon-btn:hover{background:rgba(236,105,191,.15)}main{padding:34px 28px 46px;min-height:630px}.view{display:none}.active-view{display:block}.game-heading,.page-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;margin:0 0 22px}.eyebrow{font-size:10px;font-weight:800;letter-spacing:.2em;color:#d76ab4;margin:0 0 9px}.game-heading h1,.page-heading h1{font-size:clamp(25px,3.2vw,36px);line-height:1.15;margin:0 0 10px;letter-spacing:.02em}.subheading{margin:0;color:var(--muted);font-size:14px}.round-badge,.total-chip{border:1px solid var(--line);background:rgba(20,1,17,.2);color:#e7b8d7;border-radius:999px;padding:11px 16px;font-weight:700;font-size:12px;white-space:nowrap}.live-dot{display:inline-block;width:7px;height:7px;border-radius:50%;background:#f279c2;margin-right:9px;box-shadow:0 0 12px #f279c2}.status-strip{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:13px 16px;background:rgba(41,2,31,.6);border:1px solid var(--line);border-radius:16px;margin-bottom:18px}.status-item{min-width:96px;text-align:center;padding:4px 14px;border-right:1px solid var(--line)}.status-label{display:block;color:#ae88a5;font-size:11px;margin-bottom:4px}.status-item strong{font-size:16px;font-variant-numeric:tabular-nums}.pill-btn{border-color:var(--line);padding:10px 17px;color:#eac0db;font-weight:700}.pill-btn:hover{border-color:var(--line2);background:rgba(236,105,191,.1)}.hint-btn{margin-left:auto}.hint-btn span:first-child{color:var(--gold);margin-right:6px}.reset-btn{color:#f48acb}.howto-bar{display:flex;align-items:center;gap:10px;padding:15px 18px;background:rgba(53,6,43,.75);border:1px solid rgba(255,125,205,.13);border-radius:13px;color:#e9bed9;font-size:13px;margin-bottom:19px}.howto-icon{font-size:16px;color:#b9b2ff}.howto-bar strong{white-space:nowrap;color:#f1c5e1}.howto-bar span:last-child{color:#bd9fb5}.hint-panel{padding:12px 16px;margin:-4px 0 17px;border:1px dashed rgba(229,186,106,.45);background:rgba(229,186,106,.07);border-radius:12px;color:#f4d8a5;font-size:13px}.guess-input-wrap{position:relative;display:flex;align-items:center;gap:12px;padding:6px 7px 6px 18px;border:1px solid rgba(236,105,191,.34);background:rgba(25,2,20,.68);border-radius:999px;max-width:850px;margin:0 auto}.search-icon{font-size:24px;color:#d17cb2;line-height:1}.guess-input-wrap input,.dex-search input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:#fff;padding:12px 0;font-size:15px}.guess-input-wrap input::placeholder,.dex-search input::placeholder{color:#9e7e95}.primary-btn{border:0;color:#fff;font-weight:800;background:linear-gradient(135deg,#e66abe,#a93689);padding:14px 23px;border-radius:999px;box-shadow:0 5px 18px rgba(196,57,148,.2);white-space:nowrap;transition:.2s}.primary-btn:hover{filter:brightness(1.1);transform:translateY(-1px)}.primary-btn span:last-child{margin-left:10px}.input-note{text-align:center;color:#97758e;font-size:11px;margin:9px 0 27px}.suggestions{position:absolute;z-index:8;top:calc(100% + 8px);left:15px;right:100px;background:#24051e;border:1px solid var(--line2);border-radius:13px;padding:6px;box-shadow:var(--shadow);max-height:300px;overflow:auto}.suggestion{display:flex;align-items:center;gap:10px;padding:10px 12px;border:0;background:transparent;color:#f6e5f1;width:100%;text-align:left;border-radius:8px}.suggestion:hover,.suggestion.active{background:rgba(236,105,191,.13)}.suggestion small{color:#a9879e;margin-left:auto;font-size:10px}.mini-avatar,.avatar{display:grid;place-items:center;flex:none;background:linear-gradient(145deg,#a84e94,#522457);border:1px solid rgba(255,208,238,.15);color:#fff;font-weight:900}.mini-avatar{width:27px;height:27px;border-radius:8px;font-size:10px}.table-section{margin-top:2px}.table-title-row{display:flex;align-items:end;justify-content:space-between;margin-bottom:12px}.table-title-row h2,.record-panel h2{font-size:17px;margin:0 0 5px}.table-title-row p{font-size:11px;color:#a9889e;margin:0}.table-count{font-size:12px;color:#dba2c9;border:1px solid var(--line);border-radius:999px;padding:6px 12px}.table-scroll{overflow:auto;border:1px solid var(--line);border-radius:13px;background:rgba(20,1,17,.25)}.guess-table{border-collapse:separate;border-spacing:0;width:100%;min-width:790px;font-size:13px}.guess-table th{padding:14px 13px;text-align:center;background:rgba(65,14,52,.85);color:#caa9c1;font-weight:700;border-bottom:1px solid var(--line);white-space:nowrap}.guess-table th:first-child{text-align:left;padding-left:18px}.guess-table td{padding:10px 12px;text-align:center;border-bottom:1px solid rgba(255,144,206,.12);border-right:1px solid rgba(255,144,206,.08);color:#efdfeb}.guess-table tr:last-child td{border-bottom:0}.guess-table td:first-child{text-align:left;padding-left:15px;min-width:175px}.guess-row{animation:rowIn .25s ease-out}.pokemon-cell{display:flex;align-items:center;gap:10px;font-weight:700}.avatar{width:36px;height:36px;border-radius:10px;font-size:11px;letter-spacing:-.04em}.cell-match{background:rgba(32,120,88,.47)!important;color:#d8fff1!important;box-shadow:inset 0 0 0 1px rgba(85,219,169,.22)}.cell-miss{background:rgba(115,34,61,.44)!important;color:#ffdce6!important;box-shadow:inset 0 0 0 1px rgba(255,112,151,.15)}.cell-neutral{background:rgba(92,55,85,.24)!important}.match-symbol{display:inline-block;margin-right:5px;color:#91edc9;font-size:11px}.miss-symbol{display:inline-block;margin-right:5px;color:#ff9bb2;font-size:11px}.empty-row td{text-align:center!important;color:#98768e;padding:45px 16px!important}.empty-star{display:block;color:#c56ca9;font-size:24px;margin-bottom:8px}.legend-row{display:flex;justify-content:flex-end;gap:18px;color:#a98aa0;font-size:11px;margin-top:11px}.legend-row>span{display:flex;align-items:center;gap:7px}.legend-swatch{width:10px;height:10px;display:inline-block;border-radius:3px}.legend-swatch.correct{background:#38a77b}.legend-swatch.wrong{background:#b54c6a}.result-card{margin-top:22px;padding:22px;border:1px solid rgba(235,113,193,.38);border-radius:16px;background:linear-gradient(130deg,rgba(93,20,70,.65),rgba(34,3,28,.9));box-shadow:0 18px 42px rgba(0,0,0,.16);animation:rowIn .3s ease}.result-top{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:15px}.result-top h2{margin:0;font-size:22px}.result-pokemon{display:flex;align-items:center;gap:14px}.result-pokemon .avatar{width:58px;height:58px;font-size:15px;border-radius:15px}.result-pokemon h3{margin:0 0 5px;font-size:19px}.result-pokemon p{margin:0;color:#bb9bb3;font-size:12px}.result-metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px 0}.metric{padding:12px;border:1px solid var(--line);border-radius:11px;text-align:center;background:rgba(20,1,17,.25)}.metric strong{display:block;color:#ef7cc5;font-size:21px;margin-bottom:4px}.metric span{color:#a98ba1;font-size:11px}.result-actions{display:flex;gap:9px;flex-wrap:wrap}.secondary-btn{border:1px solid var(--line2);border-radius:999px;padding:11px 16px;background:transparent;color:#eac4df;font-weight:700}.secondary-btn:hover{background:rgba(236,105,191,.1)}.page-heading{margin-bottom:25px}.total-chip{color:#f0b3dd}.dex-controls{display:flex;gap:12px;margin-bottom:20px}.dex-search{display:flex;align-items:center;gap:11px;padding:0 15px;border:1px solid var(--line);border-radius:999px;background:rgba(22,1,18,.36);flex:1}.dex-search>span{font-size:22px;color:#d17cb2}.dex-search input{padding:13px 0}.filter-select{border-radius:999px;min-width:170px}.dex-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:11px}.dex-card{display:flex;align-items:center;gap:11px;text-align:left;padding:12px;border:1px solid rgba(255,125,205,.15);border-radius:13px;background:rgba(28,3,24,.38);color:var(--text);transition:.18s}.dex-card:hover{transform:translateY(-2px);border-color:var(--line2);background:rgba(94,20,72,.4)}.dex-card .avatar{width:40px;height:40px}.dex-card strong{font-size:12px;display:block;margin-bottom:4px}.dex-card small{display:block;color:#a98aa0;font-size:10px}.role-tag{margin-left:auto;font-size:9px;color:#ed9fd0;white-space:nowrap}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:5px 0 24px}.stat-card{padding:19px;border:1px solid var(--line);border-radius:14px;background:rgba(26,2,22,.42)}.stat-card span{display:block;color:#ab8aa0;font-size:11px;margin-bottom:9px}.stat-card strong{font-size:27px;color:#f2a4d6;font-variant-numeric:tabular-nums}.record-panel{padding:18px;border:1px solid var(--line);border-radius:15px;background:rgba(26,2,22,.35)}.record-panel-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px}.text-btn{border:0;background:transparent;color:#d987bd;font-size:11px}.recent-item{display:flex;align-items:center;gap:12px;padding:11px 0;border-top:1px solid rgba(255,130,204,.1)}.recent-item .avatar{width:33px;height:33px}.recent-item strong{font-size:12px}.recent-item small{display:block;color:#a98aa0;font-size:10px;margin-top:3px}.recent-result{margin-left:auto;font-size:11px;font-weight:700}.won{color:#69d4aa}.lost{color:#ff92ac}.no-records{padding:22px;text-align:center;color:#9c7c93;font-size:12px}.footer{display:flex;justify-content:space-between;gap:18px;padding:17px 28px;border-top:1px solid var(--line);color:#87677f;font-size:9px;letter-spacing:.08em}.footer span:last-child{letter-spacing:0;text-align:right}.modal-backdrop{position:fixed;inset:0;z-index:20;display:grid;place-items:center;background:rgba(9,0,8,.76);padding:20px;backdrop-filter:blur(9px)}.modal-card{width:min(530px,100%);position:relative;padding:28px;border:1px solid var(--line2);border-radius:18px;background:#27051f;box-shadow:var(--shadow)}.modal-card h2{margin:0 0 18px;font-size:25px}.modal-close{position:absolute;right:18px;top:13px;border:0;background:transparent;color:#d8b4ce;font-size:27px}.help-content{color:#c6a6bb;font-size:13px;line-height:1.8}.help-content ol{padding-left:20px}.help-content strong{color:#f0c4df}.modal-ok{margin-top:20px}.toast{position:fixed;left:50%;bottom:25px;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:30;background:#f2c0df;color:#3a0b2e;padding:11px 18px;border-radius:999px;font-weight:700;font-size:12px;box-shadow:var(--shadow);transition:.2s;max-width:calc(100% - 30px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.hidden{display:none!important}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}@keyframes rowIn{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
@@ -137,13 +137,14 @@
 
 
 
-/* V1.7.6: keep all header icons; only Pokémon-type icons appear in data cells */
+/* V1.7.7: keep all header icons; only Pokémon-type icons appear in data cells */
 .guess-th-icon{display:inline-grid;place-items:center;width:25px;height:25px;margin-right:7px;border:1px solid rgba(255,174,224,.18);border-radius:8px;background:rgba(236,105,191,.09);font-size:15px;line-height:1;vertical-align:middle;}
 .guess-table th{vertical-align:middle;}
 .cell-attribute-icon{display:inline-flex;align-items:center;gap:3px;margin:0 5px 0 1px;line-height:1;vertical-align:middle;white-space:nowrap}.type-badge{display:inline-block;flex:0 0 auto;width:20px;height:20px;object-fit:contain;border:0;border-radius:0;box-shadow:none;vertical-align:middle}.type-badge + .type-badge{margin-left:2px}
-@media(max-width:620px){.guess-th-icon{width:22px;height:22px;margin-right:5px;font-size:13px;border-radius:7px}.guess-table th{padding:12px 10px}.cell-attribute-icon{margin-right:4px}.type-badge{width:18px;height:18px}}
+.guess-th-icon.mega-th-icon{padding:2px 4px;overflow:hidden}.mega-evolution-icon{display:block;width:15px;height:20px;object-fit:contain;}
+@media(max-width:620px){.guess-th-icon{width:22px;height:22px;margin-right:5px;font-size:13px;border-radius:7px}.guess-table th{padding:12px 10px}.cell-attribute-icon{margin-right:4px}.type-badge{width:18px;height:18px}.mega-evolution-icon{width:13px;height:18px}}
 
-/* V1.7.6: mobile-first fixed guess dock and richer live suggestions */
+/* V1.7.7: mobile-first fixed guess dock and richer live suggestions */
 .suggestion{gap:11px;padding:10px 11px;border-bottom:1px solid rgba(255,144,206,.10)}
 .suggestion:last-child{border-bottom:0}
 .suggestion .mini-avatar{width:42px;height:42px;border-radius:11px}
@@ -185,13 +186,13 @@
 }
 
 
-/* V1.7.6: retain the complete header icon row and all per-attribute value icons */
+/* V1.7.7: retain the complete header icon row and all per-attribute value icons */
 .guess-table th .guess-th-icon{display:inline-grid;flex:0 0 25px;place-items:center;width:25px;height:25px;margin-right:7px;border:1px solid rgba(255,174,224,.22);border-radius:8px;background:rgba(236,105,191,.11);font-size:15px;line-height:1;vertical-align:middle}
 .guess-table th{vertical-align:middle}
 .cell-attribute-icon{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;gap:3px;min-width:21px;min-height:21px;margin:0 5px 0 1px;line-height:1;vertical-align:middle;white-space:nowrap}
 .cell-attribute-icon .type-badge{display:inline-block;flex:0 0 auto;width:20px;height:20px;object-fit:contain;border:0;border-radius:0;box-shadow:none;vertical-align:middle}
 .cell-attribute-icon .type-badge+.type-badge{margin-left:2px}
-@media(max-width:620px){.guess-table th .guess-th-icon{flex-basis:22px;width:22px;height:22px;margin-right:5px;font-size:13px;border-radius:7px}.cell-attribute-icon{min-width:19px;min-height:19px;margin-right:4px}.cell-attribute-icon .type-badge{width:18px;height:18px}}
+@media(max-width:620px){.guess-table th .guess-th-icon{flex-basis:22px;width:22px;height:22px;margin-right:5px;font-size:13px;border-radius:7px}.cell-attribute-icon{min-width:19px;min-height:19px;margin-right:4px}.cell-attribute-icon .type-badge{width:18px;height:18px}.mega-evolution-icon{width:13px;height:18px}}
 </style>
 </head>
 <body>
@@ -270,10 +271,10 @@
           <div class="table-scroll">
             <table class="guess-table">
               <thead><tr>
-                <th><span class="guess-th-icon" aria-hidden="true">🐾</span><span id="th-name-label">角色</span></th><th><span class="guess-th-icon" aria-hidden="true">🛡️</span><span id="th-role-label">戰鬥定位</span></th><th><span class="guess-th-icon" aria-hidden="true">⚔️</span><span id="th-damage-label">攻擊分類</span></th><th><span class="guess-th-icon" aria-hidden="true">🌈</span><span id="th-types-label">寶可夢屬性</span></th><th><span class="guess-th-icon" aria-hidden="true">🧬</span><span id="th-evolution-label">進化次數</span></th><th><span class="guess-th-icon" aria-hidden="true">📖</span><span id="th-generation-label">圖鑑世代</span></th><th><span class="guess-th-icon" aria-hidden="true">🎯</span><span id="th-difficulty-label">操作難度</span></th><th><span class="guess-th-icon" aria-hidden="true">🎮</span><span id="th-playable-label">可否遊玩</span></th><th><span class="guess-th-icon" aria-hidden="true">🗺️</span><span id="th-maps-label">主要出現地圖</span></th>
+                <th><span class="guess-th-icon" aria-hidden="true">🐾</span><span id="th-name-label">角色</span></th><th><span class="guess-th-icon" aria-hidden="true">🛡️</span><span id="th-role-label">戰鬥定位</span></th><th><span class="guess-th-icon" aria-hidden="true">⚔️</span><span id="th-damage-label">攻擊分類</span></th><th><span class="guess-th-icon" aria-hidden="true">🌈</span><span id="th-types-label">寶可夢屬性</span></th><th><span class="guess-th-icon" aria-hidden="true">🧬</span><span id="th-evolution-label">進化次數</span></th><th><span class="guess-th-icon" aria-hidden="true">📖</span><span id="th-generation-label">圖鑑世代</span></th><th><span class="guess-th-icon" aria-hidden="true">🎯</span><span id="th-difficulty-label">操作難度</span></th><th><span class="guess-th-icon" aria-hidden="true">🎮</span><span id="th-playable-label">可否遊玩</span></th><th><span class="guess-th-icon" aria-hidden="true">🗺️</span><span id="th-maps-label">主要出現地圖</span></th><th><span class="guess-th-icon mega-th-icon" aria-hidden="true"><img class="mega-evolution-icon" src="https://archives.bulbagarden.net/media/upload/e/ed/Mega_Evolution_symbol.png" alt="" width="15" height="20" loading="eager" decoding="async"></span><span id="th-mega-label">可否超級進化</span></th>
               </tr></thead>
               <tbody id="guess-rows">
-                <tr class="empty-row"><td colspan="9"><span class="empty-star">✧</span><span id="empty-message">還沒有猜測紀錄，從下方輸入角色開始吧！</span></td></tr>
+                <tr class="empty-row"><td colspan="10"><span class="empty-star">✧</span><span id="empty-message">還沒有猜測紀錄，從下方輸入角色開始吧！</span></td></tr>
               </tbody>
             </table>
           </div>
@@ -345,7 +346,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": true,
     "maps": [
       "mer"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "charizard",
@@ -365,7 +367,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 6,
     "imageId": 6,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "snorlax",
@@ -384,7 +387,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 143,
     "imageId": 143,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "crustle",
@@ -404,7 +408,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 558,
     "imageId": 558,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "greninja",
@@ -424,7 +429,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 658,
     "imageId": 658,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "lucario",
@@ -444,7 +450,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 448,
     "imageId": 448,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "venusaur",
@@ -464,7 +471,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 3,
     "imageId": 3,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "talonflame",
@@ -484,7 +492,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 663,
     "imageId": 663,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "eldegoss",
@@ -503,7 +512,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 830,
     "imageId": 830,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "mr-mime",
@@ -523,7 +533,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 122,
     "imageId": 122,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "zeraora",
@@ -542,7 +553,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 807,
     "imageId": 807,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "cinderace",
@@ -561,7 +573,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 815,
     "imageId": 815,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "gengar",
@@ -581,7 +594,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 94,
     "imageId": 94,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "alolan-ninetales",
@@ -601,7 +615,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 38,
     "imageId": 10104,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "machamp",
@@ -620,7 +635,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 68,
     "imageId": 68,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "cramorant",
@@ -640,7 +656,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 845,
     "imageId": 845,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "wigglytuff",
@@ -660,7 +677,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 40,
     "imageId": 40,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "slowbro",
@@ -680,7 +698,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 80,
     "imageId": 80,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "absol",
@@ -699,7 +718,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 359,
     "imageId": 359,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "garchomp",
@@ -719,7 +739,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 445,
     "imageId": 445,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "gardevoir",
@@ -739,7 +760,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 282,
     "imageId": 282,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "blissey",
@@ -758,7 +780,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 242,
     "imageId": 242,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "blastoise",
@@ -777,7 +800,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 9,
     "imageId": 9,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "mamoswine",
@@ -797,7 +821,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 473,
     "imageId": 473,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "sylveon",
@@ -816,7 +841,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 700,
     "imageId": 700,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "greedent",
@@ -835,7 +861,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 820,
     "imageId": 820,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "decidueye",
@@ -855,7 +882,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 724,
     "imageId": 724,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "tsareena",
@@ -874,7 +902,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 763,
     "imageId": 763,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "dragonite",
@@ -894,7 +923,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 149,
     "imageId": 149,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "trevenant",
@@ -914,7 +944,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 709,
     "imageId": 709,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "aegislash",
@@ -934,7 +965,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 681,
     "imageId": 681,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "hoopa",
@@ -954,7 +986,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 720,
     "imageId": 720,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "duraludon",
@@ -974,7 +1007,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 884,
     "imageId": 884,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "azumarill",
@@ -994,7 +1028,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 184,
     "imageId": 184,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "espeon",
@@ -1013,7 +1048,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 196,
     "imageId": 196,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "delphox",
@@ -1033,7 +1069,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 655,
     "imageId": 655,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "glaceon",
@@ -1052,7 +1089,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 471,
     "imageId": 471,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "buzzwole",
@@ -1072,7 +1110,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 794,
     "imageId": 794,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "tyranitar",
@@ -1092,7 +1131,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 248,
     "imageId": 248,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "mew",
@@ -1111,7 +1151,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 151,
     "imageId": 151,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "dodrio",
@@ -1131,7 +1172,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 85,
     "imageId": 85,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "scizor",
@@ -1161,7 +1203,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 212,
     "imageId": 212,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "clefable",
@@ -1180,7 +1223,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 36,
     "imageId": 36,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "zoroark",
@@ -1199,7 +1243,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 571,
     "imageId": 571,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "sableye",
@@ -1219,7 +1264,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 302,
     "imageId": 302,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "urshifu",
@@ -1249,7 +1295,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 892,
     "imageId": 892,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "dragapult",
@@ -1269,7 +1316,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 887,
     "imageId": 887,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "comfey",
@@ -1288,7 +1336,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 764,
     "imageId": 764,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "zacian",
@@ -1307,7 +1356,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 888,
     "imageId": 888,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "goodra",
@@ -1326,7 +1376,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 706,
     "imageId": 706,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "lapras",
@@ -1346,7 +1397,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 131,
     "imageId": 131,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "chandelure",
@@ -1366,7 +1418,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 609,
     "imageId": 609,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "umbreon",
@@ -1385,7 +1438,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 197,
     "imageId": 197,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "leafeon",
@@ -1404,7 +1458,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 470,
     "imageId": 470,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "inteleon",
@@ -1423,7 +1478,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 818,
     "imageId": 818,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "mewtwo-x",
@@ -1443,7 +1499,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 150,
     "imageId": 10043,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "mewtwo-y",
@@ -1462,7 +1519,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 150,
     "imageId": 10044,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "blaziken",
@@ -1482,7 +1540,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 257,
     "imageId": 257,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "mimikyu",
@@ -1502,7 +1561,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 778,
     "imageId": 778,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "meowscarada",
@@ -1522,7 +1582,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 908,
     "imageId": 908,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "metagross",
@@ -1542,7 +1603,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 376,
     "imageId": 376,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "gyarados",
@@ -1562,7 +1624,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 130,
     "imageId": 130,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "miraidon",
@@ -1582,7 +1645,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 1008,
     "imageId": 1008,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "falinks",
@@ -1601,7 +1665,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 870,
     "imageId": 870,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "ceruledge",
@@ -1621,7 +1686,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 937,
     "imageId": 937,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "ho-oh",
@@ -1641,7 +1707,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 250,
     "imageId": 250,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "armarouge",
@@ -1661,7 +1728,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 936,
     "imageId": 936,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "darkrai",
@@ -1680,7 +1748,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 491,
     "imageId": 491,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "psyduck",
@@ -1699,7 +1768,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 54,
     "imageId": 54,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "tinkaton",
@@ -1719,7 +1789,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 959,
     "imageId": 959,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "galarian-rapidash",
@@ -1739,7 +1810,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 78,
     "imageId": 10163,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "suicune",
@@ -1758,7 +1830,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 245,
     "imageId": 245,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "alolan-raichu",
@@ -1778,7 +1851,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 26,
     "imageId": 10100,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "alcremie",
@@ -1797,7 +1871,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 869,
     "imageId": 869,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "latios",
@@ -1817,7 +1892,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 381,
     "imageId": 381,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "latias",
@@ -1837,7 +1913,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 380,
     "imageId": 380,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "pawmot",
@@ -1857,7 +1934,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 923,
     "imageId": 923,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "empoleon",
@@ -1877,7 +1955,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 395,
     "imageId": 395,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "mega-lucario",
@@ -1897,7 +1976,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 448,
     "imageId": 10059,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "mega-charizard-x",
@@ -1917,7 +1997,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 6,
     "imageId": 10034,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "dhelmise",
@@ -1937,7 +2018,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 781,
     "imageId": 781,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "vaporeon",
@@ -1956,7 +2038,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 134,
     "imageId": 134,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "mega-gyarados",
@@ -1976,7 +2059,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 130,
     "imageId": 10041,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "mega-charizard-y",
@@ -1996,7 +2080,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 6,
     "imageId": 10035,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "meowth",
@@ -2015,7 +2100,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 52,
     "imageId": 52,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "sirfetchd",
@@ -2034,7 +2120,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 865,
     "imageId": 865,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "zapdos",
@@ -2059,7 +2146,8 @@ window.UNITE_ONE_POKEMON = [
       "mer",
       "shivre",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "moltres",
@@ -2079,7 +2167,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 146,
     "imageId": 146,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "articuno",
@@ -2104,7 +2193,8 @@ window.UNITE_ONE_POKEMON = [
       "mer",
       "shivre",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "typhlosion",
@@ -2123,7 +2213,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 157,
     "imageId": 157,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "feraligatr",
@@ -2142,7 +2233,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 160,
     "imageId": 160,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "meganium",
@@ -2161,7 +2253,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 154,
     "imageId": 154,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": true
   },
   {
     "id": "skeledirge",
@@ -2181,7 +2274,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 911,
     "imageId": 911,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "quaquaval",
@@ -2201,7 +2295,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 914,
     "imageId": 914,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "yveltal",
@@ -2221,7 +2316,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 717,
     "imageId": 717,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "palkia",
@@ -2241,7 +2337,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 484,
     "imageId": 484,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "reshiram",
@@ -2261,7 +2358,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 643,
     "imageId": 643,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "solgaleo",
@@ -2281,7 +2379,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 791,
     "imageId": 791,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "morpeko",
@@ -2301,7 +2400,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 877,
     "imageId": 877,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "toxtricity",
@@ -2321,7 +2421,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 849,
     "imageId": 849,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "jolteon",
@@ -2340,7 +2441,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 135,
     "imageId": 135,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "flareon",
@@ -2359,7 +2461,8 @@ window.UNITE_ONE_POKEMON = [
     "dexNo": 136,
     "imageId": 136,
     "playable": true,
-    "maps": []
+    "maps": [],
+    "mega": false
   },
   {
     "id": "ambipom",
@@ -2382,7 +2485,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "crawdaunt",
@@ -2406,7 +2510,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "audino",
@@ -2429,7 +2534,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "pt500"
-    ]
+    ],
+    "mega": true
   },
   {
     "id": "vespiquen",
@@ -2453,7 +2559,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "shivre",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "herdier",
@@ -2476,7 +2583,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "remoat-holiday",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "abra",
@@ -2498,7 +2606,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "auroma",
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "venomoth",
@@ -2520,7 +2629,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "auroma"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "ledian",
@@ -2542,7 +2652,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "auroma"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "sunflora",
@@ -2563,7 +2674,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "auroma"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "araquanid",
@@ -2586,7 +2698,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "auroma",
       "mer"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "alolan-persian",
@@ -2607,7 +2720,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "electrode",
@@ -2629,7 +2743,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "shivre",
       "mer"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "frosmoth",
@@ -2651,7 +2766,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "diggersby",
@@ -2675,7 +2791,8 @@ window.UNITE_ONE_POKEMON = [
       "theia",
       "shivre",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "claydol",
@@ -2699,7 +2816,8 @@ window.UNITE_ONE_POKEMON = [
       "theia",
       "shivre",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "indeedee",
@@ -2721,7 +2839,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "theia"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "altaria",
@@ -2745,7 +2864,8 @@ window.UNITE_ONE_POKEMON = [
       "theia",
       "mer",
       "pt500"
-    ]
+    ],
+    "mega": true
   },
   {
     "id": "xatu",
@@ -2767,7 +2887,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "theia"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "ludicolo",
@@ -2791,7 +2912,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "bouffalant",
@@ -2814,7 +2936,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "rotom",
@@ -2839,7 +2962,8 @@ window.UNITE_ONE_POKEMON = [
       "mer",
       "remoat-holiday",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "drednaw",
@@ -2863,7 +2987,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "regigigas",
@@ -2886,7 +3011,8 @@ window.UNITE_ONE_POKEMON = [
       "auroma",
       "mer",
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "avalugg",
@@ -2908,7 +3034,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "shivre",
       "mer"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "escavalier",
@@ -2930,7 +3057,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "theia"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "accelgor",
@@ -2952,7 +3080,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "theia",
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "regieleki",
@@ -2974,7 +3103,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "theia",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "regirock",
@@ -2996,7 +3126,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "theia",
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "regice",
@@ -3018,7 +3149,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "theia",
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "registeel",
@@ -3040,7 +3172,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "theia",
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "rayquaza",
@@ -3063,7 +3196,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "theia",
       "mer"
-    ]
+    ],
+    "mega": true
   },
   {
     "id": "regidrago",
@@ -3086,7 +3220,8 @@ window.UNITE_ONE_POKEMON = [
       "theia",
       "mer",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "groudon",
@@ -3107,7 +3242,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "theia"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "kyogre",
@@ -3128,7 +3264,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "theia"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "simipour",
@@ -3150,7 +3287,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "remoat",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "eiscue",
@@ -3172,7 +3310,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "remoat",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "beartic",
@@ -3194,7 +3333,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "remoat",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "bellibolt",
@@ -3215,7 +3355,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "flamigo",
@@ -3238,7 +3379,8 @@ window.UNITE_ONE_POKEMON = [
     "maps": [
       "shivre",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "paldean-tauros-combat",
@@ -3259,7 +3401,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "delibird",
@@ -3281,7 +3424,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "shivre"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "stantler",
@@ -3304,7 +3448,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "remoat-holiday",
       "pt500"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "tauros",
@@ -3327,7 +3472,8 @@ window.UNITE_ONE_POKEMON = [
       "remoat",
       "mer",
       "remoat-holiday"
-    ]
+    ],
+    "mega": false
   },
   {
     "id": "magnemite",
@@ -3349,7 +3495,8 @@ window.UNITE_ONE_POKEMON = [
     "playable": false,
     "maps": [
       "pt500"
-    ]
+    ],
+    "mega": false
   }
 ];
 
@@ -3367,18 +3514,51 @@ window.UNITE_ONE_POKEMON = [
   const LANGS = ['zh-TW','zh-CN','en','ja'];
   const I18N = {
     'zh-TW': {
-      navGame:'開始猜謎',navDex:'角色圖鑑',navStats:'遊玩紀錄',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.6',title:'今天要猜出誰？',subtitle:'輸入角色名稱，從八項特徵提示找出神祕寶可夢。',difficultyTitle:'選擇本局難度',difficultyIntro:'選擇今天的挑戰範圍。難度會影響答案題庫與可猜次數。',modeEasy:'簡單',modeEasyDesc:'答案只從操作難度為初級的角色中選出，適合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案從初級與中級角色中選出，考驗基本角色知識。',modeHard:'困難',modeHardDesc:'完整題庫，包含可遊玩角色與地圖 NPC，六次機會。',modeHell:'地獄',modeHellDesc:'完整題庫，包含可遊玩角色與地圖 NPC，只有四次機會，而且不能使用提示。',modePoolSuffix:'隻寶可夢',modePlayableSuffix:'隻寶可夢',modeNpcSuffix:'隻 NPC 寶可夢',modeAttemptsSuffix:'次機會',noHint:'本難度不能使用提示。',chooseMode:'開始挑戰',changeMode:'更換難度',hintUnavailable:'地獄難度不提供提示。',dexFilterHelp:'同一組可複選，符合其中任一項即可；不同組別會同時套用。',filterRole:'戰鬥定位',filterDamage:'攻擊分類',filterTypes:'寶可夢屬性',filterEvolution:'本傳進化次數',filterGeneration:'圖鑑世代',filterDifficulty:'操作難度',filterPlayable:'可否遊玩',filterMaps:'主要出現地圖',playableYes:'可遊玩',playableNo:'不可遊玩',npcTag:'地圖 NPC',notApplicable:'無',mapNames:{remoat:'黎莫特競技場', 'remoat-holiday':'黎莫特競技場（冰雪版）', pt500:'黎莫特競技場（PT500 模式）', mer:'瑪爾競技場',auroma:'奧拉公園',shivre:'吉弗市',theia:'媞亞蒼空遺跡'},all:'全部',clearFilters:'清除篩選',sortLabel:'排序',sortName:'名稱',sortGeneration:'世代',sortDifficulty:'操作難度',sortRole:'定位',dexNoMatches:'找不到符合條件的角色，請調整搜尋或篩選。',dexDetails:'角色資料',detailClose:'關閉',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次進化',filterSelected:'已選 {n} 項',standard:'八項特徵模式',time:'計時',round:'本局',left:'剩餘',hint:'提示',reset:'重新開始',howTitle:'怎麼玩？',howText:'每次猜測都會比對八項特徵。綠色代表符合，黃色代表屬性或地圖部分重疊，紅色代表不符合；灰色「無」代表該資料不適用。數值欄的箭頭表示答案在較高或較低的區間。',placeholder:'輸入寶可夢名稱…',guess:'猜測',inputNote:'可輸入繁體中文、簡體中文、英文或日文名稱。',history:'猜測紀錄',historySub:'每次猜測都會揭示更多線索。',name:'角色',role:'戰鬥定位',damage:'攻擊分類',types:'寶可夢屬性',evolution:'本傳進化次數',generation:'圖鑑世代',difficulty:'操作難度',playable:'可否遊玩',maps:'主要出現地圖',notCompared:'不適用',empty:'還沒有猜測紀錄，從下方輸入角色開始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色圖鑑',dexSub:'瀏覽遊戲題庫中的角色特徵資料。',search:'搜尋角色…',allRoles:'全部定位',statsTitle:'遊玩紀錄',statsSub:'你的猜謎成績都保存在這台裝置。',played:'總遊玩局數',wins:'猜中局數',rate:'猜中率',best:'最佳猜測次數',recent:'最近紀錄',clear:'清除紀錄',noRecords:'目前還沒有遊玩紀錄。',wonTitle:'推理成功！',lostTitle:'這次差一點！',found:'你找到了神祕寶可夢',answer:'正確答案',attempts:'猜測次數',elapsed:'耗時',winStreak:'目前連勝',bestStreak:'最高連勝',wonSubtitle:'你找到了隱藏的寶可夢！',lostSubtitle:'正確答案已揭曉，下一局再挑戰吧！',resultModes:'選擇難度',again:'再猜一局',seeDex:'檢視圖鑑',hintPrefix:'提示已揭露',hintUsed:'本局提示已使用過了。',invalid:'找不到這隻寶可夢，請從候選清單選擇。',duplicate:'這隻寶可夢已經猜過了。',finished:'本局已結束，請開始新的一局。',footer:'非官方粉絲作品，與 Pokémon 及 Pokémon UNITE 無隸屬關係。',helpTitle:'遊戲說明',helpHtml:'<ol><li>簡單與普通難度只從可遊玩角色出題；困難與地獄難度也會加入地圖 NPC。野生寶可夢家族會以 UNITE 地圖中實際出現的代表形態作為題目。</li><li>輸入角色名稱，支援繁體中文、簡體中文、英文及日文。</li><li>每局可猜測次數依照所選難度而定，比對<strong>戰鬥定位、攻擊分類、寶可夢屬性、本傳進化次數、圖鑑世代、操作難度、可否遊玩、主要出現地圖</strong>。</li><li><strong>綠色</strong>代表符合；<strong>黃色</strong>代表屬性或地圖部分重疊；<strong>紅色</strong>代表不符合；灰色「無」代表該欄不適用。</li><li>進化次數及圖鑑世代會顯示方向箭頭：↑ 代表答案數值較高，↓ 代表答案數值較低。</li><li>本傳進化次數從該進化鏈最初形態起算；超級進化不另計。地圖欄包含正式地圖及活動地圖。</li><li>提示會揭露答案的一項特徵，每局限用一次。遊玩紀錄只保存在目前瀏覽器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻擊型',speedster:'敏捷型',allrounder:'平衡型',defender:'防禦型',supporter:'輔助型'},damageNames:{physical:'物理攻擊',special:'特殊攻擊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'高級'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'電',grass:'草',ice:'冰',fighting:'格鬥',poison:'毒',ground:'地面',flying:'飛行',psychic:'超能力',bug:'蟲',rock:'岩石',ghost:'幽靈',dragon:'龍',dark:'惡',steel:'鋼',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 個角色授權',targetHint:'答案的「{field}」是：{value}',up:'↑',down:'↓',sourceNote:'「可遊玩」指有一般可選擇的集結參賽證；限時模式中暫時可操控不算。題庫包含可遊玩角色及地圖野生 NPC；野生寶可夢家族以大集結地圖中實際出現的代表形態作為題目。地圖欄標示該寶可夢或其進化家族出現的主要地圖，並將冰雪季節版與 PT500 模式分開標示。NPC 不適用的戰鬥定位、攻擊分類及操作難度以「無」表示。圖片由 PokéAPI Sprites 提供。',directionLegend:'箭頭表示答案數值較高或較低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'開始猜謎',navDex:'角色圖鑑',navStats:'遊玩紀錄',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.7',title:'今天要猜出誰？',subtitle:'輸入角色名稱，從八項特徵提示找出神祕寶可夢。',difficultyTitle:'選擇本局難度',difficultyIntro:'選擇今天的挑戰範圍。難度會影響答案題庫與可猜次數。',modeEasy:'簡單',modeEasyDesc:'答案只從操作難度為初級的角色中選出，適合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案從初級與中級角色中選出，考驗基本角色知識。',modeHard:'困難',modeHardDesc:'完整題庫，包含可遊玩角色與地圖 NPC，六次機會。',modeHell:'地獄',modeHellDesc:'完整題庫，包含可遊玩角色與地圖 NPC，只有四次機會，而且不能使用提示。',modePoolSuffix:'隻寶可夢',modePlayableSuffix:'隻寶可夢',modeNpcSuffix:'隻 NPC 寶可夢',modeAttemptsSuffix:'次機會',noHint:'本難度不能使用提示。',chooseMode:'開始挑戰',changeMode:'更換難度',hintUnavailable:'地獄難度不提供提示。',dexFilterHelp:'同一組可複選，符合其中任一項即可；不同組別會同時套用。',filterRole:'戰鬥定位',filterDamage:'攻擊分類',filterTypes:'寶可夢屬性',filterEvolution:'本傳進化次數',filterGeneration:'圖鑑世代',filterDifficulty:'操作難度',filterPlayable:'可否遊玩',filterMaps:'主要出現地圖',playableYes:'可遊玩',playableNo:'不可遊玩',npcTag:'地圖 NPC',notApplicable:'無',mapNames:{remoat:'黎莫特競技場', 'remoat-holiday':'黎莫特競技場（冰雪版）', pt500:'黎莫特競技場（PT500 模式）', mer:'瑪爾競技場',auroma:'奧拉公園',shivre:'吉弗市',theia:'媞亞蒼空遺跡'},all:'全部',clearFilters:'清除篩選',sortLabel:'排序',sortName:'名稱',sortGeneration:'世代',sortDifficulty:'操作難度',sortRole:'定位',dexNoMatches:'找不到符合條件的角色，請調整搜尋或篩選。',dexDetails:'角色資料',detailClose:'關閉',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次進化',filterSelected:'已選 {n} 項',standard:'八項特徵模式',time:'計時',round:'本局',left:'剩餘',hint:'提示',reset:'重新開始',howTitle:'怎麼玩？',howText:'每次猜測都會比對八項特徵。綠色代表符合，黃色代表屬性或地圖部分重疊，紅色代表不符合；灰色「無」代表該資料不適用。數值欄的箭頭表示答案在較高或較低的區間。',placeholder:'輸入寶可夢名稱…',guess:'猜測',inputNote:'可輸入繁體中文、簡體中文、英文或日文名稱。',history:'猜測紀錄',historySub:'每次猜測都會揭示更多線索。',name:'角色',role:'戰鬥定位',damage:'攻擊分類',types:'寶可夢屬性',evolution:'本傳進化次數',generation:'圖鑑世代',difficulty:'操作難度',playable:'可否遊玩',maps:'主要出現地圖',notCompared:'不適用',empty:'還沒有猜測紀錄，從下方輸入角色開始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色圖鑑',dexSub:'瀏覽遊戲題庫中的角色特徵資料。',search:'搜尋角色…',allRoles:'全部定位',statsTitle:'遊玩紀錄',statsSub:'你的猜謎成績都保存在這台裝置。',played:'總遊玩局數',wins:'猜中局數',rate:'猜中率',best:'最佳猜測次數',recent:'最近紀錄',clear:'清除紀錄',noRecords:'目前還沒有遊玩紀錄。',wonTitle:'推理成功！',lostTitle:'這次差一點！',found:'你找到了神祕寶可夢',answer:'正確答案',attempts:'猜測次數',elapsed:'耗時',winStreak:'目前連勝',bestStreak:'最高連勝',wonSubtitle:'你找到了隱藏的寶可夢！',lostSubtitle:'正確答案已揭曉，下一局再挑戰吧！',resultModes:'選擇難度',again:'再猜一局',seeDex:'檢視圖鑑',hintPrefix:'提示已揭露',hintUsed:'本局提示已使用過了。',invalid:'找不到這隻寶可夢，請從候選清單選擇。',duplicate:'這隻寶可夢已經猜過了。',finished:'本局已結束，請開始新的一局。',footer:'非官方粉絲作品，與 Pokémon 及 Pokémon UNITE 無隸屬關係。',helpTitle:'遊戲說明',helpHtml:'<ol><li>簡單與普通難度只從可遊玩角色出題；困難與地獄難度也會加入地圖 NPC。野生寶可夢家族會以 UNITE 地圖中實際出現的代表形態作為題目。</li><li>輸入角色名稱，支援繁體中文、簡體中文、英文及日文。</li><li>每局可猜測次數依照所選難度而定，比對<strong>戰鬥定位、攻擊分類、寶可夢屬性、本傳進化次數、圖鑑世代、操作難度、可否遊玩、主要出現地圖</strong>。</li><li><strong>綠色</strong>代表符合；<strong>黃色</strong>代表屬性或地圖部分重疊；<strong>紅色</strong>代表不符合；灰色「無」代表該欄不適用。</li><li>進化次數及圖鑑世代會顯示方向箭頭：↑ 代表答案數值較高，↓ 代表答案數值較低。</li><li>本傳進化次數從該進化鏈最初形態起算；超級進化不另計。地圖欄包含正式地圖及活動地圖。</li><li>提示會揭露答案的一項特徵，每局限用一次。遊玩紀錄只保存在目前瀏覽器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻擊型',speedster:'敏捷型',allrounder:'平衡型',defender:'防禦型',supporter:'輔助型'},damageNames:{physical:'物理攻擊',special:'特殊攻擊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'高級'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'電',grass:'草',ice:'冰',fighting:'格鬥',poison:'毒',ground:'地面',flying:'飛行',psychic:'超能力',bug:'蟲',rock:'岩石',ghost:'幽靈',dragon:'龍',dark:'惡',steel:'鋼',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 個角色授權',targetHint:'答案的「{field}」是：{value}',up:'↑',down:'↓',sourceNote:'「可遊玩」指有一般可選擇的集結參賽證；限時模式中暫時可操控不算。題庫包含可遊玩角色及地圖野生 NPC；野生寶可夢家族以大集結地圖中實際出現的代表形態作為題目。地圖欄標示該寶可夢或其進化家族出現的主要地圖，並將冰雪季節版與 PT500 模式分開標示。NPC 不適用的戰鬥定位、攻擊分類及操作難度以「無」表示。圖片由 PokéAPI Sprites 提供。',directionLegend:'箭頭表示答案數值較高或較低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     },
     'zh-CN': {
-      navGame:'开始猜谜',navDex:'角色图鉴',navStats:'游玩记录',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.6',title:'今天要猜出谁？',subtitle:'输入角色名称，通过八项特征提示找出神秘宝可梦。',difficultyTitle:'选择本局难度',difficultyIntro:'选择今天的挑战范围。难度会影响答案题库与可猜次数。',modeEasy:'简单',modeEasyDesc:'答案只从操作难度为初级的角色中选出，适合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案从初级与中级角色中选出，考验基本角色知识。',modeHard:'困难',modeHardDesc:'完整题库，包含可玩角色与地图 NPC，六次机会。',modeHell:'地狱',modeHellDesc:'完整题库，包含可玩角色与地图 NPC，只有四次机会，而且不能使用提示。',modePoolSuffix:'只宝可梦',modePlayableSuffix:'只宝可梦',modeNpcSuffix:'只 NPC 宝可梦',modeAttemptsSuffix:'次机会',noHint:'此难度不能使用提示。',chooseMode:'开始挑战',changeMode:'更换难度',hintUnavailable:'地狱难度不提供提示。',dexFilterHelp:'同一组可多选，符合其中任一项即可；不同组别会同时应用。',filterRole:'战斗定位',filterDamage:'攻击分类',filterTypes:'宝可梦属性',filterEvolution:'本传进化次数',filterGeneration:'图鉴世代',filterDifficulty:'操作难度',filterPlayable:'是否可玩',filterMaps:'主要出现地图',playableYes:'可玩',playableNo:'不可玩',npcTag:'地图 NPC',notApplicable:'无',mapNames:{remoat:'黎莫特竞技场', 'remoat-holiday':'黎莫特竞技场（冰雪版）', pt500:'黎莫特竞技场（PT500 模式）', mer:'玛尔竞技场',auroma:'奥拉公园',shivre:'吉弗市',theia:'媞亚苍空遗迹'},all:'全部',clearFilters:'清除筛选',sortLabel:'排序',sortName:'名称',sortGeneration:'世代',sortDifficulty:'操作难度',sortRole:'定位',dexNoMatches:'找不到符合条件的角色，请调整搜索或筛选。',dexDetails:'角色资料',detailClose:'关闭',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次进化',filterSelected:'已选 {n} 项',standard:'八项特征模式',time:'计时',round:'本局',left:'剩余',hint:'提示',reset:'重新开始',howTitle:'怎么玩？',howText:'每次猜测都会比对八项特征。绿色代表符合，黄色代表属性或地图部分重叠，红色代表不符合；灰色“不适用”代表该资料不适用。数值栏的箭头表示答案数值更高或更低。',placeholder:'输入宝可梦名称…',guess:'猜测',inputNote:'可输入简体中文、繁体中文、英文或日文名称。',history:'猜测记录',historySub:'每次猜测都会揭示更多线索。',name:'角色',role:'战斗定位',damage:'攻击分类',types:'宝可梦属性',evolution:'本传进化次数',generation:'图鉴世代',difficulty:'操作难度',notCompared:'不适用',maps:'主要出现地图',playable:'是否可玩',empty:'还没有猜测记录，从下方输入角色开始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色图鉴',dexSub:'浏览游戏题库中的角色特征资料。',search:'搜索角色…',allRoles:'全部定位',statsTitle:'游玩记录',statsSub:'你的猜谜成绩都保存在这台设备。',played:'总游玩局数',wins:'猜中局数',rate:'猜中率',best:'最佳猜测次数',recent:'最近记录',clear:'清除记录',noRecords:'目前还没有游玩记录。',wonTitle:'推理成功！',lostTitle:'这次差一点！',found:'你找到了神秘宝可梦',answer:'正确答案',attempts:'猜测次数',elapsed:'耗时',winStreak:'当前连胜',bestStreak:'最高连胜',wonSubtitle:'你找到了隐藏的宝可梦！',lostSubtitle:'正确答案已经揭晓，下一局再挑战吧！',resultModes:'选择难度',again:'再猜一局',seeDex:'查看图鉴',hintPrefix:'提示已揭晓',hintUsed:'本局提示已经使用过了。',invalid:'找不到这只宝可梦，请从候选列表中选择。',duplicate:'这只宝可梦已经猜过了。',finished:'本局已结束，请开始新的一局。',footer:'非官方粉丝作品，与 Pokémon 及 Pokémon UNITE 无隶属关系。',helpTitle:'游戏说明',helpHtml:'<ol><li>简单与普通难度只从可玩角色出题；困难与地狱难度也会加入地图 NPC。野生宝可梦若有进化链，会以该进化链的最终进化形态代表。</li><li>输入角色名称，支持简体中文、繁体中文、英文及日文。</li><li>每局可猜测次数由所选难度决定，比对<strong>战斗定位、攻击分类、宝可梦属性、本传进化次数、图鉴世代、操作难度、是否可玩、主要出现地图</strong>。</li><li><strong>绿色</strong>代表符合；<strong>黄色</strong>代表属性或地图部分重叠；<strong>红色</strong>代表不符合；灰色“不适用”代表该栏没有可比较的数据。</li><li>本传进化次数及图鉴世代会显示方向箭头：↑ 代表答案数值较高，↓ 代表答案数值较低。</li><li>本传进化次数从进化链最初形态起算；超级进化不另计。地图栏包含正式地图及活动地图。</li><li>提示会揭晓答案的一项特征，每局限用一次。记录只保存在当前浏览器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻击型',speedster:'敏捷型',allrounder:'平衡型',defender:'防御型',supporter:'辅助型'},damageNames:{physical:'物理攻击',special:'特殊攻击'},difficultyNames:{novice:'初级',intermediate:'中级',expert:'高级'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'电',grass:'草',ice:'冰',fighting:'格斗',poison:'毒',ground:'地面',flying:'飞行',psychic:'超能力',bug:'虫',rock:'岩石',ghost:'幽灵',dragon:'龙',dark:'恶',steel:'钢',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 个角色授权',targetHint:'答案的“{field}”是：{value}',up:'↑',down:'↓',sourceNote:'“可玩”指拥有常规可选的集结参赛证；限时模式中暂时可操控不算。题库包含可玩角色及地图野生 NPC；有进化链的野生家族以本传最终进化形态代表。地图栏标示该宝可梦或其进化家族出现的主要地图，并将冰雪季节版与 PT500 模式分开标示。NPC 不适用的战斗定位、攻击分类及操作难度标记为“不适用”。图片由 PokéAPI Sprites 提供。',directionLegend:'箭头表示答案数值更高或更低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'开始猜谜',navDex:'角色图鉴',navStats:'游玩记录',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.7',title:'今天要猜出谁？',subtitle:'输入角色名称，通过八项特征提示找出神秘宝可梦。',difficultyTitle:'选择本局难度',difficultyIntro:'选择今天的挑战范围。难度会影响答案题库与可猜次数。',modeEasy:'简单',modeEasyDesc:'答案只从操作难度为初级的角色中选出，适合熟悉玩法。',modeNormal:'普通',modeNormalDesc:'答案从初级与中级角色中选出，考验基本角色知识。',modeHard:'困难',modeHardDesc:'完整题库，包含可玩角色与地图 NPC，六次机会。',modeHell:'地狱',modeHellDesc:'完整题库，包含可玩角色与地图 NPC，只有四次机会，而且不能使用提示。',modePoolSuffix:'只宝可梦',modePlayableSuffix:'只宝可梦',modeNpcSuffix:'只 NPC 宝可梦',modeAttemptsSuffix:'次机会',noHint:'此难度不能使用提示。',chooseMode:'开始挑战',changeMode:'更换难度',hintUnavailable:'地狱难度不提供提示。',dexFilterHelp:'同一组可多选，符合其中任一项即可；不同组别会同时应用。',filterRole:'战斗定位',filterDamage:'攻击分类',filterTypes:'宝可梦属性',filterEvolution:'本传进化次数',filterGeneration:'图鉴世代',filterDifficulty:'操作难度',filterPlayable:'是否可玩',filterMaps:'主要出现地图',playableYes:'可玩',playableNo:'不可玩',npcTag:'地图 NPC',notApplicable:'无',mapNames:{remoat:'黎莫特竞技场', 'remoat-holiday':'黎莫特竞技场（冰雪版）', pt500:'黎莫特竞技场（PT500 模式）', mer:'玛尔竞技场',auroma:'奥拉公园',shivre:'吉弗市',theia:'媞亚苍空遗迹'},all:'全部',clearFilters:'清除筛选',sortLabel:'排序',sortName:'名称',sortGeneration:'世代',sortDifficulty:'操作难度',sortRole:'定位',dexNoMatches:'找不到符合条件的角色，请调整搜索或筛选。',dexDetails:'角色资料',detailClose:'关闭',detailGeneration:'第 {n} 世代',detailEvolution:'{n} 次进化',filterSelected:'已选 {n} 项',standard:'八项特征模式',time:'计时',round:'本局',left:'剩余',hint:'提示',reset:'重新开始',howTitle:'怎么玩？',howText:'每次猜测都会比对八项特征。绿色代表符合，黄色代表属性或地图部分重叠，红色代表不符合；灰色“不适用”代表该资料不适用。数值栏的箭头表示答案数值更高或更低。',placeholder:'输入宝可梦名称…',guess:'猜测',inputNote:'可输入简体中文、繁体中文、英文或日文名称。',history:'猜测记录',historySub:'每次猜测都会揭示更多线索。',name:'角色',role:'战斗定位',damage:'攻击分类',types:'宝可梦属性',evolution:'本传进化次数',generation:'图鉴世代',difficulty:'操作难度',notCompared:'不适用',maps:'主要出现地图',playable:'是否可玩',empty:'还没有猜测记录，从下方输入角色开始吧！',correct:'完全符合',partial:'部分符合',wrong:'不符合',dexTitle:'角色图鉴',dexSub:'浏览游戏题库中的角色特征资料。',search:'搜索角色…',allRoles:'全部定位',statsTitle:'游玩记录',statsSub:'你的猜谜成绩都保存在这台设备。',played:'总游玩局数',wins:'猜中局数',rate:'猜中率',best:'最佳猜测次数',recent:'最近记录',clear:'清除记录',noRecords:'目前还没有游玩记录。',wonTitle:'推理成功！',lostTitle:'这次差一点！',found:'你找到了神秘宝可梦',answer:'正确答案',attempts:'猜测次数',elapsed:'耗时',winStreak:'当前连胜',bestStreak:'最高连胜',wonSubtitle:'你找到了隐藏的宝可梦！',lostSubtitle:'正确答案已经揭晓，下一局再挑战吧！',resultModes:'选择难度',again:'再猜一局',seeDex:'查看图鉴',hintPrefix:'提示已揭晓',hintUsed:'本局提示已经使用过了。',invalid:'找不到这只宝可梦，请从候选列表中选择。',duplicate:'这只宝可梦已经猜过了。',finished:'本局已结束，请开始新的一局。',footer:'非官方粉丝作品，与 Pokémon 及 Pokémon UNITE 无隶属关系。',helpTitle:'游戏说明',helpHtml:'<ol><li>简单与普通难度只从可玩角色出题；困难与地狱难度也会加入地图 NPC。野生宝可梦若有进化链，会以该进化链的最终进化形态代表。</li><li>输入角色名称，支持简体中文、繁体中文、英文及日文。</li><li>每局可猜测次数由所选难度决定，比对<strong>战斗定位、攻击分类、宝可梦属性、本传进化次数、图鉴世代、操作难度、是否可玩、主要出现地图</strong>。</li><li><strong>绿色</strong>代表符合；<strong>黄色</strong>代表属性或地图部分重叠；<strong>红色</strong>代表不符合；灰色“不适用”代表该栏没有可比较的数据。</li><li>本传进化次数及图鉴世代会显示方向箭头：↑ 代表答案数值较高，↓ 代表答案数值较低。</li><li>本传进化次数从进化链最初形态起算；超级进化不另计。地图栏包含正式地图及活动地图。</li><li>提示会揭晓答案的一项特征，每局限用一次。记录只保存在当前浏览器。</li></ol>',ok:'知道了',roleNames:{attacker:'攻击型',speedster:'敏捷型',allrounder:'平衡型',defender:'防御型',supporter:'辅助型'},damageNames:{physical:'物理攻击',special:'特殊攻击'},difficultyNames:{novice:'初级',intermediate:'中级',expert:'高级'},typeNames:{normal:'一般',fire:'火',water:'水',electric:'电',grass:'草',ice:'冰',fighting:'格斗',poison:'毒',ground:'地面',flying:'飞行',psychic:'超能力',bug:'虫',rock:'岩石',ghost:'幽灵',dragon:'龙',dark:'恶',steel:'钢',fairy:'妖精'},evoValue:n=>`${n} 次`,genValue:n=>`第 ${n} 世代`,win:'猜中',loss:'未猜中',licenses:' 个角色授权',targetHint:'答案的“{field}”是：{value}',up:'↑',down:'↓',sourceNote:'“可玩”指拥有常规可选的集结参赛证；限时模式中暂时可操控不算。题库包含可玩角色及地图野生 NPC；有进化链的野生家族以本传最终进化形态代表。地图栏标示该宝可梦或其进化家族出现的主要地图，并将冰雪季节版与 PT500 模式分开标示。NPC 不适用的战斗定位、攻击分类及操作难度标记为“不适用”。图片由 PokéAPI Sprites 提供。',directionLegend:'箭头表示答案数值更高或更低',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     },
     en: {
-      navGame:'Play',navDex:'Pokédex',navStats:'Records',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.6',title:'Who is today’s Pokémon?',subtitle:'Guess the Pokémon and use eight attributes to narrow it down.',difficultyTitle:'Choose a difficulty',difficultyIntro:'Choose today’s challenge. Difficulty changes the answer pool and the number of guesses.',modeEasy:'Easy',modeEasyDesc:'Answers are selected from Novice licenses only. A friendly way to learn the roster.',modeNormal:'Normal',modeNormalDesc:'Answers come from Novice and Intermediate licenses. A balanced challenge.',modeHard:'Hard',modeHardDesc:'The full pool of playable licenses and map NPCs, with six guesses.',modeHell:'Hell',modeHellDesc:'The full pool of playable licenses and map NPCs, only four guesses, and no hints.',modePoolSuffix:'Pokémon',modePlayableSuffix:'Pokémon',modeNpcSuffix:'NPC Pokémon',modeAttemptsSuffix:'guesses',noHint:'Hints are disabled in this difficulty.',chooseMode:'Start challenge',changeMode:'Change difficulty',hintUnavailable:'Hints are disabled in Hell mode.',dexFilterHelp:'Select multiple options within a group (any match). Different groups are combined (all must match).',filterRole:'Battle role',filterDamage:'Damage category',filterTypes:'Pokémon type',filterEvolution:'Main-series evolution',filterGeneration:'Pokédex generation',filterDifficulty:'License difficulty',filterPlayable:'Playable',filterMaps:'Main map',playableYes:'Playable',playableNo:'Not playable',npcTag:'Map NPC',notApplicable:'N/A',mapNames:{remoat:'Remoat Stadium', 'remoat-holiday':'Remoat Stadium (Holiday)', pt500:'Remoat Stadium (PT500)', mer:'Mer Stadium',auroma:'Auroma Park',shivre:'Shivre City',theia:'Theia Sky Ruins'},all:'All',clearFilters:'Clear filters',sortLabel:'Sort',sortName:'Name',sortGeneration:'Generation',sortDifficulty:'Difficulty',sortRole:'Role',dexNoMatches:'No Pokémon entries match these filters. Try changing your search or filters.',dexDetails:'Pokémon details',detailClose:'Close',detailGeneration:'Generation {n}',detailEvolution:'{n} evolution steps',filterSelected:'{n} selected',standard:'Eight-attribute mode',time:'TIME',round:'GUESSES',left:'LEFT',hint:'Hint',reset:'New game',howTitle:'How to play',howText:'Each guess is checked against eight attributes. Green means a match, yellow means a partial type or map overlap, red means no match, and gray N/A means the field does not apply. Arrows show whether the answer has a higher or lower value.',placeholder:'Enter a Pokémon name…',guess:'Guess',inputNote:'Names are accepted in Traditional Chinese, Simplified Chinese, English, or Japanese.',history:'Guess history',historySub:'Each guess reveals more clues.',name:'Pokémon',role:'Battle role',damage:'Damage type',types:'Pokémon type',evolution:'Main-series evolution steps',generation:'Pokédex generation',difficulty:'Difficulty',playable:'Playable',maps:'Main map(s)',notCompared:'Not applicable',empty:'No guesses yet. Enter a Pokémon name below to begin!',correct:'Exact match',partial:'Partial match',wrong:'No match',dexTitle:'Pokédex',dexSub:'Browse the character attributes used in this game.',search:'Search Pokémon…',allRoles:'All roles',statsTitle:'Player records',statsSub:'Your guessing stats are saved in this browser.',played:'Games played',wins:'Correct answers',rate:'Win rate',best:'Best guesses',recent:'Recent games',clear:'Clear records',noRecords:'No games recorded yet.',wonTitle:'Correct deduction!',lostTitle:'So close!',found:'You found the mystery Pokémon',answer:'Answer',attempts:'Guesses',elapsed:'Time',winStreak:'Current streak',bestStreak:'Best streak',wonSubtitle:'You found the hidden Pokémon!',lostSubtitle:'The answer is revealed. Try another round!',resultModes:'Choose difficulty',again:'Play again',seeDex:'Open Pokédex',hintPrefix:'Hint revealed',hintUsed:'You have already used the hint this round.',invalid:'Pokémon not found. Choose a name from the suggestions.',duplicate:'You already guessed that Pokémon.',finished:'This round is over. Start a new game to play again.',footer:'Unofficial fan-made game. Not affiliated with Pokémon or Pokémon UNITE.',helpTitle:'How to play',helpHtml:'<ol><li>Easy and Normal select answers from playable licenses only. Hard and Hell also include map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map.</li><li>Enter a name in Traditional Chinese, Simplified Chinese, English, or Japanese.</li><li>The number of guesses depends on difficulty. Each guess compares <strong>battle role, damage category, Pokémon type, main-series evolution steps, Pokédex generation, license difficulty, playability, and main map</strong>.</li><li><strong>Green</strong> means a match; <strong>yellow</strong> means a partial type or map overlap; <strong>red</strong> means no match; gray N/A means the field does not apply.</li><li>Evolution steps and generation show an arrow: ↑ means the answer is higher; ↓ means it is lower.</li><li>Evolution steps count from the earliest form in the main-series evolutionary line. Mega Evolution is not counted. Maps include standard and event stages.</li><li>One attribute hint is available per round. Records stay in this browser.</li></ol>',ok:'Got it',roleNames:{attacker:'Attacker',speedster:'Speedster',allrounder:'All-Rounder',defender:'Defender',supporter:'Supporter'},damageNames:{physical:'Physical',special:'Special'},difficultyNames:{novice:'Novice',intermediate:'Intermediate',expert:'Expert'},typeNames:{normal:'Normal',fire:'Fire',water:'Water',electric:'Electric',grass:'Grass',ice:'Ice',fighting:'Fighting',poison:'Poison',ground:'Ground',flying:'Flying',psychic:'Psychic',bug:'Bug',rock:'Rock',ghost:'Ghost',dragon:'Dragon',dark:'Dark',steel:'Steel',fairy:'Fairy'},evoValue:n=>`${n}`,genValue:n=>`Gen ${n}`,win:'Won',loss:'Lost',licenses:' licenses',targetHint:'The answer’s {field}: {value}',up:'↑',down:'↓',sourceNote:'Playable means the Pokémon has a regular selectable Unite License; temporary control in special modes does not count. The pool includes playable licenses and wild map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map. Maps indicate where the Pokémon or its family appears, with the Holiday variant and PT500 mode listed separately. NPC battle role, damage category, and license difficulty are N/A. Artwork by PokéAPI Sprites.',directionLegend:'Arrows show whether the answer is higher or lower',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'Play',navDex:'Pokédex',navStats:'Records',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.7',title:'Who is today’s Pokémon?',subtitle:'Guess the Pokémon and use eight attributes to narrow it down.',difficultyTitle:'Choose a difficulty',difficultyIntro:'Choose today’s challenge. Difficulty changes the answer pool and the number of guesses.',modeEasy:'Easy',modeEasyDesc:'Answers are selected from Novice licenses only. A friendly way to learn the roster.',modeNormal:'Normal',modeNormalDesc:'Answers come from Novice and Intermediate licenses. A balanced challenge.',modeHard:'Hard',modeHardDesc:'The full pool of playable licenses and map NPCs, with six guesses.',modeHell:'Hell',modeHellDesc:'The full pool of playable licenses and map NPCs, only four guesses, and no hints.',modePoolSuffix:'Pokémon',modePlayableSuffix:'Pokémon',modeNpcSuffix:'NPC Pokémon',modeAttemptsSuffix:'guesses',noHint:'Hints are disabled in this difficulty.',chooseMode:'Start challenge',changeMode:'Change difficulty',hintUnavailable:'Hints are disabled in Hell mode.',dexFilterHelp:'Select multiple options within a group (any match). Different groups are combined (all must match).',filterRole:'Battle role',filterDamage:'Damage category',filterTypes:'Pokémon type',filterEvolution:'Main-series evolution',filterGeneration:'Pokédex generation',filterDifficulty:'License difficulty',filterPlayable:'Playable',filterMaps:'Main map',playableYes:'Playable',playableNo:'Not playable',npcTag:'Map NPC',notApplicable:'N/A',mapNames:{remoat:'Remoat Stadium', 'remoat-holiday':'Remoat Stadium (Holiday)', pt500:'Remoat Stadium (PT500)', mer:'Mer Stadium',auroma:'Auroma Park',shivre:'Shivre City',theia:'Theia Sky Ruins'},all:'All',clearFilters:'Clear filters',sortLabel:'Sort',sortName:'Name',sortGeneration:'Generation',sortDifficulty:'Difficulty',sortRole:'Role',dexNoMatches:'No Pokémon entries match these filters. Try changing your search or filters.',dexDetails:'Pokémon details',detailClose:'Close',detailGeneration:'Generation {n}',detailEvolution:'{n} evolution steps',filterSelected:'{n} selected',standard:'Eight-attribute mode',time:'TIME',round:'GUESSES',left:'LEFT',hint:'Hint',reset:'New game',howTitle:'How to play',howText:'Each guess is checked against eight attributes. Green means a match, yellow means a partial type or map overlap, red means no match, and gray N/A means the field does not apply. Arrows show whether the answer has a higher or lower value.',placeholder:'Enter a Pokémon name…',guess:'Guess',inputNote:'Names are accepted in Traditional Chinese, Simplified Chinese, English, or Japanese.',history:'Guess history',historySub:'Each guess reveals more clues.',name:'Pokémon',role:'Battle role',damage:'Damage type',types:'Pokémon type',evolution:'Main-series evolution steps',generation:'Pokédex generation',difficulty:'Difficulty',playable:'Playable',maps:'Main map(s)',notCompared:'Not applicable',empty:'No guesses yet. Enter a Pokémon name below to begin!',correct:'Exact match',partial:'Partial match',wrong:'No match',dexTitle:'Pokédex',dexSub:'Browse the character attributes used in this game.',search:'Search Pokémon…',allRoles:'All roles',statsTitle:'Player records',statsSub:'Your guessing stats are saved in this browser.',played:'Games played',wins:'Correct answers',rate:'Win rate',best:'Best guesses',recent:'Recent games',clear:'Clear records',noRecords:'No games recorded yet.',wonTitle:'Correct deduction!',lostTitle:'So close!',found:'You found the mystery Pokémon',answer:'Answer',attempts:'Guesses',elapsed:'Time',winStreak:'Current streak',bestStreak:'Best streak',wonSubtitle:'You found the hidden Pokémon!',lostSubtitle:'The answer is revealed. Try another round!',resultModes:'Choose difficulty',again:'Play again',seeDex:'Open Pokédex',hintPrefix:'Hint revealed',hintUsed:'You have already used the hint this round.',invalid:'Pokémon not found. Choose a name from the suggestions.',duplicate:'You already guessed that Pokémon.',finished:'This round is over. Start a new game to play again.',footer:'Unofficial fan-made game. Not affiliated with Pokémon or Pokémon UNITE.',helpTitle:'How to play',helpHtml:'<ol><li>Easy and Normal select answers from playable licenses only. Hard and Hell also include map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map.</li><li>Enter a name in Traditional Chinese, Simplified Chinese, English, or Japanese.</li><li>The number of guesses depends on difficulty. Each guess compares <strong>battle role, damage category, Pokémon type, main-series evolution steps, Pokédex generation, license difficulty, playability, and main map</strong>.</li><li><strong>Green</strong> means a match; <strong>yellow</strong> means a partial type or map overlap; <strong>red</strong> means no match; gray N/A means the field does not apply.</li><li>Evolution steps and generation show an arrow: ↑ means the answer is higher; ↓ means it is lower.</li><li>Evolution steps count from the earliest form in the main-series evolutionary line. Mega Evolution is not counted. Maps include standard and event stages.</li><li>One attribute hint is available per round. Records stay in this browser.</li></ol>',ok:'Got it',roleNames:{attacker:'Attacker',speedster:'Speedster',allrounder:'All-Rounder',defender:'Defender',supporter:'Supporter'},damageNames:{physical:'Physical',special:'Special'},difficultyNames:{novice:'Novice',intermediate:'Intermediate',expert:'Expert'},typeNames:{normal:'Normal',fire:'Fire',water:'Water',electric:'Electric',grass:'Grass',ice:'Ice',fighting:'Fighting',poison:'Poison',ground:'Ground',flying:'Flying',psychic:'Psychic',bug:'Bug',rock:'Rock',ghost:'Ghost',dragon:'Dragon',dark:'Dark',steel:'Steel',fairy:'Fairy'},evoValue:n=>`${n}`,genValue:n=>`Gen ${n}`,win:'Won',loss:'Lost',licenses:' licenses',targetHint:'The answer’s {field}: {value}',up:'↑',down:'↓',sourceNote:'Playable means the Pokémon has a regular selectable Unite License; temporary control in special modes does not count. The pool includes playable licenses and wild map NPCs. Wild Pokémon families use the representative form that actually appears on the UNITE map. Maps indicate where the Pokémon or its family appears, with the Holiday variant and PT500 mode listed separately. NPC battle role, damage category, and license difficulty are N/A. Artwork by PokéAPI Sprites.',directionLegend:'Arrows show whether the answer is higher or lower',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     },
     ja: {
-      navGame:'ゲーム開始',navDex:'ポケモン図鑑',navStats:'プレイ記録',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.6',title:'今日のポケモンは誰？',subtitle:'名前を入力し、8つの特徴から正解を探そう。',difficultyTitle:'難易度を選択',difficultyIntro:'今日のチャレンジ範囲を選びます。難易度によって答えの候補と予想回数が変わります。',modeEasy:'かんたん',modeEasyDesc:'操作難易度「初級」のライセンスから出題。ロスターに慣れるのにおすすめ。',modeNormal:'ふつう',modeNormalDesc:'初級と中級のライセンスから出題。バランスのよい難易度です。',modeHard:'むずかしい',modeHardDesc:'プレイ可能なライセンスとマップNPCがすべて候補。予想は6回まで。',modeHell:'地獄',modeHellDesc:'プレイ可能なライセンスとマップNPCが候補。予想は4回まで、ヒントは使用できません。',modePoolSuffix:'匹',modePlayableSuffix:'匹のポケモン',modeNpcSuffix:'匹のNPCポケモン',modeAttemptsSuffix:'回',noHint:'この難易度ではヒントを使用できません。',chooseMode:'チャレンジ開始',changeMode:'難易度を変更',hintUnavailable:'地獄モードではヒントを使用できません。',dexFilterHelp:'同じグループでは複数選択でき、いずれかに一致すれば表示されます。異なるグループはすべて一致する必要があります。',filterRole:'バトルスタイル',filterDamage:'攻撃分類',filterTypes:'ポケモンのタイプ',filterEvolution:'本編の進化回数',filterGeneration:'図鑑世代',filterDifficulty:'操作難易度',filterPlayable:'プレイ可能',filterMaps:'主な出現マップ',playableYes:'プレイ可能',playableNo:'プレイ不可',npcTag:'マップNPC',notApplicable:'該当なし',mapNames:{remoat:'レモータスタジアム', 'remoat-holiday':'レモータスタジアム（氷雪Ver.）', pt500:'レモータスタジアム（PT500）', mer:'マールスタジアム',auroma:'ゼフィオパーク',shivre:'ジーヴルシティ',theia:'テイア蒼空遺跡'},all:'すべて',clearFilters:'絞り込みを解除',sortLabel:'並べ替え',sortName:'名前',sortGeneration:'世代',sortDifficulty:'難易度',sortRole:'ロール',dexNoMatches:'条件に一致するライセンスがありません。検索や絞り込みを変更してください。',dexDetails:'ライセンス情報',detailClose:'閉じる',detailGeneration:'第{n}世代',detailEvolution:'進化回数：{n}',filterSelected:'{n}件選択',standard:'8項目モード',time:'タイム',round:'回数',left:'残り',hint:'ヒント',reset:'新しいゲーム',howTitle:'遊び方',howText:'8つの特徴を照合します。緑は一致、黄色はタイプまたはマップの一部一致、赤は不一致、灰色の「対象外」は比較できない項目です。数値の矢印は正解の値が大きいか小さいかを示します。',placeholder:'ポケモンの名前を入力…',guess:'予想',inputNote:'繁體中文、簡体中文、英語、日本語の名前で入力できます。',history:'予想履歴',historySub:'予想するたびにヒントが増えます。',name:'ポケモン',role:'バトルスタイル',damage:'攻撃タイプ',types:'ポケモンのタイプ',evolution:'本編の進化回数',generation:'図鑑世代',difficulty:'難易度',playable:'プレイ可能',maps:'主な出現マップ',notCompared:'対象外',empty:'まだ予想がありません。下からポケモンを入力しよう！',correct:'完全一致',partial:'一部一致',wrong:'不一致',dexTitle:'ポケモン図鑑',dexSub:'ゲームに登録されているポケモンの特徴を確認できます。',search:'ポケモンを検索…',allRoles:'すべて',statsTitle:'プレイ記録',statsSub:'予想の成績はこのブラウザーに保存されます。',played:'プレイ回数',wins:'正解数',rate:'正解率',best:'最少予想回数',recent:'最近のゲーム',clear:'記録を削除',noRecords:'プレイ記録はまだありません。',wonTitle:'正解！',lostTitle:'惜しい！',found:'正解のポケモンを見つけました',answer:'正解',attempts:'予想回数',elapsed:'時間',winStreak:'現在の連勝',bestStreak:'最高連勝',wonSubtitle:'隠れていたポケモンを見つけました！',lostSubtitle:'正解を発表します。次のラウンドに挑戦しよう！',resultModes:'難易度を選択',again:'もう一度遊ぶ',seeDex:'図鑑を見る',hintPrefix:'ヒント公開',hintUsed:'このゲームではヒントを使用済みです。',invalid:'ポケモンが見つかりません。候補から選んでください。',duplicate:'そのポケモンはすでに予想しています。',finished:'このゲームは終了しました。新しいゲームを始めてください。',footer:'非公式ファンメイド作品です。PokémonおよびPokémon UNITEとは関係ありません。',helpTitle:'遊び方',helpHtml:'<ol><li>かんたん・ふつうはプレイ可能なライセンスのみ、むずかしい・地獄はマップNPCも出題対象です。野生ポケモンの進化系統は、UNITEマップに実際に登場する代表形態を出題します。</li><li>繁體中文、簡体中文、英語、日本語の名前を入力できます。</li><li>予想できる回数は難易度によって異なります。<strong>バトルスタイル、攻撃タイプ、ポケモンのタイプ、本編の進化回数、図鑑世代、操作難易度、プレイ可能か、主な出現マップ</strong>を照合します。</li><li><strong>緑</strong>は一致、<strong>黄</strong>はタイプまたはマップの一部一致、<strong>赤</strong>は不一致、灰色の「対象外」は比較できない項目です。</li><li>進化回数と世代には矢印が表示されます。↑は正解の値が大きく、↓は小さいことを示します。</li><li>本編の進化回数は進化系統の最初の姿から数え、メガシンカは含みません。マップ欄には通常・イベントステージを表示します。</li><li>1ゲームにつき1回ヒントを使用できます。記録はこのブラウザー内に保存されます。</li></ol>',ok:'OK',roleNames:{attacker:'アタック',speedster:'スピード',allrounder:'バランス',defender:'ディフェンス',supporter:'サポート'},damageNames:{physical:'物理',special:'特殊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'上級'},typeNames:{normal:'ノーマル',fire:'ほのお',water:'みず',electric:'でんき',grass:'くさ',ice:'こおり',fighting:'かくとう',poison:'どく',ground:'じめん',flying:'ひこう',psychic:'エスパー',bug:'むし',rock:'いわ',ghost:'ゴースト',dragon:'ドラゴン',dark:'あく',steel:'はがね',fairy:'フェアリー'},evoValue:n=>`${n}回`,genValue:n=>`第${n}世代`,win:'正解',loss:'不正解',licenses:' ライセンス',targetHint:'正解の「{field}」：{value}',up:'↑',down:'↓',sourceNote:'プレイ可能とは通常のユナイトライセンスを所持することを指し、期間限定モードで一時的に操作できる場合は含みません。野生の進化系統は、UNITEマップに実際に登場する代表形態で登録しています。マップ欄は、そのポケモンまたは進化系統が出現する主なマップを示し、氷雪版とPT500モードを分けて表示します。NPCに適用されないバトルスタイル、攻撃分類、操作難易度は「該当なし」と表示します。画像：PokéAPI Sprites。',directionLegend:'矢印は正解の値が大きいか小さいかを示します',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
+      navGame:'ゲーム開始',navDex:'ポケモン図鑑',navStats:'プレイ記録',eyebrow:'POKÉMON UNITE · CHARACTER GUESS · V1.7.7',title:'今日のポケモンは誰？',subtitle:'名前を入力し、8つの特徴から正解を探そう。',difficultyTitle:'難易度を選択',difficultyIntro:'今日のチャレンジ範囲を選びます。難易度によって答えの候補と予想回数が変わります。',modeEasy:'かんたん',modeEasyDesc:'操作難易度「初級」のライセンスから出題。ロスターに慣れるのにおすすめ。',modeNormal:'ふつう',modeNormalDesc:'初級と中級のライセンスから出題。バランスのよい難易度です。',modeHard:'むずかしい',modeHardDesc:'プレイ可能なライセンスとマップNPCがすべて候補。予想は6回まで。',modeHell:'地獄',modeHellDesc:'プレイ可能なライセンスとマップNPCが候補。予想は4回まで、ヒントは使用できません。',modePoolSuffix:'匹',modePlayableSuffix:'匹のポケモン',modeNpcSuffix:'匹のNPCポケモン',modeAttemptsSuffix:'回',noHint:'この難易度ではヒントを使用できません。',chooseMode:'チャレンジ開始',changeMode:'難易度を変更',hintUnavailable:'地獄モードではヒントを使用できません。',dexFilterHelp:'同じグループでは複数選択でき、いずれかに一致すれば表示されます。異なるグループはすべて一致する必要があります。',filterRole:'バトルスタイル',filterDamage:'攻撃分類',filterTypes:'ポケモンのタイプ',filterEvolution:'本編の進化回数',filterGeneration:'図鑑世代',filterDifficulty:'操作難易度',filterPlayable:'プレイ可能',filterMaps:'主な出現マップ',playableYes:'プレイ可能',playableNo:'プレイ不可',npcTag:'マップNPC',notApplicable:'該当なし',mapNames:{remoat:'レモータスタジアム', 'remoat-holiday':'レモータスタジアム（氷雪Ver.）', pt500:'レモータスタジアム（PT500）', mer:'マールスタジアム',auroma:'ゼフィオパーク',shivre:'ジーヴルシティ',theia:'テイア蒼空遺跡'},all:'すべて',clearFilters:'絞り込みを解除',sortLabel:'並べ替え',sortName:'名前',sortGeneration:'世代',sortDifficulty:'難易度',sortRole:'ロール',dexNoMatches:'条件に一致するライセンスがありません。検索や絞り込みを変更してください。',dexDetails:'ライセンス情報',detailClose:'閉じる',detailGeneration:'第{n}世代',detailEvolution:'進化回数：{n}',filterSelected:'{n}件選択',standard:'8項目モード',time:'タイム',round:'回数',left:'残り',hint:'ヒント',reset:'新しいゲーム',howTitle:'遊び方',howText:'8つの特徴を照合します。緑は一致、黄色はタイプまたはマップの一部一致、赤は不一致、灰色の「対象外」は比較できない項目です。数値の矢印は正解の値が大きいか小さいかを示します。',placeholder:'ポケモンの名前を入力…',guess:'予想',inputNote:'繁體中文、簡体中文、英語、日本語の名前で入力できます。',history:'予想履歴',historySub:'予想するたびにヒントが増えます。',name:'ポケモン',role:'バトルスタイル',damage:'攻撃タイプ',types:'ポケモンのタイプ',evolution:'本編の進化回数',generation:'図鑑世代',difficulty:'難易度',playable:'プレイ可能',maps:'主な出現マップ',notCompared:'対象外',empty:'まだ予想がありません。下からポケモンを入力しよう！',correct:'完全一致',partial:'一部一致',wrong:'不一致',dexTitle:'ポケモン図鑑',dexSub:'ゲームに登録されているポケモンの特徴を確認できます。',search:'ポケモンを検索…',allRoles:'すべて',statsTitle:'プレイ記録',statsSub:'予想の成績はこのブラウザーに保存されます。',played:'プレイ回数',wins:'正解数',rate:'正解率',best:'最少予想回数',recent:'最近のゲーム',clear:'記録を削除',noRecords:'プレイ記録はまだありません。',wonTitle:'正解！',lostTitle:'惜しい！',found:'正解のポケモンを見つけました',answer:'正解',attempts:'予想回数',elapsed:'時間',winStreak:'現在の連勝',bestStreak:'最高連勝',wonSubtitle:'隠れていたポケモンを見つけました！',lostSubtitle:'正解を発表します。次のラウンドに挑戦しよう！',resultModes:'難易度を選択',again:'もう一度遊ぶ',seeDex:'図鑑を見る',hintPrefix:'ヒント公開',hintUsed:'このゲームではヒントを使用済みです。',invalid:'ポケモンが見つかりません。候補から選んでください。',duplicate:'そのポケモンはすでに予想しています。',finished:'このゲームは終了しました。新しいゲームを始めてください。',footer:'非公式ファンメイド作品です。PokémonおよびPokémon UNITEとは関係ありません。',helpTitle:'遊び方',helpHtml:'<ol><li>かんたん・ふつうはプレイ可能なライセンスのみ、むずかしい・地獄はマップNPCも出題対象です。野生ポケモンの進化系統は、UNITEマップに実際に登場する代表形態を出題します。</li><li>繁體中文、簡体中文、英語、日本語の名前を入力できます。</li><li>予想できる回数は難易度によって異なります。<strong>バトルスタイル、攻撃タイプ、ポケモンのタイプ、本編の進化回数、図鑑世代、操作難易度、プレイ可能か、主な出現マップ</strong>を照合します。</li><li><strong>緑</strong>は一致、<strong>黄</strong>はタイプまたはマップの一部一致、<strong>赤</strong>は不一致、灰色の「対象外」は比較できない項目です。</li><li>進化回数と世代には矢印が表示されます。↑は正解の値が大きく、↓は小さいことを示します。</li><li>本編の進化回数は進化系統の最初の姿から数え、メガシンカは含みません。マップ欄には通常・イベントステージを表示します。</li><li>1ゲームにつき1回ヒントを使用できます。記録はこのブラウザー内に保存されます。</li></ol>',ok:'OK',roleNames:{attacker:'アタック',speedster:'スピード',allrounder:'バランス',defender:'ディフェンス',supporter:'サポート'},damageNames:{physical:'物理',special:'特殊'},difficultyNames:{novice:'初級',intermediate:'中級',expert:'上級'},typeNames:{normal:'ノーマル',fire:'ほのお',water:'みず',electric:'でんき',grass:'くさ',ice:'こおり',fighting:'かくとう',poison:'どく',ground:'じめん',flying:'ひこう',psychic:'エスパー',bug:'むし',rock:'いわ',ghost:'ゴースト',dragon:'ドラゴン',dark:'あく',steel:'はがね',fairy:'フェアリー'},evoValue:n=>`${n}回`,genValue:n=>`第${n}世代`,win:'正解',loss:'不正解',licenses:' ライセンス',targetHint:'正解の「{field}」：{value}',up:'↑',down:'↓',sourceNote:'プレイ可能とは通常のユナイトライセンスを所持することを指し、期間限定モードで一時的に操作できる場合は含みません。野生の進化系統は、UNITEマップに実際に登場する代表形態で登録しています。マップ欄は、そのポケモンまたは進化系統が出現する主なマップを示し、氷雪版とPT500モードを分けて表示します。NPCに適用されないバトルスタイル、攻撃分類、操作難易度は「該当なし」と表示します。画像：PokéAPI Sprites。',directionLegend:'矢印は正解の値が大きいか小さいかを示します',dexDetail:'{role} · {damage} · {evo} · {gen} · {difficulty}'
     }
   };
+  // V1.7.7: Mega Evolution attribute translations (core-series eligibility).
+  Object.assign(I18N['zh-TW'], {
+    subtitle:'輸入角色名稱，從九項特徵提示找出神祕寶可夢。',
+    filterMega:'可否超級進化', mega:'可否超級進化', megaYes:'可以', megaNo:'不可以',
+    standard:'九項特徵模式',
+    howText:'每次猜測都會比對九項特徵。綠色代表符合，黃色代表屬性或地圖部分重疊，紅色代表不符合；灰色「無」代表該資料不適用。數值欄的箭頭表示答案在較高或較低的區間。',
+    helpHtml:'<ol><li>簡單與普通難度只從可遊玩角色出題；困難與地獄難度也會加入地圖 NPC。野生寶可夢家族會以 UNITE 地圖中實際出現的代表形態作為題目。</li><li>輸入角色名稱，支援繁體中文、簡體中文、英文及日文。</li><li>每局比對<strong>戰鬥定位、攻擊分類、寶可夢屬性、本傳進化次數、圖鑑世代、操作難度、可否遊玩、主要出現地圖、可否超級進化</strong>九項特徵。</li><li><strong>綠色</strong>代表符合；<strong>黃色</strong>代表屬性或地圖部分重疊；<strong>紅色</strong>代表不符合；灰色「無」代表該欄不適用。</li><li>進化次數及圖鑑世代會顯示方向箭頭：↑ 代表答案數值較高，↓ 代表答案數值較低。</li><li>超級進化資料依本傳遊戲中已具有超級進化形態的寶可夢判定；超級進化不計入一般進化次數。</li><li>提示會揭露答案的一項特徵，每局限用一次。遊玩紀錄只保存在目前瀏覽器。</li></ol>',
+    sourceNote:'「可遊玩」指有一般可選擇的集結參賽證；限時模式中暫時可操控不算。NPC 以 UNITE 地圖中實際出現的代表形態登錄。超級進化欄依本傳已公開的超級進化形態判定，包含《寶可夢 X／Y》、《歐米加紅寶石／阿爾法藍寶石》及《寶可夢傳說 Z-A》相關內容。超級進化圖示採用《寶可夢傳說 Z-A》官方網站使用的標誌。圖片由 PokéAPI Sprites 提供。'
+  });
+  Object.assign(I18N['zh-CN'], {
+    subtitle:'输入角色名称，从九项特征提示找出神秘宝可梦。',
+    filterMega:'是否可以超级进化', mega:'是否可以超级进化', megaYes:'可以', megaNo:'不可以',
+    standard:'九项特征模式',
+    howText:'每次猜测都会比对九项特征。绿色代表符合，黄色代表属性或地图部分重叠，红色代表不符合；灰色“不适用”代表该资料不适用。数值栏的箭头表示答案数值更高或更低。',
+    helpHtml:'<ol><li>简单与普通难度只从可玩角色出题；困难与地狱难度也会加入地图 NPC。野生宝可梦家族以 UNITE 地图中实际出现的代表形态作为题目。</li><li>输入角色名称，支持简体中文、繁体中文、英文及日文。</li><li>每局比对<strong>战斗定位、攻击分类、宝可梦属性、本传进化次数、图鉴世代、操作难度、是否可玩、主要出现地图、是否可以超级进化</strong>九项特征。</li><li><strong>绿色</strong>代表符合；<strong>黄色</strong>代表属性或地图部分重叠；<strong>红色</strong>代表不符合；灰色“不适用”代表该栏不适用。</li><li>进化次数及图鉴世代会显示方向箭头：↑ 代表答案数值更高，↓ 代表答案数值更低。</li><li>超级进化资料依据本传游戏中已拥有超级进化形态的宝可梦判定；超级进化不计入普通进化次数。</li><li>提示会揭晓答案的一项特征，每局限用一次。记录只保存在当前浏览器。</li></ol>',
+    sourceNote:'“可玩”指拥有常规可选的集结参赛证；限时模式中暂时可操控不算。NPC 以 UNITE 地图中实际出现的代表形态登记。超级进化栏依据本传中已有的超级进化形态判定，包含《宝可梦 X／Y》《欧米加红宝石／阿尔法蓝宝石》及《宝可梦传说 Z-A》相关内容。超级进化图示采用《宝可梦传说 Z-A》官方网站使用的标志。图片由 PokéAPI Sprites 提供。'
+  });
+  Object.assign(I18N['en'], {
+    subtitle:'Guess the Pokémon using nine attributes.',
+    filterMega:'Can Mega Evolve', mega:'Can Mega Evolve', megaYes:'Yes', megaNo:'No',
+    standard:'Nine-attribute mode',
+    howText:'Each guess is compared across nine attributes. Green means a match, yellow means partial overlap for types or maps, red means no match, and gray means not applicable. Arrows show whether a numeric answer is higher or lower.',
+    helpHtml:'<ol><li>Easy and Normal use playable Pokémon only; Hard and Hell also include map NPCs, represented by the forms that actually appear on UNITE maps.</li><li>Enter a Pokémon name in Traditional Chinese, Simplified Chinese, English, or Japanese.</li><li>Each guess compares nine attributes: <strong>battle role, damage category, Pokémon types, main-series evolution steps, Pokédex generation, license difficulty, playability, main map appearance, and Mega Evolution eligibility</strong>.</li><li><strong>Green</strong> means a match; <strong>yellow</strong> means partial overlap for types or maps; <strong>red</strong> means no match; gray means not applicable.</li><li>Arrows on evolution steps and generation show whether the answer is higher or lower.</li><li>Mega Evolution eligibility is based on species with a Mega-Evolved form in the core-series games. Mega Evolution is not counted as a normal evolution step.</li><li>Hints reveal one answer attribute and can be used once per round. Records are stored in this browser.</li></ol>',
+    sourceNote:'Playable means a standard UNITE license is available; temporary event availability does not count. NPCs use the representative forms that actually appear on UNITE maps. Mega Evolution eligibility follows Mega-Evolved forms in the core-series games, including Pokémon X/Y, Omega Ruby/Alpha Sapphire, and Pokémon Legends: Z-A content. The Mega Evolution symbol is the mark used on the official Pokémon Legends: Z-A website. Pokémon artwork is provided by PokéAPI Sprites.'
+  });
+  Object.assign(I18N['ja'], {
+    subtitle:'9つの特徴を手がかりにポケモンを当てよう。',
+    filterMega:'メガシンカできる？', mega:'メガシンカできる？', megaYes:'できる', megaNo:'できない',
+    standard:'9項目モード',
+    howText:'予想するたびに9つの特徴を照合します。緑は一致、黄色はタイプまたはマップの一部一致、赤は不一致、灰色は該当なしを表します。数値の矢印は正解の値が大きいか小さいかを示します。',
+    helpHtml:'<ol><li>かんたん・ふつうはプレイアブルポケモンのみ、むずかしい・地獄はマップNPCも対象です。NPCはUNITEのマップに実際に登場する代表形態で登録しています。</li><li>繁体字中国語、簡体字中国語、英語、日本語の名前で入力できます。</li><li>予想ごとに<strong>バトルスタイル、攻撃分類、タイプ、原作の進化回数、図鑑の世代、ライセンス難易度、プレイ可能か、主な出現マップ、メガシンカできるか</strong>の9項目を照合します。</li><li>緑は一致、黄色はタイプまたはマップの一部一致、赤は不一致、灰色は該当なしです。</li><li>進化回数と世代の矢印は、正解の数値が大きいか小さいかを示します。</li><li>メガシンカの判定は、原作シリーズにメガシンカ形態が存在するポケモンを基準にしています。メガシンカは通常の進化回数に含みません。</li><li>ヒントは正解の特徴を1つ公開し、1ラウンドに1回だけ使えます。記録はこのブラウザーに保存されます。</li></ol>',
+    sourceNote:'プレイ可能とは通常のユナイトライセンスを所持することを指し、期間限定モードで一時的に操作できる場合は含みません。NPCはUNITEのマップに実際に登場する代表形態で登録しています。メガシンカ欄は『ポケットモンスター X・Y』『オメガルビー・アルファサファイア』『Pokémon LEGENDS Z-A』など原作シリーズのメガシンカ形態を基準にしています。メガシンカのアイコンは『Pokémon LEGENDS Z-A』公式サイトのシンボルを使用しています。画像：PokéAPI Sprites。'
+  });
   const $ = id => document.getElementById(id);
   const normalize = value => String(value||'').toLocaleLowerCase().normalize('NFKC').replace(/[\s.'’\-_:：]/g,'');
   let currentLang='zh-TW';
@@ -3389,7 +3569,7 @@ window.UNITE_ONE_POKEMON = [
   const getName = p => p[currentLang==='zh-TW'?'tw':currentLang==='zh-CN'?'sc':currentLang==='ja'?'ja':'en'];
   const getNames = p => [p.tw,p.sc,p.en,p.ja];
   let previousTarget=null, game=null, timerHandle=null, toastHandle=null, activeSuggestion=-1, dexSearchText='', selectedMode='normal', dexSort='name';
-  const dexFilters={playable:[],maps:[],role:[],damage:[],types:[],evolution:[],generation:[],difficulty:[]};
+  const dexFilters={playable:[],maps:[],role:[],damage:[],types:[],evolution:[],generation:[],difficulty:[],mega:[]};
   const blankStats=()=>({played:0,wins:0,streak:0,best:0,bestStreak:0,totalGuesses:0,history:[]});
   const loadStats=()=>{try{const v=JSON.parse(localStorage.getItem('uniteOneStats')||'null');if(!v||typeof v!=='object')return blankStats();const history=Array.isArray(v.history)?v.history:[];let run=0,historyBest=0;for(const record of history){if(record&&record.won){run++;historyBest=Math.max(historyBest,run);}else run=0;}return {...blankStats(),...v,bestStreak:Math.max(Number(v.bestStreak)||0,Number(v.streak)||0,historyBest),history};}catch{return blankStats();}};
   let stats=loadStats();
@@ -3405,8 +3585,8 @@ window.UNITE_ONE_POKEMON = [
     return `<span class="${cls}"><img src="${primary}" ${fallback?`data-fallback="${fallback}"`:''} alt="${esc(getName(p))}" loading="lazy" decoding="async" onerror="if(this.dataset.fallback){this.src=this.dataset.fallback;this.dataset.fallback='';}else{this.parentElement.classList.add('image-failed');this.remove();}"><span class="avatar-fallback">${esc(avatarText(p))}</span></span>`;
   }
   function toast(message){const el=$('toast');el.textContent=message;el.classList.add('show');clearTimeout(toastHandle);toastHandle=setTimeout(()=>el.classList.remove('show'),2100);}
-  const ATTRS=['role','damage','types','evolution','generation','difficulty','playable','maps'];
-  const FIELD_LABELS={role:'role',damage:'damage',types:'types',evolution:'evolution',generation:'generation',difficulty:'difficulty',playable:'filterPlayable',maps:'filterMaps'};
+  const ATTRS=['role','damage','types','evolution','generation','difficulty','playable','maps','mega'];
+  const FIELD_LABELS={role:'role',damage:'damage',types:'types',evolution:'evolution',generation:'generation',difficulty:'difficulty',playable:'filterPlayable',maps:'filterMaps',mega:'mega'};
   function typeOptions(p){return p.typeOptions||[p.types];}
   function formatTypes(p){return typeOptions(p).map(set=>set.map(id=>localized('typeNames',id)).join(' / ')).join(' · ');}
   function formatAttr(p,key){
@@ -3418,6 +3598,7 @@ window.UNITE_ONE_POKEMON = [
     if(key==='generation') return t('genValue')(p.generation);
     if(key==='playable') return p.playable ? t('playableYes') : t('playableNo');
     if(key==='maps') return Array.isArray(p.maps)&&p.maps.length ? p.maps.map(id=>localized('mapNames',id)).join(' · ') : t('notApplicable');
+    if(key==='mega') return p.mega ? t('megaYes') : t('megaNo');
     return t('notApplicable');
   }
   function typeMatch(a,b){
@@ -3508,7 +3689,7 @@ window.UNITE_ONE_POKEMON = [
   function renderCell(p,key){const c=compare(p,game.target,key);const cls=c.state==='match'?'cell-match':c.state==='partial'?'cell-partial':c.state==='neutral'?'cell-neutral':'cell-miss';const status=c.state==='match'?t('correct'):c.state==='partial'?t('partial'):c.state==='neutral'?t('notCompared'):t('wrong');const sym=c.state==='match'?'✓':c.state==='partial'?'◐':c.state==='neutral'?'—':'×';const extra=c.arrow?`<span class="direction-arrow">${esc(c.arrow)}</span>`:'';const icon=attributeIcon(p,key);const iconHtml=icon?`<span class="cell-attribute-icon" aria-hidden="true">${icon}</span>`:'';return `<td class="${cls}" title="${esc(status)}"><span class="match-symbol">${sym}</span>${iconHtml}<span>${esc(c.value)}</span>${extra}</td>`;}
   function renderGame(){
     const body=$('guess-rows');
-    if(!game.guesses.length){body.innerHTML=`<tr class="empty-row"><td colspan="9"><span class="empty-star">✧</span><span>${t('empty')}</span></td></tr>`;}
+    if(!game.guesses.length){body.innerHTML=`<tr class="empty-row"><td colspan="10"><span class="empty-star">✧</span><span>${t('empty')}</span></td></tr>`;}
     else{body.innerHTML=game.guesses.map(p=>{const name=esc(getName(p));const isAnswer=p.id===game.target.id;const nameHtml=`<td class="${isAnswer?'cell-match':'cell-neutral'}"><div class="pokemon-cell">${pokemonImage(p,'avatar')}<span>${name}</span></div></td>`;return `<tr class="guess-row">${nameHtml}${ATTRS.map(k=>renderCell(p,k)).join('')}</tr>`;}).join('');}
     updateStatus();
   }
@@ -3568,7 +3749,8 @@ window.UNITE_ONE_POKEMON = [
     {key:'types',options:Object.keys(I18N['en'].typeNames)},
     {key:'evolution',options:['0','1','2']},
     {key:'generation',options:['1','2','3','4','5','6','7','8','9']},
-    {key:'difficulty',options:['novice','intermediate','expert','none']}
+    {key:'difficulty',options:['novice','intermediate','expert','none']},
+    {key:'mega',options:['true','false']}
   ];
   function filterLabel(group,key){
     if(key==='none')return t('notApplicable');
@@ -3578,6 +3760,7 @@ window.UNITE_ONE_POKEMON = [
     if(group==='damage')return localized('damageNames',key);
     if(group==='types')return localized('typeNames',key);
     if(group==='difficulty')return localized('difficultyNames',key);
+    if(group==='mega')return key==='true'?t('megaYes'):t('megaNo');
     if(group==='evolution')return `${key} ${currentLang==='en'?'steps':currentLang==='ja'?'回':'次'}`;
     if(group==='generation')return currentLang==='en'?`Gen ${key}`:currentLang==='ja'?`${key}世代`:`第 ${key} 世代`;
     return key;
@@ -3596,7 +3779,7 @@ window.UNITE_ONE_POKEMON = [
     }));
   }
   function matchesDexFilters(p){
-    const values={playable:[String(Boolean(p.playable))],maps:p.maps&&p.maps.length?[...p.maps]:['none'],role:[p.role||'none'],damage:[p.damage||'none'],types:[...new Set(typeOptions(p).flat())],evolution:[String(p.evolution)],generation:[String(p.generation)],difficulty:[p.difficulty||'none']};
+    const values={playable:[String(Boolean(p.playable))],maps:p.maps&&p.maps.length?[...p.maps]:['none'],role:[p.role||'none'],damage:[p.damage||'none'],types:[...new Set(typeOptions(p).flat())],evolution:[String(p.evolution)],generation:[String(p.generation)],difficulty:[p.difficulty||'none'],mega:[String(Boolean(p.mega))]};
     return Object.entries(dexFilters).every(([key,selected])=>!selected.length||selected.some(v=>values[key].includes(v)));
   }
   function renderDex(){
@@ -3605,7 +3788,7 @@ window.UNITE_ONE_POKEMON = [
     const sorters={name:(a,b)=>getName(a).localeCompare(getName(b)),generation:(a,b)=>a.generation-b.generation||getName(a).localeCompare(getName(b)),difficulty:(a,b)=>(['novice','intermediate','expert'].indexOf(a.difficulty)<0?99:['novice','intermediate','expert'].indexOf(a.difficulty))-(['novice','intermediate','expert'].indexOf(b.difficulty)<0?99:['novice','intermediate','expert'].indexOf(b.difficulty))||getName(a).localeCompare(getName(b)),role:(a,b)=>(a.role||'zzz').localeCompare(b.role||'zzz')||getName(a).localeCompare(getName(b))};
     list.sort(sorters[dexSort]||sorters.name);
     $('dex-total').textContent=currentLang==='en'?`${list.length} of ${POKEMON.length} Pokémon`:currentLang==='ja'?`${POKEMON.length}件中 ${list.length}件`:`共 ${list.length} / ${POKEMON.length} 個角色`;
-    $('dex-grid').innerHTML=list.map(p=>`<button class="dex-card" type="button" data-pokemon-id="${p.id}"><span class="dex-art">${pokemonImage(p,'avatar')}<span class="dex-card-role">${esc(p.playable?formatAttr(p,'role'):t('npcTag'))}</span><span class="dex-card-gen">${esc(filterLabel('generation',String(p.generation)))}</span></span><span class="dex-card-info"><strong>${esc(getName(p))}</strong><small>${esc(formatAttr(p,'playable'))} · ${esc(formatAttr(p,'maps'))}</small><small>${esc(formatAttr(p,'role'))} · ${esc(formatAttr(p,'damage'))} · ${esc(formatTypes(p))}</small><small>${esc(formatAttr(p,'difficulty'))} · ${esc(formatAttr(p,'evolution'))}</small></span></button>`).join('')||`<div class="no-records dex-empty">${t('dexNoMatches')}</div>`;
+    $('dex-grid').innerHTML=list.map(p=>`<button class="dex-card" type="button" data-pokemon-id="${p.id}"><span class="dex-art">${pokemonImage(p,'avatar')}<span class="dex-card-role">${esc(p.playable?formatAttr(p,'role'):t('npcTag'))}</span><span class="dex-card-gen">${esc(filterLabel('generation',String(p.generation)))}</span></span><span class="dex-card-info"><strong>${esc(getName(p))}</strong><small>${esc(formatAttr(p,'playable'))} · ${esc(formatAttr(p,'maps'))}</small><small>${esc(formatAttr(p,'role'))} · ${esc(formatAttr(p,'damage'))} · ${esc(formatTypes(p))}</small><small>${esc(formatAttr(p,'difficulty'))} · ${esc(formatAttr(p,'evolution'))}</small><small>${esc(formatAttr(p,'mega'))}</small></span></button>`).join('')||`<div class="no-records dex-empty">${t('dexNoMatches')}</div>`;
     $('dex-grid').querySelectorAll('[data-pokemon-id]').forEach(btn=>btn.addEventListener('click',()=>showDexDetail(POKEMON.find(p=>p.id===btn.dataset.pokemonId))));
     document.querySelectorAll('[data-dex-sort]').forEach(btn=>btn.classList.toggle('active',btn.dataset.dexSort===dexSort));
   }
@@ -3615,7 +3798,7 @@ window.UNITE_ONE_POKEMON = [
     $('dex-modal').classList.remove('hidden');
   }
   function renderStats(){const rate=stats.played?Math.round(stats.wins/stats.played*100):0;const cards=[[t('played'),stats.played],[t('wins'),stats.wins],[t('rate'),`${rate}%`],[t('best'),stats.best||'—'],[t('bestStreak'),stats.bestStreak||0]];$('stats-grid').innerHTML=cards.map(([label,value])=>`<div class="stat-card"><span>${label}</span><strong>${value}</strong></div>`).join('');if(!stats.history.length){$('recent-list').innerHTML=`<div class="no-records">${t('noRecords')}</div>`;return;}$('recent-list').innerHTML=stats.history.map(r=>{const p=POKEMON.find(x=>x.id===r.id);if(!p)return '';const date=new Date(r.at).toLocaleString(currentLang==='en'?'en-US':currentLang==='ja'?'ja-JP':currentLang==='zh-CN'?'zh-CN':'zh-TW',{month:'numeric',day:'numeric',hour:'2-digit',minute:'2-digit'});return `<div class="recent-item">${pokemonImage(p,'avatar')}<div><strong>${esc(getName(p))}</strong><small>${date} · ${r.guesses} ${t('attempts')} · ${formatTime(r.duration)}</small></div><span class="recent-result ${r.won?'won':'lost'}">${r.won?t('win'):t('loss')}</span></div>`;}).join('');}
-  function applyLanguage(){document.documentElement.lang=currentLang==='zh-TW'?'zh-Hant':currentLang==='zh-CN'?'zh-Hans':currentLang;$('language-select').value=currentLang;const map={'nav-game':'navGame','nav-dex':'navDex','nav-stats':'navStats','eyebrow':'eyebrow','main-title':'title','main-subtitle':'subtitle','change-mode-label':'changeMode','status-time-label':'time','status-round-label':'round','status-left-label':'left','hint-label':'hint','reset-label':'reset','how-title':'howTitle','how-text':'howText','guess-btn-label':'guess','input-note':'inputNote','history-title':'history','history-subtitle':'historySub','th-name-label':'name','th-role-label':'role','th-damage-label':'damage','th-types-label':'types','th-evolution-label':'evolution','th-generation-label':'generation','th-difficulty-label':'difficulty','th-playable-label':'filterPlayable','th-maps-label':'filterMaps','empty-message':'empty','legend-correct':'correct','legend-partial':'partial','legend-wrong':'wrong','legend-neutral':'notCompared','legend-direction':'directionLegend','dex-title':'dexTitle','dex-subtitle':'dexSub','dex-source-note':'sourceNote','difficulty-title':'difficultyTitle','difficulty-intro':'difficultyIntro','dex-filter-help':'dexFilterHelp','clear-dex-filters':'clearFilters','sort-label':'sortLabel','sort-name-label':'sortName','sort-generation-label':'sortGeneration','sort-difficulty-label':'sortDifficulty','sort-role-label':'sortRole','stats-title':'statsTitle','stats-subtitle':'statsSub','recent-title':'recent','clear-stats':'clear','help-modal-title':'helpTitle','help-ok':'ok','footer-note':'footer'};Object.entries(map).forEach(([id,k])=>{if($(id))$(id).textContent=t(k);});if(game)$('mode-label').textContent=modeName(game.mode);$('guess-input').placeholder=t('placeholder');$('dex-search').placeholder=t('search');renderDifficultyPicker();renderDexFilters();$('help-content').innerHTML=t('helpHtml');if(game)renderGame();if($('dex-view').classList.contains('active-view'))renderDex();if($('stats-view').classList.contains('active-view'))renderStats();if(game&&game.finished&&!$('result-modal').classList.contains('hidden'))renderResult();updateStatus();}
+  function applyLanguage(){document.documentElement.lang=currentLang==='zh-TW'?'zh-Hant':currentLang==='zh-CN'?'zh-Hans':currentLang;$('language-select').value=currentLang;const map={'nav-game':'navGame','nav-dex':'navDex','nav-stats':'navStats','eyebrow':'eyebrow','main-title':'title','main-subtitle':'subtitle','change-mode-label':'changeMode','status-time-label':'time','status-round-label':'round','status-left-label':'left','hint-label':'hint','reset-label':'reset','how-title':'howTitle','how-text':'howText','guess-btn-label':'guess','input-note':'inputNote','history-title':'history','history-subtitle':'historySub','th-name-label':'name','th-role-label':'role','th-damage-label':'damage','th-types-label':'types','th-evolution-label':'evolution','th-generation-label':'generation','th-difficulty-label':'difficulty','th-playable-label':'filterPlayable','th-maps-label':'filterMaps','th-mega-label':'mega','empty-message':'empty','legend-correct':'correct','legend-partial':'partial','legend-wrong':'wrong','legend-neutral':'notCompared','legend-direction':'directionLegend','dex-title':'dexTitle','dex-subtitle':'dexSub','dex-source-note':'sourceNote','difficulty-title':'difficultyTitle','difficulty-intro':'difficultyIntro','dex-filter-help':'dexFilterHelp','clear-dex-filters':'clearFilters','sort-label':'sortLabel','sort-name-label':'sortName','sort-generation-label':'sortGeneration','sort-difficulty-label':'sortDifficulty','sort-role-label':'sortRole','stats-title':'statsTitle','stats-subtitle':'statsSub','recent-title':'recent','clear-stats':'clear','help-modal-title':'helpTitle','help-ok':'ok','footer-note':'footer'};Object.entries(map).forEach(([id,k])=>{if($(id))$(id).textContent=t(k);});if(game)$('mode-label').textContent=modeName(game.mode);$('guess-input').placeholder=t('placeholder');$('dex-search').placeholder=t('search');renderDifficultyPicker();renderDexFilters();$('help-content').innerHTML=t('helpHtml');if(game)renderGame();if($('dex-view').classList.contains('active-view'))renderDex();if($('stats-view').classList.contains('active-view'))renderStats();if(game&&game.finished&&!$('result-modal').classList.contains('hidden'))renderResult();updateStatus();}
   $('guess-input').addEventListener('input',renderSuggestions);
   $('guess-input').addEventListener('keydown',e=>{const b=[...$('suggestions').querySelectorAll('.suggestion')];if(e.key==='ArrowDown'&&b.length){e.preventDefault();activeSuggestion=(activeSuggestion+1)%b.length;b.forEach((x,i)=>x.classList.toggle('active',i===activeSuggestion));}else if(e.key==='ArrowUp'&&b.length){e.preventDefault();activeSuggestion=(activeSuggestion-1+b.length)%b.length;b.forEach((x,i)=>x.classList.toggle('active',i===activeSuggestion));}else if(e.key==='Enter'){e.preventDefault();if(activeSuggestion>=0&&b[activeSuggestion])b[activeSuggestion].click();else submitGuess();}else if(e.key==='Escape')hideSuggestions();});
   $('guess-btn').addEventListener('click',()=>submitGuess());$('hint-btn').addEventListener('click',showHint);$('reset-btn').addEventListener('click',()=>newGame());
