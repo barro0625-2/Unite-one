@@ -1,5 +1,6 @@
 # Unite-one
 Pokémon UNITE Fan-made Guess Game
+
 排位規則
 - 單人模式，固定地獄難度、完整題庫、不可使用提示、最多 4 次猜測。
 - 目標：在 1、3、5 分鐘內猜中 1 隻寶可夢。
