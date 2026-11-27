@@ -3822,5 +3822,36 @@ window.UNITE_ONE_POKEMON = [
 })();
 
 </script>
+  <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
+import { getDatabase } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-database.js";
+import {
+  getAuth,
+  onAuthStateChanged,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signInAnonymously,
+  signOut
+} from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyAS5SSLXOFQB2enLQYjk0LqY3nMdTgfcCY",
+  authDomain: "unite-one-39b9b.firebaseapp.com",
+  databaseURL: "https://unite-one-39b9b-default-rtdb.asia-southeast1.firebasedatabase.app",
+  projectId: "unite-one-39b9b",
+  storageBucket: "unite-one-39b9b.firebasestorage.app",
+  messagingSenderId: "824640873441",
+  appId: "1:824640873441:web:84af5afa776edf4369e8a0",
+  measurementId: "G-Y080N9134C"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getDatabase(app);
+const auth = getAuth(app);
+
+window.firebaseDB = db;
+window.firebaseAuth = auth;
+
+</script>
 </body>
 </html>
