@@ -4636,6 +4636,9 @@ roomStyle.textContent = `
   .room-guess-table th:first-child,.room-guess-table td.room-pokemon-cell{position:sticky;left:0;}
   .room-guess-table th:first-child{z-index:5;background:#410e34;box-shadow:2px 0 5px rgba(0,0,0,.2)}
   .room-guess-table td.room-pokemon-cell{z-index:3;background:#2b0925!important;box-shadow:2px 0 5px rgba(0,0,0,.2)}
+  /* V1.8.4 correction: the Pokémon column should scroll horizontally with the rest of the table. */
+  .room-guess-table th:first-child{left:auto!important;z-index:2}
+  .room-guess-table td.room-pokemon-cell{position:static!important;left:auto!important;z-index:auto!important;box-shadow:none!important}
   @media(max-width:650px){.room-rematch-controls{grid-template-columns:1fr}.room-rematch-controls label{grid-column:auto}.room-rematch-controls button{width:100%}.room-panel{padding:16px}.room-create-grid,.room-player-grid,.room-guess-columns{grid-template-columns:1fr}.room-panel-head,.room-session-head{align-items:flex-start}.room-guess-form{grid-template-columns:1fr}.room-guess-form button{width:auto}.room-clue-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.room-session-actions button{flex:1}.room-guess-input-wrap{padding:5px 6px 5px 14px;gap:7px}.room-guess-input-wrap input{font-size:16px;min-width:0}.room-guess-input-wrap .primary-btn{padding:11px 13px;font-size:12px}.room-guess-input-wrap .suggestions{left:0;right:0;max-height:min(42vh,330px)}.room-turn-box{padding:12px}}
 `;
 document.head.appendChild(roomStyle);
