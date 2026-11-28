@@ -194,6 +194,16 @@
 .cell-attribute-icon .type-badge+.type-badge{margin-left:2px}
 @media(max-width:620px){.guess-table th .guess-th-icon{flex-basis:22px;width:22px;height:22px;margin-right:5px;font-size:13px;border-radius:7px}.cell-attribute-icon{min-width:19px;min-height:19px;margin-right:4px}.cell-attribute-icon .type-badge{width:18px;height:18px}.mega-evolution-icon{width:13px;height:18px}}
 
+
+/* V2.0.1: center Ranked lobby like the difficulty selector */
+#rank-view .rank-page-heading{justify-content:center;text-align:center;flex-direction:column;gap:18px}
+#rank-view .rank-page-heading>div:first-child{max-width:780px}
+#rank-view .rank-heading-tools{justify-content:center}
+#rank-view .rank-rules-strip{justify-content:center}
+#rank-view .rank-mode-grid{grid-template-columns:minmax(0,1fr);max-width:720px;margin:0 auto 22px}
+#rank-view .rank-mode-card{width:100%}
+@media(max-width:850px){#rank-view .rank-mode-grid{max-width:100%}}
+
 /* Ranked mode */
 .rank-page-heading{align-items:center}.rank-season-chip{border:1px solid rgba(255,211,128,.4);color:#ffe0a0;background:rgba(189,127,34,.12);border-radius:999px;padding:10px 15px;font-size:11px;font-weight:900;letter-spacing:.15em;white-space:nowrap}
 .rank-rules-strip{display:flex;gap:9px;flex-wrap:wrap;margin:-5px 0 18px}.rank-rules-strip span{border:1px solid var(--line);background:rgba(30,3,25,.35);border-radius:999px;padding:8px 12px;color:#e9c5dd;font-size:11px;font-weight:700}
@@ -3956,7 +3966,7 @@ window.UNITE_ONE_POKEMON = [
   const CHANGELOG_TEXTS = {
     'zh-TW': {
       title:'更新日誌', subtitle:'查看 UNITE-ONE 各版本新增功能、調整與修正。', footnote:'版本紀錄依照已加入遊戲的功能整理；較早版本僅列出主要更新。', latest:'最新版本',
-      items:[{v:'V2.0.0',title:'排位模式整合',bullets:['移除 1 分鐘與 3 分鐘排位模式及排行榜，只保留原 5 分鐘模式。','將原 5 分鐘模式名稱統一改為「牌位模式」，段位、積分、連勝與排行榜以此模式累積。','同步更新繁體中文、簡體中文、英文及日文介面與更新日誌。']},
+      items:[{v:'V2.0.1',title:'牌位大廳版面調整',bullets:['將牌位模式頁面調整為置中版面，與一般難度選擇頁一致。']},{v:'V2.0.0',title:'排位模式整合',bullets:['移除 1 分鐘與 3 分鐘排位模式及排行榜，只保留原 5 分鐘模式。','將原 5 分鐘模式名稱統一改為「牌位模式」，段位、積分、連勝與排行榜以此模式累積。','同步更新繁體中文、簡體中文、英文及日文介面與更新日誌。']},
         {v:'V1.9.9',title:'超級進化形態欄位名稱調整',bullets:['將猜測表格與角色圖鑑篩選的欄位名稱統一為「超級進化形態」。','提示結果統一顯示為「有／無」，讓欄位名稱與答案更直覺。','同步更新繁體中文、簡體中文、英文及日文介面與說明。']},
         {v:'V1.9.8',title:'超級進化線索名稱釐清',bullets:['將猜測表格與圖鑑篩選名稱統一為「是否有超級進化形」。','答案改為「有／沒有」，並明確說明此欄判斷是否存在超級進化形態，不代表寶可夢目前正處於超級進化狀態。','同步更新繁體中文、簡體中文、英文及日文介面與說明。']},
         {v:'V1.9.7',title:'危機驚襲大防衛！地圖分類',bullets:['新增獨立「危機驚襲大防衛！」地圖分類，與吉弗市一般地圖分開顯示。','將 17 隻原先標記於吉弗市、且出現在防衛模式的寶可夢改列為危機驚襲大防衛；同時出現在兩種模式的寶可夢保留雙重地圖標籤。','更新圖鑑地圖篩選與四種語言的地圖名稱。']},
@@ -3976,7 +3986,7 @@ window.UNITE_ONE_POKEMON = [
     },
     'zh-CN': {
       title:'更新日志', subtitle:'查看 UNITE-ONE 各版本新增功能、调整与修复。', footnote:'版本记录根据已加入游戏的功能整理；较早版本仅列出主要更新。', latest:'最新版本',
-      items:[{v:'V2.0.0',title:'排位模式整合',bullets:['移除 1 分钟与 3 分钟排位模式及排行榜，仅保留原 5 分钟模式。','将原 5 分钟模式名称统一为「排位模式」，段位、积分、连胜与排行榜均在此模式累积。','同步更新繁体中文、简体中文、英文和日文界面及更新日志。']},
+      items:[{v:'V2.0.1',title:'排位大厅版面调整',bullets:['将排位模式页面调整为居中布局，与一般难度选择页一致。']},{v:'V2.0.0',title:'排位模式整合',bullets:['移除 1 分钟与 3 分钟排位模式及排行榜，仅保留原 5 分钟模式。','将原 5 分钟模式名称统一为「排位模式」，段位、积分、连胜与排行榜均在此模式累积。','同步更新繁体中文、简体中文、英文和日文界面及更新日志。']},
         {v:'V1.9.9',title:'超级进化形态字段名称调整',bullets:['将猜测表格与角色图鉴筛选的字段名称统一为“超级进化形态”。','提示结果统一显示为“有／无”，让字段名称与答案更加直观。','同步更新繁体中文、简体中文、英文和日文界面及说明。']},
         {v:'V1.9.8',title:'超级进化线索名称说明',bullets:['将猜测表格与图鉴筛选名称统一为“是否有超级进化形态”。','答案改为“有／没有”，并明确说明此栏判断是否存在超级进化形态，不代表宝可梦当前正处于超级进化状态。','同步更新繁体中文、简体中文、英文和日文界面及说明。']},
         {v:'V1.9.7',title:'危机惊袭大防卫！地图分类',bullets:['新增独立的“危机惊袭大防卫！”地图分类，与吉弗市普通地图分开显示。','将 17 只原先标记在吉弗市、且出现在防卫模式中的宝可梦改列到危机惊袭大防卫；同时出现在两种模式的宝可梦保留双地图标签。','更新图鉴地图筛选及四种语言的地图名称。']},
@@ -3996,7 +4006,7 @@ window.UNITE_ONE_POKEMON = [
     },
     en: {
       title:'Update Log', subtitle:'Explore new features, adjustments, and fixes in each UNITE-ONE release.', footnote:'Entries summarize features included in the game; older releases list their major changes.', latest:'LATEST',
-      items:[{v:'V2.0.0',title:'Ranked Mode Consolidation',bullets:['Removed the 1-minute and 3-minute Ranked modes and leaderboards, keeping the original 5-minute mode.','Renamed the retained mode to Ranked Mode; rank, points, streaks, and leaderboard progress now use this single mode.','Updated the interface and changelog in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
+      items:[{v:'V2.0.1',title:'Ranked Lobby Layout',bullets:['Centered the Ranked Mode lobby to match the regular difficulty-selection layout.']},{v:'V2.0.0',title:'Ranked Mode Consolidation',bullets:['Removed the 1-minute and 3-minute Ranked modes and leaderboards, keeping the original 5-minute mode.','Renamed the retained mode to Ranked Mode; rank, points, streaks, and leaderboard progress now use this single mode.','Updated the interface and changelog in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
         {v:'V1.9.9',title:'Clearer Mega Evolution Label',bullets:['Renamed the guessing-table attribute and Pokédex filter to “Mega Evolution Form”.','Standardized the answers as “Yes / No” for a clearer, more direct clue.','Updated the interface and help text in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
         {v:'V1.9.8',title:'Clarified Mega Evolution Attribute',bullets:['Renamed the guessing-table and Pokédex filter attribute to “Mega Form Available”.','Changed the answers to “Yes / No” and clarified that the attribute checks whether a Mega Evolution form exists, not the Pokémon’s current battle state.','Updated the interface and help text in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
         {v:'V1.9.7',title:'Panic Parade Map Category',bullets:['Added a dedicated Panic Parade map category, separate from the regular Shivre City stage.','Reclassified 17 Pokémon previously tagged under Shivre City that also appear in the defense mode; Pokémon appearing in both modes retain both map tags.','Updated Pokédex map filters and map names in all four supported languages.']},
@@ -4016,7 +4026,7 @@ window.UNITE_ONE_POKEMON = [
     },
     ja: {
       title:'更新履歴', subtitle:'UNITE-ONE の各バージョンで追加・調整・修正された内容を確認できます。', footnote:'ゲームに実装された内容をもとに記載しています。古いバージョンは主な更新のみ掲載しています。', latest:'最新',
-      items:[{v:'V2.0.0',title:'ランクモード統合',bullets:['1分・3分のランクモードとランキングを廃止し、従来の5分モードのみを残しました。','残した5分モードの名称を「ランクモード」に統一し、ランク・ポイント・連勝・ランキングを一本化。','繁体字中国語、簡体字中国語、英語、日本語の表示と更新履歴を更新。']},
+      items:[{v:'V2.0.1',title:'ランクロビーのレイアウト調整',bullets:['ランクモード画面を通常の難易度選択画面と同様の中央配置に変更。']},{v:'V2.0.0',title:'ランクモード統合',bullets:['1分・3分のランクモードとランキングを廃止し、従来の5分モードのみを残しました。','残した5分モードの名称を「ランクモード」に統一し、ランク・ポイント・連勝・ランキングを一本化。','繁体字中国語、簡体字中国語、英語、日本語の表示と更新履歴を更新。']},
         {v:'V1.9.9',title:'メガシンカ項目名をわかりやすく調整',bullets:['予想テーブルと図鑑フィルターの項目名を「メガシンカ形態」に統一。','回答表示を「あり／なし」に統一し、項目名と答えをより直感的に変更。','繁体字中国語、簡体字中国語、英語、日本語の表示と説明を更新。']},
         {v:'V1.9.8',title:'メガシンカ項目の表記を明確化',bullets:['予想テーブルと図鑑フィルターの項目名を「メガシンカ形態の有無」に統一。','回答を「あり／なし」に変更し、メガシンカ形態が存在するかを示す項目であり、現在の状態を示すものではないことを明記。','繁体字中国語、簡体字中国語、英語、日本語の表示と説明を更新。']},
         {v:'V1.9.7',title:'「防衛！パニックパレード」マップ分類',bullets:['通常のジーヴルシティとは別に「防衛！パニックパレード」のマップ分類を追加。','ジーヴルシティに分類されていたポケモンのうち、防衛モードにも登場する17匹を分類し直し、両方に登場するポケモンには両方のタグを保持。','図鑑のマップ絞り込みと4言語のマップ名を更新。']},
