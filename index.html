@@ -194,16 +194,6 @@
 .cell-attribute-icon .type-badge+.type-badge{margin-left:2px}
 @media(max-width:620px){.guess-table th .guess-th-icon{flex-basis:22px;width:22px;height:22px;margin-right:5px;font-size:13px;border-radius:7px}.cell-attribute-icon{min-width:19px;min-height:19px;margin-right:4px}.cell-attribute-icon .type-badge{width:18px;height:18px}.mega-evolution-icon{width:13px;height:18px}}
 
-
-/* V2.0.1: center Ranked lobby like the difficulty selector */
-#rank-view .rank-page-heading{justify-content:center;text-align:center;flex-direction:column;gap:18px}
-#rank-view .rank-page-heading>div:first-child{max-width:780px}
-#rank-view .rank-heading-tools{justify-content:center}
-#rank-view .rank-rules-strip{justify-content:center}
-#rank-view .rank-mode-grid{grid-template-columns:minmax(0,1fr);max-width:720px;margin:0 auto 22px}
-#rank-view .rank-mode-card{width:100%}
-@media(max-width:850px){#rank-view .rank-mode-grid{max-width:100%}}
-
 /* Ranked mode */
 .rank-page-heading{align-items:center}.rank-season-chip{border:1px solid rgba(255,211,128,.4);color:#ffe0a0;background:rgba(189,127,34,.12);border-radius:999px;padding:10px 15px;font-size:11px;font-weight:900;letter-spacing:.15em;white-space:nowrap}
 .rank-rules-strip{display:flex;gap:9px;flex-wrap:wrap;margin:-5px 0 18px}.rank-rules-strip span{border:1px solid var(--line);background:rgba(30,3,25,.35);border-radius:999px;padding:8px 12px;color:#e9c5dd;font-size:11px;font-weight:700}
@@ -375,7 +365,7 @@
       </section>
       <section id="rank-view" class="view">
         <div class="page-heading rank-page-heading">
-          <div><p class="eyebrow" id="rank-page-eyebrow">UNITE-ONE · RANKED CHALLENGE</p><h1 id="rank-page-title">排位模式</h1><p class="subheading" id="rank-page-subtitle">單人・困難難度・限時猜中 1 隻寶可夢。僅保留 5 分鐘牌位挑戰，累積段位、積分與連勝。</p></div>
+          <div><p class="eyebrow" id="rank-page-eyebrow">UNITE-ONE · RANKED CHALLENGE</p><h1 id="rank-page-title">排位模式</h1><p class="subheading" id="rank-page-subtitle">單人・困難難度・限時猜中 1 隻寶可夢。三種時間各自累積段位、積分與連勝。</p></div>
           <div class="rank-heading-tools"><button class="secondary-btn rank-info-open" id="rank-info-open" type="button">🏆 段位資訊</button><span class="rank-season-chip">RANKED</span></div>
         </div>
         <div class="rank-rules-strip">
@@ -387,16 +377,18 @@
 
       <section id="leaderboard-view" class="view">
         <div class="page-heading rank-page-heading">
-          <div><p class="eyebrow" id="leaderboard-page-eyebrow">UNITE-ONE · COMPETITIVE LEADERBOARD</p><h1 id="leaderboard-page-title">排行榜</h1><p class="subheading" id="leaderboard-page-subtitle">查看牌位模式的傳奇積分排名。進入排行榜前 100 名即可取得大集結巔峰資格。</p></div>
+          <div><p class="eyebrow" id="leaderboard-page-eyebrow">UNITE-ONE · COMPETITIVE LEADERBOARD</p><h1 id="leaderboard-page-title">排行榜</h1><p class="subheading" id="leaderboard-page-subtitle">查看 1 分鐘、3 分鐘與 5 分鐘排位的傳奇積分排名。進入各模式前 100 名即可取得大集結巔峰資格。</p></div>
           <span class="rank-season-chip">TOP 100</span>
         </div>
         <section class="rank-board-panel">
           <div class="rank-board-head"><div><p class="eyebrow" id="leaderboard-panel-eyebrow">TOP 100 · LEGENDARY</p><h2 id="leaderboard-panel-title">傳奇排行榜</h2><p class="subheading" id="leaderboard-panel-subtitle">只有傳奇玩家會列入排名；同分時依最高連勝、累積勝場、較早達到該積分的時間排序。</p></div><button class="secondary-btn" id="rank-refresh" type="button">更新排行榜</button></div>
           <div class="rank-board-tabs" id="rank-board-tabs">
-            <button type="button" class="rank-board-tab active" data-rank-board="m5">牌位模式</button>
+            <button type="button" class="rank-board-tab active" data-rank-board="m1">1 分鐘</button>
+            <button type="button" class="rank-board-tab" data-rank-board="m3">3 分鐘</button>
+            <button type="button" class="rank-board-tab" data-rank-board="m5">5 分鐘</button>
           </div>
           <div id="rank-board-list" class="rank-board-list"><div class="rank-empty">登入帳號或訪客帳號後，即可載入雲端排行榜。</div></div>
-          <p class="rank-board-note" id="rank-board-note">排行榜依牌位模式計算。大集結巔峰資格為傳奇排行榜前 100 名。</p>
+          <p class="rank-board-note" id="rank-board-note">排行榜依各模式獨立計算。大集結巔峰資格為該模式傳奇排行榜前 100 名。</p>
         </section>
       </section>
 
@@ -407,7 +399,7 @@
             <h1 id="changelog-title">更新日誌</h1>
             <p class="subheading" id="changelog-subtitle">查看各版本新增功能、調整與修正。</p>
           </div>
-          <span class="rank-season-chip" id="changelog-current-version">V2.0.0</span>
+          <span class="rank-season-chip" id="changelog-current-version">V1.9.9</span>
         </div>
         <div class="changelog-list" id="changelog-list" aria-live="polite"></div>
         <p class="changelog-footnote" id="changelog-footnote">版本紀錄依照實際釋出的功能整理；部分舊版本僅列出主要更新。</p>
@@ -3686,47 +3678,47 @@ window.UNITE_ONE_POKEMON = [
   const getName = p => p[currentLang==='zh-TW'?'tw':currentLang==='zh-CN'?'sc':currentLang==='ja'?'ja':'en'];
   const getNames = p => [p.tw,p.sc,p.en,p.ja];
   let previousTarget=null, game=null, timerHandle=null, toastHandle=null, activeSuggestion=-1, dexSearchText='', selectedMode='normal', dexSort='name';
-  let rankActive=null, rankTimerHandle=null, rankSelectedBoard='m5', rankResult=null, rankBoardCache={m5:[]};
-  const RANK_MODES={m5:{minutes:5,label:'牌位模式'}};
+  let rankActive=null, rankTimerHandle=null, rankSelectedBoard='m1', rankResult=null, rankBoardCache={m1:[],m3:[],m5:[]};
+  const RANK_MODES={m1:{minutes:1,label:'1 分鐘',limit:12},m3:{minutes:3,label:'3 分鐘',limit:9},m5:{minutes:5,label:'5 分鐘',limit:6}};
   const RANK_UI_TEXTS={
     'zh-TW':{
-      navRank:'排位模式',navLeaderboard:'排行榜',rankTitle:'排位模式',rankSubtitle:'單人・困難難度・限時猜中 1 隻寶可夢。僅保留 5 分鐘牌位挑戰，累積段位、積分與連勝。',ruleHard:'困難難度',ruleGoal:'猜中 1 隻',ruleTier:'每階 100 分',ruleStreak:'連勝加分',rankEyebrow:'UNITE-ONE · 排位挑戰',leaderboardEyebrow:'UNITE-ONE · 競技排行榜',leaderboardPanelEyebrow:'TOP 100 · 傳奇',
-      infoButton:'🏆 段位資訊',modeSuffix:'排位',modeMeta:'單人 · 5 分鐘 · 困難難度 · 6 次機會 · 每局 1 次提示 · 猜中 1 隻',
+      navRank:'排位模式',navLeaderboard:'排行榜',rankTitle:'排位模式',rankSubtitle:'單人・困難難度・限時猜中 1 隻寶可夢。三種時間各自累積段位、積分與連勝。',ruleHard:'困難難度',ruleGoal:'猜中 1 隻',ruleTier:'每階 100 分',ruleStreak:'連勝加分',rankEyebrow:'UNITE-ONE · 排位挑戰',leaderboardEyebrow:'UNITE-ONE · 競技排行榜',leaderboardPanelEyebrow:'TOP 100 · 傳奇',
+      infoButton:'🏆 段位資訊',modeSuffix:'排位',modeMeta:'單人 · 困難難度 · 1 分鐘 12 次／3 分鐘 9 次／5 分鐘 6 次 · 每局 1 次提示 · 猜中 1 隻',
       nextLegend:'正在競逐大集結巔峰 TOP 100',nextMaster:'還差 {points} 分進入傳奇',masterReached:'已達大師，積分從 0 開始',nextTier:'下一階還差 {points} 分',
       currentStreak:'目前連勝',bestStreak:'最高連勝',startChallenge:'開始 {time} 挑戰 ↗',rankedPrefix:'排位',difficulty:'困難',rankInProgress:'排位挑戰進行中，請先完成本局。',
       statusLegend:'傳奇積分持續累積',statusMaster:'{points} / 500 RP · 距離傳奇還差 {remaining} 分',statusLadder:'累積 {points} / {total} RP · 本階還差 {remaining} 分',badgeSuffix:'段位徽章',
-      leaderboardTitle:'排行榜',leaderboardSubtitle:'查看牌位模式的傳奇積分排名。進入排行榜前 100 名即可取得大集結巔峰資格。',leaderboardPanelTitle:'傳奇排行榜',leaderboardPanelSubtitle:'只有傳奇玩家會列入排名；同分時依最高連勝、累積勝場、較早達到該積分的時間排序。',refresh:'更新排行榜',leaderboardNote:'排行榜依牌位模式計算。大集結巔峰資格為傳奇排行榜前 100 名。',
-      minuteUnit:'分鐘',rankModeName:'牌位模式',loading:'正在載入排行榜…',loginRequired:'登入帳號或使用訪客帳號後，即可查看跨玩家雲端排行榜。未登入時，個人排位仍會保存在此裝置。',readFailed:'排行榜讀取失敗：{error}。請確認 Firebase Realtime Database 權限。',loadFailed:'排行榜暫時無法載入：{error}',notReady:'雲端排行榜尚未初始化，個人排位可先在此裝置遊玩。',noLegend:'目前還沒有傳奇玩家。成為傳奇後就會出現在這裡！',peak:'大集結巔峰',peakQualified:'已取得 TOP 100 資格 · 目前排名 #{rank}',playerFallback:'玩家',you:'（你）',rowBestStreak:'最高連勝 {count}',rowWins:'勝場 {count}',rankedResultWin:'排位挑戰成功',rankedResultLoss:'挑戰失敗',guessReward:'猜測獎勵',streakReward:'連勝獎勵',streakNow:'目前連勝 {count} 場',demoted:'傳奇積分低於 500，已回到大師',promoted:'恭喜晉升！',resultRecord:'排位模式',retry:'再挑戰',backLobby:'返回排位大廳',rankChallengeTitle:'排位挑戰',challengeSubtitle:'在 {minutes} 分鐘內猜中 1 隻寶可夢。固定困難難度，完整題庫、最多 6 次猜測，每局可使用 1 次提示。',remainingTime:'剩餘時間',guessCount:'猜測次數',remainingGuesses:'剩餘次數',rankRules:'排位規則',rankHow:'固定困難難度，完整題庫、最多 6 次猜測，每局可使用 1 次提示。猜中 1 隻即可完成挑戰，時間結束或用完次數仍未猜中則失敗，扣 15 分。',guessSuffix:'次猜測',
+      leaderboardTitle:'排行榜',leaderboardSubtitle:'查看 1 分鐘、3 分鐘與 5 分鐘排位的傳奇積分排名。進入各模式前 100 名即可取得大集結巔峰資格。',leaderboardPanelTitle:'傳奇排行榜',leaderboardPanelSubtitle:'只有傳奇玩家會列入排名；同分時依最高連勝、累積勝場、較早達到該積分的時間排序。',refresh:'更新排行榜',leaderboardNote:'排行榜依各模式獨立計算。大集結巔峰資格為該模式傳奇排行榜前 100 名。',
+      minuteUnit:'分鐘',loading:'正在載入排行榜…',loginRequired:'登入帳號或使用訪客帳號後，即可查看跨玩家雲端排行榜。未登入時，個人排位仍會保存在此裝置。',readFailed:'排行榜讀取失敗：{error}。請確認 Firebase Realtime Database 權限。',loadFailed:'排行榜暫時無法載入：{error}',notReady:'雲端排行榜尚未初始化，個人排位可先在此裝置遊玩。',noLegend:'目前還沒有傳奇玩家。成為傳奇後就會出現在這裡！',peak:'大集結巔峰',peakQualified:'已取得 TOP 100 資格 · 目前排名 #{rank}',playerFallback:'玩家',you:'（你）',rowBestStreak:'最高連勝 {count}',rowWins:'勝場 {count}',rankedResultWin:'排位挑戰成功',rankedResultLoss:'挑戰失敗',guessReward:'猜測獎勵',streakReward:'連勝獎勵',streakNow:'目前連勝 {count} 場',demoted:'傳奇積分低於 500，已回到大師',promoted:'恭喜晉升！',resultRecord:'排位模式',retry:'再挑戰',backLobby:'返回排位大廳',rankChallengeTitle:'排位挑戰',challengeSubtitle:'在 {minutes} 分鐘內猜中 1 隻寶可夢。固定困難難度、完整題庫，猜測次數依時間模式而定，每局可使用 1 次提示。',remainingTime:'剩餘時間',guessCount:'猜測次數',remainingGuesses:'剩餘次數',rankRules:'排位規則',rankHow:'固定困難難度與完整題庫。1 分鐘模式最多猜 12 次、3 分鐘模式最多猜 9 次、5 分鐘模式最多猜 6 次，每局可使用 1 次提示。猜中 1 隻即可完成挑戰，時間結束或用完次數仍未猜中則失敗，扣 15 分。',guessSuffix:'次猜測',
       rankNames:{'高級':'高級','菁英':'菁英','專家':'專家','大師':'大師','傳奇':'傳奇','大集結巔峰':'大集結巔峰'}
     },
     'zh-CN':{
-      navRank:'排位模式',navLeaderboard:'排行榜',rankTitle:'排位模式',rankSubtitle:'单人・困难难度・限时猜中 1 只宝可梦。仅保留 5 分钟排位挑战，累积段位、积分与连胜。',ruleHard:'困难难度',ruleGoal:'猜中 1 只',ruleTier:'每阶 100 分',ruleStreak:'连胜加分',rankEyebrow:'UNITE-ONE · 排位挑战',leaderboardEyebrow:'UNITE-ONE · 竞技排行榜',leaderboardPanelEyebrow:'TOP 100 · 传奇',
-      infoButton:'🏆 段位信息',modeSuffix:'排位',modeMeta:'单人 · 5 分钟 · 困难难度 · 6 次机会 · 每局 1 次提示 · 猜中 1 只',
+      navRank:'排位模式',navLeaderboard:'排行榜',rankTitle:'排位模式',rankSubtitle:'单人・困难难度・限时猜中 1 只宝可梦。三种时长分别累积段位、积分与连胜。',ruleHard:'困难难度',ruleGoal:'猜中 1 只',ruleTier:'每阶 100 分',ruleStreak:'连胜加分',rankEyebrow:'UNITE-ONE · 排位挑战',leaderboardEyebrow:'UNITE-ONE · 竞技排行榜',leaderboardPanelEyebrow:'TOP 100 · 传奇',
+      infoButton:'🏆 段位信息',modeSuffix:'排位',modeMeta:'单人 · 困难难度 · 1 分钟 12 次／3 分钟 9 次／5 分钟 6 次 · 每局 1 次提示 · 猜中 1 只',
       nextLegend:'正在竞争大集结巅峰 TOP 100',nextMaster:'还差 {points} 分进入传奇',masterReached:'已达到大师，积分从 0 开始',nextTier:'距离下一阶还差 {points} 分',
       currentStreak:'当前连胜',bestStreak:'最高连胜',startChallenge:'开始 {time} 挑战 ↗',rankedPrefix:'排位',difficulty:'困难',rankInProgress:'排位挑战进行中，请先完成本局。',
       statusLegend:'传奇积分持续累积',statusMaster:'{points} / 500 RP · 距离传奇还差 {remaining} 分',statusLadder:'累计 {points} / {total} RP · 本阶还差 {remaining} 分',badgeSuffix:'段位徽章',
-      leaderboardTitle:'排行榜',leaderboardSubtitle:'查看排位模式的传奇积分排名。进入排行榜前 100 名即可获得大集结巅峰资格。',leaderboardPanelTitle:'传奇排行榜',leaderboardPanelSubtitle:'只有传奇玩家会列入排名；同分时依次比较最高连胜、累计胜场、较早达到该积分的时间。',refresh:'更新排行榜',leaderboardNote:'排行榜按排位模式计算。大集结巅峰资格为传奇排行榜前 100 名。',
-      minuteUnit:'分钟',rankModeName:'排位模式',loading:'正在加载排行榜…',loginRequired:'登录账号或使用访客账号后，即可查看跨玩家云端排行榜。未登录时，个人排位仍会保存在此设备。',readFailed:'排行榜读取失败：{error}。请确认 Firebase Realtime Database 权限。',loadFailed:'排行榜暂时无法加载：{error}',notReady:'云端排行榜尚未初始化，个人排位可先在此设备游玩。',noLegend:'目前还没有传奇玩家。达到传奇后就会显示在这里！',peak:'大集结巅峰',peakQualified:'已取得 TOP 100 资格 · 当前排名 #{rank}',playerFallback:'玩家',you:'（你）',rowBestStreak:'最高连胜 {count}',rowWins:'胜场 {count}',rankedResultWin:'排位挑战成功',rankedResultLoss:'挑战失败',guessReward:'猜测奖励',streakReward:'连胜奖励',streakNow:'当前连胜 {count} 场',demoted:'传奇积分低于 500，已返回大师',promoted:'恭喜晋级！',resultRecord:'排位模式',retry:'再挑战',backLobby:'返回排位大厅',rankChallengeTitle:'排位挑战',challengeSubtitle:'在 {minutes} 分钟内猜中 1 只宝可梦。固定困难难度，完整题库、最多 6 次猜测，每局可使用 1 次提示。',remainingTime:'剩余时间',guessCount:'猜测次数',remainingGuesses:'剩余次数',rankRules:'排位规则',rankHow:'固定困难难度，完整题库、最多 6 次猜测，每局可使用 1 次提示。猜中 1 只即可完成挑战，时间结束或用完次数仍未猜中则失败，扣除 15 分。',guessSuffix:'次猜测',
+      leaderboardTitle:'排行榜',leaderboardSubtitle:'查看 1 分钟、3 分钟与 5 分钟排位的传奇积分排名。进入各模式前 100 名即可获得大集结巅峰资格。',leaderboardPanelTitle:'传奇排行榜',leaderboardPanelSubtitle:'只有传奇玩家会列入排名；同分时依次比较最高连胜、累计胜场、较早达到该积分的时间。',refresh:'更新排行榜',leaderboardNote:'排行榜按各模式独立计算。大集结巅峰资格为该模式传奇排行榜前 100 名。',
+      minuteUnit:'分钟',loading:'正在加载排行榜…',loginRequired:'登录账号或使用访客账号后，即可查看跨玩家云端排行榜。未登录时，个人排位仍会保存在此设备。',readFailed:'排行榜读取失败：{error}。请确认 Firebase Realtime Database 权限。',loadFailed:'排行榜暂时无法加载：{error}',notReady:'云端排行榜尚未初始化，个人排位可先在此设备游玩。',noLegend:'目前还没有传奇玩家。达到传奇后就会显示在这里！',peak:'大集结巅峰',peakQualified:'已取得 TOP 100 资格 · 当前排名 #{rank}',playerFallback:'玩家',you:'（你）',rowBestStreak:'最高连胜 {count}',rowWins:'胜场 {count}',rankedResultWin:'排位挑战成功',rankedResultLoss:'挑战失败',guessReward:'猜测奖励',streakReward:'连胜奖励',streakNow:'当前连胜 {count} 场',demoted:'传奇积分低于 500，已返回大师',promoted:'恭喜晋级！',resultRecord:'排位模式',retry:'再挑战',backLobby:'返回排位大厅',rankChallengeTitle:'排位挑战',challengeSubtitle:'在 {minutes} 分钟内猜中 1 只宝可梦。固定困难难度、完整题库，猜测次数依时间模式而定，每局可使用 1 次提示。',remainingTime:'剩余时间',guessCount:'猜测次数',remainingGuesses:'剩余次数',rankRules:'排位规则',rankHow:'固定困难难度与完整题库。1 分钟模式最多猜 12 次、3 分钟模式最多猜 9 次、5 分钟模式最多猜 6 次，每局可使用 1 次提示。猜中 1 只即可完成挑战，时间结束或用完次数仍未猜中则失败，扣除 15 分。',guessSuffix:'次猜测',
       rankNames:{'高級':'高级','菁英':'菁英','專家':'专家','大師':'大师','傳奇':'传奇','大集結巔峰':'大集结巅峰'}
     },
     en:{
-      navRank:'Ranked',navLeaderboard:'Leaderboard',rankTitle:'Ranked Mode',rankSubtitle:'Solo · Hard difficulty · Guess 1 Pokémon before time runs out. Only the 5-minute Ranked Mode remains, with rank, points, and win streaks.',ruleHard:'Hard difficulty',ruleGoal:'Guess 1 Pokémon',ruleTier:'100 RP per tier',ruleStreak:'Win-streak bonuses',rankEyebrow:'UNITE-ONE · RANKED CHALLENGE',leaderboardEyebrow:'UNITE-ONE · COMPETITIVE LEADERBOARD',leaderboardPanelEyebrow:'TOP 100 · LEGENDARY',
-      infoButton:'🏆 Rank Guide',modeSuffix:'Ranked',modeMeta:'Solo · 5 minutes · Hard · 6 guesses · 1 hint per round · Find 1 Pokémon',
+      navRank:'Ranked',navLeaderboard:'Leaderboard',rankTitle:'Ranked Mode',rankSubtitle:'Solo · Hard difficulty · Guess 1 Pokémon before time runs out. Rank, points, and win streaks are tracked separately for each time mode.',ruleHard:'Hard difficulty',ruleGoal:'Guess 1 Pokémon',ruleTier:'100 RP per tier',ruleStreak:'Win-streak bonuses',rankEyebrow:'UNITE-ONE · RANKED CHALLENGE',leaderboardEyebrow:'UNITE-ONE · COMPETITIVE LEADERBOARD',leaderboardPanelEyebrow:'TOP 100 · LEGENDARY',
+      infoButton:'🏆 Rank Guide',modeSuffix:'Ranked',modeMeta:'Solo · Hard · 12 guesses (1 min) / 9 (3 min) / 6 (5 min) · 1 hint · Find 1 Pokémon',
       nextLegend:'Competing for UNITE Peak TOP 100',nextMaster:'{points} RP to Legendary',masterReached:'Master reached · points start at 0',nextTier:'{points} RP to the next tier',
       currentStreak:'Current streak',bestStreak:'Best streak',startChallenge:'Start {time} challenge ↗',rankedPrefix:'Ranked',difficulty:'Hard',rankInProgress:'A Ranked challenge is in progress. Finish this round first.',
       statusLegend:'Legendary points keep accumulating',statusMaster:'{points} / 500 RP · {remaining} RP to Legendary',statusLadder:'{points} / {total} RP total · {remaining} RP to the next tier',badgeSuffix:'rank badge',
-      leaderboardTitle:'Leaderboard',leaderboardSubtitle:'View Legendary point rankings for Ranked Mode. Place in the top 100 to earn UNITE Peak status.',leaderboardPanelTitle:'Legendary Leaderboard',leaderboardPanelSubtitle:'Only Legendary players are ranked. Ties are resolved by best streak, total wins, then the earliest time reaching the score.',refresh:'Refresh leaderboard',leaderboardNote:'The Ranked Mode leaderboard determines UNITE Peak eligibility based on its top 100 Legendary players.',
-      minuteUnit:'min',rankModeName:'Ranked Mode',loading:'Loading leaderboard…',loginRequired:'Sign in or use a guest account to view the cross-player cloud leaderboard. Without signing in, your personal Ranked progress stays on this device.',readFailed:'Could not load leaderboard: {error}. Check your Firebase Realtime Database rules.',loadFailed:'Leaderboard is temporarily unavailable: {error}',notReady:'The cloud leaderboard is not initialized yet. You can still play Ranked locally on this device.',noLegend:'No Legendary players yet. Reach Legendary to appear here!',peak:'UNITE Peak',peakQualified:'TOP 100 qualified · Current rank #{rank}',playerFallback:'Player',you:' (You)',rowBestStreak:'Best streak {count}',rowWins:'Wins {count}',rankedResultWin:'Ranked challenge cleared',rankedResultLoss:'Challenge failed',guessReward:'Guess reward',streakReward:'Win-streak reward',streakNow:'Current streak: {count}',demoted:'Legendary points fell below 500; returned to Master',promoted:'Rank promoted!',resultRecord:'Ranked',retry:'Try again',backLobby:'Back to Ranked lobby',rankChallengeTitle:'Ranked Challenge',challengeSubtitle:'Guess 1 Pokémon within {minutes}. Hard difficulty is fixed, with the full pool, up to 6 guesses, and 1 hint per round.',remainingTime:'Time left',guessCount:'Guesses',remainingGuesses:'Guesses left',rankRules:'Ranked Rules',rankHow:'Hard difficulty is fixed. The full pool is used, with up to 6 guesses and 1 hint per round. Guess 1 Pokémon to win. If time expires or all guesses are used, the challenge is lost and 15 RP are deducted.',guessSuffix:'guesses',
+      leaderboardTitle:'Leaderboard',leaderboardSubtitle:'View Legendary point rankings for the 1-, 3-, and 5-minute Ranked modes. Place in the top 100 of a mode to earn UNITE Peak status.',leaderboardPanelTitle:'Legendary Leaderboard',leaderboardPanelSubtitle:'Only Legendary players are ranked. Ties are resolved by best streak, total wins, then the earliest time reaching the score.',refresh:'Refresh leaderboard',leaderboardNote:'Each time mode has its own leaderboard. UNITE Peak eligibility is based on the top 100 Legendary players in that mode.',
+      minuteUnit:'min',loading:'Loading leaderboard…',loginRequired:'Sign in or use a guest account to view the cross-player cloud leaderboard. Without signing in, your personal Ranked progress stays on this device.',readFailed:'Could not load leaderboard: {error}. Check your Firebase Realtime Database rules.',loadFailed:'Leaderboard is temporarily unavailable: {error}',notReady:'The cloud leaderboard is not initialized yet. You can still play Ranked locally on this device.',noLegend:'No Legendary players yet. Reach Legendary to appear here!',peak:'UNITE Peak',peakQualified:'TOP 100 qualified · Current rank #{rank}',playerFallback:'Player',you:' (You)',rowBestStreak:'Best streak {count}',rowWins:'Wins {count}',rankedResultWin:'Ranked challenge cleared',rankedResultLoss:'Challenge failed',guessReward:'Guess reward',streakReward:'Win-streak reward',streakNow:'Current streak: {count}',demoted:'Legendary points fell below 500; returned to Master',promoted:'Rank promoted!',resultRecord:'Ranked',retry:'Try again',backLobby:'Back to Ranked lobby',rankChallengeTitle:'Ranked Challenge',challengeSubtitle:'Guess 1 Pokémon within {minutes}. Hard difficulty and the full pool are fixed. Guess limits: 12 (1 min), 9 (3 min), or 6 (5 min). One hint per round.',remainingTime:'Time left',guessCount:'Guesses',remainingGuesses:'Guesses left',rankRules:'Ranked Rules',rankHow:'Hard difficulty and the full pool are fixed. The limits are 12 guesses for 1 minute, 9 for 3 minutes, and 6 for 5 minutes, with 1 hint per round. Guess 1 Pokémon to win. If time expires or all guesses are used, the challenge is lost and 15 RP are deducted.',guessSuffix:'guesses',
       rankNames:{'高級':'Advanced','菁英':'Elite','專家':'Expert','大師':'Master','傳奇':'Legendary','大集結巔峰':'UNITE Peak'}
     },
     ja:{
-      navRank:'ランクモード',navLeaderboard:'ランキング',rankTitle:'ランクモード',rankSubtitle:'ソロ・むずかしい・制限時間内にポケモンを1匹当てよう。5分間のランクモードのみを残し、ランク・ポイント・連勝を累積します。',ruleHard:'むずかしい',ruleGoal:'1匹正解',ruleTier:'各階級 100 RP',ruleStreak:'連勝ボーナス',rankEyebrow:'UNITE-ONE · ランクチャレンジ',leaderboardEyebrow:'UNITE-ONE · 競技ランキング',leaderboardPanelEyebrow:'TOP 100 · レジェンド',
-      infoButton:'🏆 ランク情報',modeSuffix:'ランク',modeMeta:'ソロ · 5分 · むずかしい · 6回予想 · 1ラウンド1回ヒント · 1匹正解',
+      navRank:'ランクモード',navLeaderboard:'ランキング',rankTitle:'ランクモード',rankSubtitle:'ソロ・むずかしい・制限時間内にポケモンを1匹当てよう。ランク、ポイント、連勝数は時間モードごとに独立しています。',ruleHard:'むずかしい',ruleGoal:'1匹正解',ruleTier:'各階級 100 RP',ruleStreak:'連勝ボーナス',rankEyebrow:'UNITE-ONE · ランクチャレンジ',leaderboardEyebrow:'UNITE-ONE · 競技ランキング',leaderboardPanelEyebrow:'TOP 100 · レジェンド',
+      infoButton:'🏆 ランク情報',modeSuffix:'ランク',modeMeta:'ソロ · むずかしい · 1分12回／3分9回／5分6回予想 · 1ラウンド1回ヒント · 1匹正解',
       nextLegend:'UNITE ピーク TOP 100 を目指そう',nextMaster:'レジェンドまであと {points} RP',masterReached:'マスター到達 · ポイントは0から開始',nextTier:'次の階級まであと {points} RP',
       currentStreak:'現在の連勝',bestStreak:'最高連勝',startChallenge:'{time} チャレンジ開始 ↗',rankedPrefix:'ランク',difficulty:'むずかしい',rankInProgress:'ランクチャレンジ中です。このラウンドを先に完了してください。',
       statusLegend:'レジェンドポイントを継続加算中',statusMaster:'{points} / 500 RP · レジェンドまであと {remaining} RP',statusLadder:'累計 {points} / {total} RP · 次の階級まであと {remaining} RP',badgeSuffix:'ランクバッジ',
-      leaderboardTitle:'ランキング',leaderboardSubtitle:'ランクモードのレジェンドポイント順位を表示します。ランキング100位以内で「大集結峰」の資格を獲得します。',leaderboardPanelTitle:'レジェンドランキング',leaderboardPanelSubtitle:'レジェンドプレイヤーのみが対象です。同点の場合は最高連勝数、累計勝利数、同じポイントに先に到達した時刻で順位を決定します。',refresh:'ランキングを更新',leaderboardNote:'ランクモードのレジェンドランキングTOP 100がUNITE ピークの対象です。',
-      minuteUnit:'分',rankModeName:'ランクモード',loading:'ランキングを読み込み中…',loginRequired:'他のプレイヤーと共有するランキングを見るには、アカウントまたはゲストでログインしてください。未ログインの場合、ランクの記録はこの端末に保存されます。',readFailed:'ランキングの読み込みに失敗しました：{error}。Firebase Realtime Database のルールを確認してください。',loadFailed:'ランキングを読み込めません：{error}',notReady:'クラウドランキングはまだ初期化されていません。この端末ではランクモードをプレイできます。',noLegend:'レジェンドプレイヤーはまだいません。レジェンドに到達するとここに表示されます！',peak:'UNITE ピーク',peakQualified:'TOP 100 資格獲得 · 現在の順位 #{rank}',playerFallback:'プレイヤー',you:'（あなた）',rowBestStreak:'最高連勝 {count}',rowWins:'勝利数 {count}',rankedResultWin:'ランクチャレンジ成功',rankedResultLoss:'チャレンジ失敗',guessReward:'予想報酬',streakReward:'連勝報酬',streakNow:'現在の連勝：{count}',demoted:'レジェンドポイントが500未満になったため、マスターに戻りました',promoted:'ランクアップ！',resultRecord:'ランク',retry:'もう一度挑戦',backLobby:'ランクロビーに戻る',rankChallengeTitle:'ランクチャレンジ',challengeSubtitle:'制限時間 {minutes} 以内にポケモンを1匹当てよう。難易度は「むずかしい」に固定。全対象、最大6回予想、各ラウンド1回ヒントを使用できます。',remainingTime:'残り時間',guessCount:'予想回数',remainingGuesses:'残り回数',rankRules:'ランクルール',rankHow:'難易度は「むずかしい」に固定。全対象から出題され、最大6回予想、各ラウンド1回ヒントを使用できます。1匹正解でクリア。時間切れ、または予想を使い切って不正解の場合は失敗となり、15 RP減点されます。',guessSuffix:'回予想',
+      leaderboardTitle:'ランキング',leaderboardSubtitle:'1分・3分・5分のランクモードにおけるレジェンドポイント順位を表示します。各モードで100位以内に入ると「大集結峰」の資格を獲得します。',leaderboardPanelTitle:'レジェンドランキング',leaderboardPanelSubtitle:'レジェンドプレイヤーのみが対象です。同点の場合は最高連勝数、累計勝利数、同じポイントに先に到達した時刻で順位を決定します。',refresh:'ランキングを更新',leaderboardNote:'ランキングは時間モードごとに独立しています。各モードのレジェンドランキングTOP 100がUNITE ピークの対象です。',
+      minuteUnit:'分',loading:'ランキングを読み込み中…',loginRequired:'他のプレイヤーと共有するランキングを見るには、アカウントまたはゲストでログインしてください。未ログインの場合、ランクの記録はこの端末に保存されます。',readFailed:'ランキングの読み込みに失敗しました：{error}。Firebase Realtime Database のルールを確認してください。',loadFailed:'ランキングを読み込めません：{error}',notReady:'クラウドランキングはまだ初期化されていません。この端末ではランクモードをプレイできます。',noLegend:'レジェンドプレイヤーはまだいません。レジェンドに到達するとここに表示されます！',peak:'UNITE ピーク',peakQualified:'TOP 100 資格獲得 · 現在の順位 #{rank}',playerFallback:'プレイヤー',you:'（あなた）',rowBestStreak:'最高連勝 {count}',rowWins:'勝利数 {count}',rankedResultWin:'ランクチャレンジ成功',rankedResultLoss:'チャレンジ失敗',guessReward:'予想報酬',streakReward:'連勝報酬',streakNow:'現在の連勝：{count}',demoted:'レジェンドポイントが500未満になったため、マスターに戻りました',promoted:'ランクアップ！',resultRecord:'ランク',retry:'もう一度挑戦',backLobby:'ランクロビーに戻る',rankChallengeTitle:'ランクチャレンジ',challengeSubtitle:'制限時間 {minutes} 以内にポケモンを1匹当てよう。難易度は「むずかしい」に固定。予想回数は1分12回、3分9回、5分6回。各ラウンド1回ヒントを使用できます。',remainingTime:'残り時間',guessCount:'予想回数',remainingGuesses:'残り回数',rankRules:'ランクルール',rankHow:'難易度は「むずかしい」に固定。全対象から出題され、1分モードは12回、3分は9回、5分は6回予想できます。各ラウンド1回ヒントを使用できます。1匹正解でクリア。時間切れ、または予想を使い切って不正解の場合は失敗となり、15 RP減点されます。',guessSuffix:'回予想',
       rankNames:{'高級':'アドバンス','菁英':'エリート','專家':'エキスパート','大師':'マスター','傳奇':'レジェンド','大集結巔峰':'UNITE ピーク'}
     }
   };
@@ -3743,11 +3735,11 @@ window.UNITE_ONE_POKEMON = [
   const RANK_MASTER_ICON=RANK_BADGES.master, RANK_LEGEND_ICON=RANK_BADGES.legend, RANK_PEAK_ICON=RANK_BADGES.peak;
   const RANK_LADDER_END=1100, RANK_LEGEND_START=500;
   const blankRankMode=()=>({stage:'ladder',ladderPoints:0,masterPoints:0,streak:0,bestStreak:0,wins:0,losses:0,scoreReachedAt:Date.now(),lastPlayedAt:0});
-  const loadRankProfile=()=>{try{const v=JSON.parse(localStorage.getItem('uniteOneRankedV1')||'null');const out={m5:blankRankMode()};if(v&&v.m5)out.m5={...out.m5,...v.m5};return out;}catch{return {m5:blankRankMode()};}};
+  const loadRankProfile=()=>{try{const v=JSON.parse(localStorage.getItem('uniteOneRankedV1')||'null');const out={m1:blankRankMode(),m3:blankRankMode(),m5:blankRankMode()};for(const k of Object.keys(out)){if(v&&v[k])out[k]={...out[k],...v[k]};}return out;}catch{return {m1:blankRankMode(),m3:blankRankMode(),m5:blankRankMode()};}};
   let rankProfile=loadRankProfile();
   const saveRankProfile=()=>{try{localStorage.setItem('uniteOneRankedV1',JSON.stringify(rankProfile));}catch{}};
   window.uniteOneGetRankProfile=()=>JSON.parse(JSON.stringify(rankProfile));
-  window.uniteOneApplyCloudRankEntries=entries=>{if(!entries||typeof entries!=='object')return;for(const key of ['m5']){const remote=entries[key];if(!remote)continue;const local=rankModeData(key);if((Number(remote.lastPlayedAt)||0)>=(Number(local.lastPlayedAt)||0)){local.stage=remote.stage==='legend'?'legend':remote.stage==='master'?'master':'ladder';local.ladderPoints=Math.max(0,Number(remote.ladderPoints)||0);local.masterPoints=Math.max(0,Number(remote.points)||0);if(local.stage==='ladder')local.masterPoints=0;local.streak=Math.max(0,Number(remote.streak)||0);local.bestStreak=Math.max(0,Number(remote.bestStreak)||0);local.wins=Math.max(0,Number(remote.wins)||0);local.losses=Math.max(0,Number(remote.losses)||0);local.scoreReachedAt=Math.max(0,Number(remote.scoreReachedAt)||Date.now());local.lastPlayedAt=Math.max(0,Number(remote.lastPlayedAt)||0);}}saveRankProfile();if($('rank-view')?.classList.contains('active-view'))renderRankView();};
+  window.uniteOneApplyCloudRankEntries=entries=>{if(!entries||typeof entries!=='object')return;for(const key of ['m1','m3','m5']){const remote=entries[key];if(!remote)continue;const local=rankModeData(key);if((Number(remote.lastPlayedAt)||0)>=(Number(local.lastPlayedAt)||0)){local.stage=remote.stage==='legend'?'legend':remote.stage==='master'?'master':'ladder';local.ladderPoints=Math.max(0,Number(remote.ladderPoints)||0);local.masterPoints=Math.max(0,Number(remote.points)||0);if(local.stage==='ladder')local.masterPoints=0;local.streak=Math.max(0,Number(remote.streak)||0);local.bestStreak=Math.max(0,Number(remote.bestStreak)||0);local.wins=Math.max(0,Number(remote.wins)||0);local.losses=Math.max(0,Number(remote.losses)||0);local.scoreReachedAt=Math.max(0,Number(remote.scoreReachedAt)||Date.now());local.lastPlayedAt=Math.max(0,Number(remote.lastPlayedAt)||0);}}saveRankProfile();if($('rank-view')?.classList.contains('active-view'))renderRankView();};
   const dexFilters={playable:[],maps:[],role:[],damage:[],types:[],evolution:[],generation:[],difficulty:[],mega:[]};
   const blankStats=()=>({played:0,wins:0,streak:0,best:0,bestStreak:0,totalGuesses:0,history:[]});
   const loadStats=()=>{try{const v=JSON.parse(localStorage.getItem('uniteOneStats')||'null');if(!v||typeof v!=='object')return blankStats();const history=Array.isArray(v.history)?v.history:[];let run=0,historyBest=0;for(const record of history){if(record&&record.won){run++;historyBest=Math.max(historyBest,run);}else run=0;}return {...blankStats(),...v,bestStreak:Math.max(Number(v.bestStreak)||0,Number(v.streak)||0,historyBest),history};}catch{return blankStats();}};
@@ -3966,7 +3958,8 @@ window.UNITE_ONE_POKEMON = [
   const CHANGELOG_TEXTS = {
     'zh-TW': {
       title:'更新日誌', subtitle:'查看 UNITE-ONE 各版本新增功能、調整與修正。', footnote:'版本紀錄依照已加入遊戲的功能整理；較早版本僅列出主要更新。', latest:'最新版本',
-      items:[{v:'V2.0.1',title:'牌位大廳版面調整',bullets:['將牌位模式頁面調整為置中版面，與一般難度選擇頁一致。']},{v:'V2.0.0',title:'排位模式整合',bullets:['移除 1 分鐘與 3 分鐘排位模式及排行榜，只保留原 5 分鐘模式。','將原 5 分鐘模式名稱統一改為「牌位模式」，段位、積分、連勝與排行榜以此模式累積。','同步更新繁體中文、簡體中文、英文及日文介面與更新日誌。']},
+      items:[
+        {v:'V2.0.0',title:'排位猜測次數調整',bullets:['1 分鐘排位的猜測上限調整為 12 次。','3 分鐘排位的猜測上限調整為 9 次。','5 分鐘排位維持 6 次猜測，並同步更新四種語言的排位說明。']},
         {v:'V1.9.9',title:'超級進化形態欄位名稱調整',bullets:['將猜測表格與角色圖鑑篩選的欄位名稱統一為「超級進化形態」。','提示結果統一顯示為「有／無」，讓欄位名稱與答案更直覺。','同步更新繁體中文、簡體中文、英文及日文介面與說明。']},
         {v:'V1.9.8',title:'超級進化線索名稱釐清',bullets:['將猜測表格與圖鑑篩選名稱統一為「是否有超級進化形」。','答案改為「有／沒有」，並明確說明此欄判斷是否存在超級進化形態，不代表寶可夢目前正處於超級進化狀態。','同步更新繁體中文、簡體中文、英文及日文介面與說明。']},
         {v:'V1.9.7',title:'危機驚襲大防衛！地圖分類',bullets:['新增獨立「危機驚襲大防衛！」地圖分類，與吉弗市一般地圖分開顯示。','將 17 隻原先標記於吉弗市、且出現在防衛模式的寶可夢改列為危機驚襲大防衛；同時出現在兩種模式的寶可夢保留雙重地圖標籤。','更新圖鑑地圖篩選與四種語言的地圖名稱。']},
@@ -3986,7 +3979,8 @@ window.UNITE_ONE_POKEMON = [
     },
     'zh-CN': {
       title:'更新日志', subtitle:'查看 UNITE-ONE 各版本新增功能、调整与修复。', footnote:'版本记录根据已加入游戏的功能整理；较早版本仅列出主要更新。', latest:'最新版本',
-      items:[{v:'V2.0.1',title:'排位大厅版面调整',bullets:['将排位模式页面调整为居中布局，与一般难度选择页一致。']},{v:'V2.0.0',title:'排位模式整合',bullets:['移除 1 分钟与 3 分钟排位模式及排行榜，仅保留原 5 分钟模式。','将原 5 分钟模式名称统一为「排位模式」，段位、积分、连胜与排行榜均在此模式累积。','同步更新繁体中文、简体中文、英文和日文界面及更新日志。']},
+      items:[
+        {v:'V2.0.0',title:'排位猜测次数调整',bullets:['1 分钟排位的猜测上限调整为 12 次。','3 分钟排位的猜测上限调整为 9 次。','5 分钟排位保持 6 次猜测，并同步更新四种语言的排位说明。']},
         {v:'V1.9.9',title:'超级进化形态字段名称调整',bullets:['将猜测表格与角色图鉴筛选的字段名称统一为“超级进化形态”。','提示结果统一显示为“有／无”，让字段名称与答案更加直观。','同步更新繁体中文、简体中文、英文和日文界面及说明。']},
         {v:'V1.9.8',title:'超级进化线索名称说明',bullets:['将猜测表格与图鉴筛选名称统一为“是否有超级进化形态”。','答案改为“有／没有”，并明确说明此栏判断是否存在超级进化形态，不代表宝可梦当前正处于超级进化状态。','同步更新繁体中文、简体中文、英文和日文界面及说明。']},
         {v:'V1.9.7',title:'危机惊袭大防卫！地图分类',bullets:['新增独立的“危机惊袭大防卫！”地图分类，与吉弗市普通地图分开显示。','将 17 只原先标记在吉弗市、且出现在防卫模式中的宝可梦改列到危机惊袭大防卫；同时出现在两种模式的宝可梦保留双地图标签。','更新图鉴地图筛选及四种语言的地图名称。']},
@@ -4006,7 +4000,8 @@ window.UNITE_ONE_POKEMON = [
     },
     en: {
       title:'Update Log', subtitle:'Explore new features, adjustments, and fixes in each UNITE-ONE release.', footnote:'Entries summarize features included in the game; older releases list their major changes.', latest:'LATEST',
-      items:[{v:'V2.0.1',title:'Ranked Lobby Layout',bullets:['Centered the Ranked Mode lobby to match the regular difficulty-selection layout.']},{v:'V2.0.0',title:'Ranked Mode Consolidation',bullets:['Removed the 1-minute and 3-minute Ranked modes and leaderboards, keeping the original 5-minute mode.','Renamed the retained mode to Ranked Mode; rank, points, streaks, and leaderboard progress now use this single mode.','Updated the interface and changelog in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
+      items:[
+        {v:'V2.0.0',title:'Ranked Guess Limit Update',bullets:['Raised the 1-minute Ranked guess limit to 12.','Raised the 3-minute Ranked guess limit to 9.','The 5-minute mode remains at 6 guesses; Ranked guidance was updated in all four languages.']},
         {v:'V1.9.9',title:'Clearer Mega Evolution Label',bullets:['Renamed the guessing-table attribute and Pokédex filter to “Mega Evolution Form”.','Standardized the answers as “Yes / No” for a clearer, more direct clue.','Updated the interface and help text in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
         {v:'V1.9.8',title:'Clarified Mega Evolution Attribute',bullets:['Renamed the guessing-table and Pokédex filter attribute to “Mega Form Available”.','Changed the answers to “Yes / No” and clarified that the attribute checks whether a Mega Evolution form exists, not the Pokémon’s current battle state.','Updated the interface and help text in Traditional Chinese, Simplified Chinese, English, and Japanese.']},
         {v:'V1.9.7',title:'Panic Parade Map Category',bullets:['Added a dedicated Panic Parade map category, separate from the regular Shivre City stage.','Reclassified 17 Pokémon previously tagged under Shivre City that also appear in the defense mode; Pokémon appearing in both modes retain both map tags.','Updated Pokédex map filters and map names in all four supported languages.']},
@@ -4026,7 +4021,8 @@ window.UNITE_ONE_POKEMON = [
     },
     ja: {
       title:'更新履歴', subtitle:'UNITE-ONE の各バージョンで追加・調整・修正された内容を確認できます。', footnote:'ゲームに実装された内容をもとに記載しています。古いバージョンは主な更新のみ掲載しています。', latest:'最新',
-      items:[{v:'V2.0.1',title:'ランクロビーのレイアウト調整',bullets:['ランクモード画面を通常の難易度選択画面と同様の中央配置に変更。']},{v:'V2.0.0',title:'ランクモード統合',bullets:['1分・3分のランクモードとランキングを廃止し、従来の5分モードのみを残しました。','残した5分モードの名称を「ランクモード」に統一し、ランク・ポイント・連勝・ランキングを一本化。','繁体字中国語、簡体字中国語、英語、日本語の表示と更新履歴を更新。']},
+      items:[
+        {v:'V2.0.0',title:'ランクモードの予想回数を調整',bullets:['1分モードの予想上限を12回に変更。','3分モードの予想上限を9回に変更。','5分モードは6回のまま維持し、4言語のランク説明を更新。']},
         {v:'V1.9.9',title:'メガシンカ項目名をわかりやすく調整',bullets:['予想テーブルと図鑑フィルターの項目名を「メガシンカ形態」に統一。','回答表示を「あり／なし」に統一し、項目名と答えをより直感的に変更。','繁体字中国語、簡体字中国語、英語、日本語の表示と説明を更新。']},
         {v:'V1.9.8',title:'メガシンカ項目の表記を明確化',bullets:['予想テーブルと図鑑フィルターの項目名を「メガシンカ形態の有無」に統一。','回答を「あり／なし」に変更し、メガシンカ形態が存在するかを示す項目であり、現在の状態を示すものではないことを明記。','繁体字中国語、簡体字中国語、英語、日本語の表示と説明を更新。']},
         {v:'V1.9.7',title:'「防衛！パニックパレード」マップ分類',bullets:['通常のジーヴルシティとは別に「防衛！パニックパレード」のマップ分類を追加。','ジーヴルシティに分類されていたポケモンのうち、防衛モードにも登場する17匹を分類し直し、両方に登場するポケモンには両方のタグを保持。','図鑑のマップ絞り込みと4言語のマップ名を更新。']},
@@ -4118,7 +4114,7 @@ window.UNITE_ONE_POKEMON = [
     if(rankTimerHandle){clearInterval(rankTimerHandle);rankTimerHandle=null;}
     $('result-modal').classList.add('hidden');rankActive={key,minutes:RANK_MODES[key].minutes};rankResult=null;
     switchView('game');$('difficulty-picker').classList.add('hidden');$('game-play-screen').classList.remove('hidden');
-    selectedMode='hard';newGame('hard');
+    selectedMode='hard';newGame('hard');game.limit=RANK_MODES[key].limit;
     applyRankChallengeLanguage();
     updateStatus();rankTimerHandle=setInterval(()=>{if(!rankActive||!game||game.finished){clearInterval(rankTimerHandle);rankTimerHandle=null;return;}const left=rankActive.minutes*60-elapsed();updateStatus();if(left<=0)completeGame(false);},200);
   }
@@ -4136,7 +4132,7 @@ window.UNITE_ONE_POKEMON = [
         {key:'peak',name:'大集結巔峰',entry:'TOP 100',tiers:['傳奇資格','該模式排行榜前 100 名'],note:'排名跌出前 100 名即失去巔峰資格，回到傳奇。'}
       ],
       pointsTitle:'排位積分規則',efficiency:'猜測效率獎勵',win1:'第 1 次猜中',win23:'第 2–3 次猜中',win45:'第 4–5 次猜中',win6:'第 6 次以上猜中',failure:'挑戰失敗',
-      streakTitle:'連勝里程碑獎勵',otherTitle:'其他規則',other:['排位模式限時 5 分鐘，段位、積分、連勝與排行榜統一累積。','大師積分最低為 0；傳奇積分低於 500 時回到大師。','傳奇排行榜同分依序比較：最高連勝、累積勝場、較早達到該積分的時間。','大集結巔峰資格依各時間模式的傳奇排行榜 TOP 100 判定。'],
+      streakTitle:'連勝里程碑獎勵',otherTitle:'其他規則',other:['1、3、5 分鐘各自擁有獨立段位、積分、連勝與排行榜。','大師積分最低為 0；傳奇積分低於 500 時回到大師。','傳奇排行榜同分依序比較：最高連勝、累積勝場、較早達到該積分的時間。','大集結巔峰資格依各時間模式的傳奇排行榜 TOP 100 判定。'],
       attempt:'次猜中',streakUnit:'連勝',failNote:'時間結束或用完 6 次猜測仍未猜中，扣除 15 RP。'
     },
     'zh-CN':{
@@ -4150,7 +4146,7 @@ window.UNITE_ONE_POKEMON = [
         {key:'peak',name:'大集结巅峰',entry:'TOP 100',tiers:['传奇资格','该模式排行榜前 100 名'],note:'排名跌出前 100 名即失去巅峰资格，回到传奇。'}
       ],
       pointsTitle:'排位积分规则',efficiency:'猜测效率奖励',win1:'第 1 次猜中',win23:'第 2–3 次猜中',win45:'第 4–5 次猜中',win6:'第 6 次及以后猜中',failure:'挑战失败',
-      streakTitle:'连胜里程碑奖励',otherTitle:'其他规则',other:['排位模式限时 5 分钟，段位、积分、连胜与排行榜统一累积。','大师积分最低为 0；传奇积分低于 500 时回到大师。','传奇排行榜同分依次比较：最高连胜、累计胜场、较早达到该积分的时间。','大集结巅峰资格按各时间模式的传奇排行榜 TOP 100 判定。'],
+      streakTitle:'连胜里程碑奖励',otherTitle:'其他规则',other:['1、3、5 分钟分别拥有独立段位、积分、连胜与排行榜。','大师积分最低为 0；传奇积分低于 500 时回到大师。','传奇排行榜同分依次比较：最高连胜、累计胜场、较早达到该积分的时间。','大集结巅峰资格按各时间模式的传奇排行榜 TOP 100 判定。'],
       attempt:'次猜中',streakUnit:'连胜',failNote:'时间结束或用完 6 次猜测仍未猜中，扣除 15 RP。'
     },
     en:{
@@ -4164,8 +4160,8 @@ window.UNITE_ONE_POKEMON = [
         {key:'peak',name:'UNITE Peak',entry:'TOP 100',tiers:['Legendary rank required','Top 100 in that mode'],note:'Dropping out of the top 100 removes Peak status and returns you to Legendary.'}
       ],
       pointsTitle:'Ranked Point Rules',efficiency:'Guess-efficiency rewards',win1:'Correct on guess 1',win23:'Correct on guesses 2–3',win45:'Correct on guesses 4–5',win6:'Correct on guess 6+',failure:'Challenge failed',
-      streakTitle:'Win-streak milestones',otherTitle:'Additional Rules',other:['Ranked Mode is a 5-minute challenge with a single rank, point, streak, and leaderboard track.','Master points cannot fall below 0. Falling below 500 Legendary points returns you to Master.','Legendary ties are ordered by best streak, total wins, then the earliest time reaching that score.','UNITE Peak eligibility is based on the top 100 of each mode’s Legendary leaderboard.'],
-      attempt:'guess',streakUnit:'wins',failNote:'Time expires or all 6 guesses are used without a correct answer: −15 RP.'
+      streakTitle:'Win-streak milestones',otherTitle:'Additional Rules',other:['1-, 3-, and 5-minute modes have separate ranks, points, streaks, and leaderboards.','Master points cannot fall below 0. Falling below 500 Legendary points returns you to Master.','Legendary ties are ordered by best streak, total wins, then the earliest time reaching that score.','UNITE Peak eligibility is based on the top 100 of each mode’s Legendary leaderboard.'],
+      attempt:'guess',streakUnit:'wins',failNote:'Time expires or the mode-specific guess limit is reached without a correct answer: −15 RP.'
     },
     ja:{
       open:'🏆 ランク情報',title:'ランクの説明',subtitle:'各ランクの階級、必要ポイント、昇格・降格ルールを確認できます。',rankSection:'ランク階級とポイント条件',
@@ -4178,7 +4174,7 @@ window.UNITE_ONE_POKEMON = [
         {key:'peak',name:'UNITE ピーク',entry:'TOP 100',tiers:['レジェンドが条件','各モードのランキング100位以内'],note:'100位圏外になるとピーク資格を失い、レジェンドに戻る。'}
       ],
       pointsTitle:'ランクポイントルール',efficiency:'予想効率ボーナス',win1:'1回目で正解',win23:'2～3回目で正解',win45:'4～5回目で正解',win6:'6回目以降で正解',failure:'チャレンジ失敗',
-      streakTitle:'連勝マイルストーン',otherTitle:'その他のルール',other:['ランクモードは5分間のチャレンジで、ランク・ポイント・連勝・ランキングを共通で累積します。','マスターの最低ポイントは0。レジェンドで500 RP未満になるとマスターに戻ります。','レジェンドの同点順位は、最高連勝、累計勝利数、同じポイントに先に到達した時刻の順で決まります。','UNITE ピーク資格は各モードのレジェンドランキングTOP 100で判定します。'],
+      streakTitle:'連勝マイルストーン',otherTitle:'その他のルール',other:['1分・3分・5分モードはランク、ポイント、連勝、ランキングがそれぞれ独立しています。','マスターの最低ポイントは0。レジェンドで500 RP未満になるとマスターに戻ります。','レジェンドの同点順位は、最高連勝、累計勝利数、同じポイントに先に到達した時刻の順で決まります。','UNITE ピーク資格は各モードのレジェンドランキングTOP 100で判定します。'],
       attempt:'回目で正解',streakUnit:'連勝',failNote:'時間切れ、または6回すべて不正解の場合は15 RP減点。'
     }
   };
@@ -4201,7 +4197,7 @@ window.UNITE_ONE_POKEMON = [
     grid.innerHTML=Object.entries(RANK_MODES).map(([key,mode])=>{
       const d=rankModeData(key),desc=rankDescriptor(d),streak=d.streak||0,pct=desc.progress===null?100:Math.max(0,Math.min(100,desc.progress));
       const nextNote=d.stage==='legend'?ui.nextLegend:d.stage==='master'?rankText('nextMaster',{points:desc.next}):desc.name===rankName('大師')?ui.masterReached:rankText('nextTier',{points:desc.next});
-      return `<article class="rank-mode-card" data-rank-mode-card="${key}"><div class="rank-mode-card-head">${rankEmblem(desc.name,desc.icon)}<div><h3>${ui.rankModeName}</h3><small>${ui.modeMeta}</small><div class="rank-current-name">${esc(desc.label)}</div><div class="rank-points">${rankStatusLine(d,key)}</div></div></div><div class="rank-progress"><span style="width:${pct}%"></span></div><div class="rank-progress-note">${nextNote}</div><div class="rank-streak-line"><span>🔥 ${ui.currentStreak} ${streak}</span><span>${ui.bestStreak} ${d.bestStreak||0}</span></div><button class="primary-btn rank-start-btn" type="button" data-rank-start="${key}">${rankText('startChallenge',{time:rankTimeLabel(key)})}</button></article>`;
+      return `<article class="rank-mode-card" data-rank-mode-card="${key}"><div class="rank-mode-card-head">${rankEmblem(desc.name,desc.icon)}<div><h3>${rankTimeLabel(key)}${ui.modeSuffix}</h3><small>${ui.modeMeta}</small><div class="rank-current-name">${esc(desc.label)}</div><div class="rank-points">${rankStatusLine(d,key)}</div></div></div><div class="rank-progress"><span style="width:${pct}%"></span></div><div class="rank-progress-note">${nextNote}</div><div class="rank-streak-line"><span>🔥 ${ui.currentStreak} ${streak}</span><span>${ui.bestStreak} ${d.bestStreak||0}</span></div><button class="primary-btn rank-start-btn" type="button" data-rank-start="${key}">${rankText('startChallenge',{time:rankTimeLabel(key)})}</button></article>`;
     }).join('');
   }
   function renderLeaderboardView(){
@@ -4209,7 +4205,7 @@ window.UNITE_ONE_POKEMON = [
     $('leaderboard-page-eyebrow').textContent=ui.leaderboardEyebrow;$('leaderboard-panel-eyebrow').textContent=ui.leaderboardPanelEyebrow;$('leaderboard-page-title').textContent=ui.leaderboardTitle;$('leaderboard-page-subtitle').textContent=ui.leaderboardSubtitle;
     $('leaderboard-panel-title').textContent=ui.leaderboardPanelTitle;$('leaderboard-panel-subtitle').textContent=ui.leaderboardPanelSubtitle;
     $('rank-refresh').textContent=ui.refresh;$('rank-board-note').textContent=ui.leaderboardNote;
-    document.querySelectorAll('[data-rank-board]').forEach(btn=>{btn.classList.toggle('active',btn.dataset.rankBoard===rankSelectedBoard);btn.textContent=rankUi().rankModeName;});
+    document.querySelectorAll('[data-rank-board]').forEach(btn=>{btn.classList.toggle('active',btn.dataset.rankBoard===rankSelectedBoard);btn.textContent=rankTimeLabel(btn.dataset.rankBoard);});
     loadRankBoard(rankSelectedBoard);
   }
   async function loadRankBoard(key){
@@ -6078,7 +6074,7 @@ onAuthStateChanged(auth, user => {
         const cloudEntries = await window.uniteOneReadMyRankEntries();
         const localProfile = window.uniteOneGetRankProfile();
         const apply = {};
-        for (const mode of ["m5"]) {
+        for (const mode of ["m1", "m3", "m5"]) {
           const local = localProfile[mode];
           const remote = cloudEntries?.[mode];
           const localHasData = local && ((local.ladderPoints || 0) > 0 || (local.masterPoints || 0) > 0 || (local.wins || 0) > 0 || (local.losses || 0) > 0);
@@ -6109,7 +6105,7 @@ onAuthStateChanged(auth, user => {
 window.uniteOneSaveRankEntry = async (mode, entry) => {
   const user = auth.currentUser;
   if (!user) return { ok:false, reason:"login" };
-  if (mode !== "m5") throw new Error("Invalid ranked mode.");
+  if (!/^(m1|m3|m5)$/.test(mode)) throw new Error("Invalid ranked mode.");
   const profileSnapshot = await get(ref(db, `users/${user.uid}/profile`));
   const profile = profileSnapshot.val() || {};
   const nickname = String(profile.nickname || defaultNickname(user)).slice(0, 20);
@@ -6131,7 +6127,7 @@ window.uniteOneSaveRankEntry = async (mode, entry) => {
 window.uniteOneReadRankLeaderboard = async mode => {
   const user = auth.currentUser;
   if (!user) return { ok:false, reason:"login", entries:[] };
-  if (mode !== "m5") throw new Error("Invalid ranked mode.");
+  if (!/^(m1|m3|m5)$/.test(mode)) throw new Error("Invalid ranked mode.");
   try {
     const snapshot = await get(ref(db, `rankLeaderboard/${mode}`));
     const value = snapshot.val() || {};
@@ -6144,7 +6140,7 @@ window.uniteOneReadMyRankEntries = async () => {
   const user = auth.currentUser;
   if (!user) return {};
   const output = {};
-  for (const mode of ["m5"]) {
+  for (const mode of ["m1", "m3", "m5"]) {
     const snapshot = await get(ref(db, `rankLeaderboard/${mode}/${user.uid}`));
     if (snapshot.exists()) output[mode] = snapshot.val();
   }
